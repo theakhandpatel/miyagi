@@ -1,6 +1,7 @@
 package main
 
 import (
+	"embed"
 	"fmt"
 	"os"
 	"io/fs"
@@ -126,10 +127,12 @@ func prepareContent(root, srcDir string) (int, error) {
 		return nil
 	}
 
-	// The home page is the repository README.
-	if err := copyPage("README.md", "index.md"); err != nil {
+	// The home, install and how-it-works pages come from the binary, not the repository.
+	// See writeSitePages for why the home page is not the README.
+	if err := writeSitePages(srcDir); err != nil {
 		return 0, err
 	}
+	pages += 3
 
 	for _, ch := range allChapters(root) {
 		if !ch.written() {
@@ -541,11 +544,17 @@ func buildConfig(title, root string) string {
 	if first := firstChapterLink(root); first != "" {
 		fmt.Fprintf(&b, "      { text: 'Chapters', link: %s },\n", strconv.Quote(first))
 	}
+	b.WriteString("      { text: 'Install', link: '/install' },\n")
+	b.WriteString("      { text: 'How it works', link: '/how-it-works' },\n")
 	b.WriteString("      { text: 'Designs', link: '/docs/designs' },\n")
 	b.WriteString("      { text: 'GitHub', link: 'https://github.com/theakhandpatel/miyagi' },\n")
 	b.WriteString("    ],\n")
 	b.WriteString("    sidebar: [\n")
-	b.WriteString("      { text: 'Start', items: [{ text: 'What Miyagi is', link: '/' }] },\n")
+	b.WriteString("      { text: 'Start', items: [\n")
+	b.WriteString("        { text: 'What Miyagi is', link: '/' },\n")
+	b.WriteString("        { text: 'Install', link: '/install' },\n")
+	b.WriteString("        { text: 'How it works', link: '/how-it-works' },\n")
+	b.WriteString("      ] },\n")
 
 	for _, part := range partTitles() {
 		var items []string
@@ -733,4 +742,33 @@ func trimToSentence(s string) string {
 		cut = cut[:i]
 	}
 	return strings.TrimRight(cut, " ,;:") + "."
+}
+
+
+// The site's own pages, embedded so the binary can generate a site with no repository
+// pages beside it. Only the build machine needs the source; `miyagi` carries it.
+//
+//go:embed pages/*.md
+var sitePages embed.FS
+
+// writeSitePages copies the embedded pages into the generated project.
+//
+// The home page is deliberately not the repository README: a README is for someone already
+// looking at the repository, while the site's front page is for someone who is not, so it
+// leads with what the thing does and the one command that starts it.
+func writeSitePages(srcDir string) error {
+	entries, err := sitePages.ReadDir("pages")
+	if err != nil {
+		return err
+	}
+	for _, e := range entries {
+		body, err := sitePages.ReadFile(filepath.Join("pages", e.Name()))
+		if err != nil {
+			return err
+		}
+		if err := os.WriteFile(filepath.Join(srcDir, e.Name()), body, 0o644); err != nil {
+			return err
+		}
+	}
+	return nil
 }

@@ -95,3 +95,43 @@ func TestSitePublishesNoDecisionRecords(t *testing.T) {
 		t.Errorf("docs/adr is in the published-documents list; decision records are internal")
 	}
 }
+
+// The site's own pages are embedded, so they ship inside the binary. A page renamed or
+// dropped here would 404 in production while every other test stayed green, and the
+// install command is the one thing a reader needs to be exactly right.
+func TestSitePagesAreEmbeddedAndCorrect(t *testing.T) {
+	entries, err := sitePages.ReadDir("pages")
+	if err != nil {
+		t.Fatalf("read embedded pages: %v", err)
+	}
+	have := map[string]bool{}
+	for _, e := range entries {
+		have[e.Name()] = true
+	}
+	for _, want := range []string{"index.md", "install.md", "how-it-works.md"} {
+		if !have[want] {
+			t.Errorf("embedded pages are missing %s", want)
+		}
+	}
+
+	install, err := sitePages.ReadFile("pages/install.md")
+	if err != nil {
+		t.Fatalf("read install page: %v", err)
+	}
+	// The install command must name a real tag. A reader who copies a stale version gets
+	// the old broken module path, which is the exact defect this page exists to close.
+	if !strings.Contains(string(install), "go install github.com/theakhandpatel/miyagi/cmd/miyagi@v") {
+		t.Error("install page does not show a tagged go install command")
+	}
+	if strings.Contains(string(install), "@latest") {
+		t.Error("install page should pin a tag, not @latest: the proxy can serve a stale commit")
+	}
+
+	home, err := sitePages.ReadFile("pages/index.md")
+	if err != nil {
+		t.Fatalf("read home page: %v", err)
+	}
+	if !strings.Contains(string(home), "layout: home") {
+		t.Error("home page should use the VitePress home layout rather than dumping the README")
+	}
+}
