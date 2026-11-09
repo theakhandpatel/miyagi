@@ -1,0 +1,56 @@
+<svg class="scratch" viewBox="0 0 720 320" role="img" aria-label="13 MCP" data-draw="17.73">
+<title>13 MCP</title>
+<desc>An MCP server is tools in another process, reached over stdin and stdout with one JSON message per line. Its tool names are namespaced by the server, so a server’s read cannot collide with yours.</desc>
+<style>
+@keyframes c0{from{width:0}to{width:232.4px}}
+@keyframes s1{from{stroke-dashoffset:1}to{stroke-dashoffset:0}}
+@keyframes s2{from{stroke-dashoffset:1}to{stroke-dashoffset:0}}
+@keyframes c3{from{width:0}to{width:71.4px}}
+@keyframes s4{from{stroke-dashoffset:1}to{stroke-dashoffset:0}}
+@keyframes c5{from{width:0}to{width:75.8px}}
+@keyframes s6{from{stroke-dashoffset:1}to{stroke-dashoffset:0}}
+@keyframes c7{from{width:0}to{width:152.8px}}
+@keyframes s8{from{stroke-dashoffset:1}to{stroke-dashoffset:0}}
+@keyframes c9{from{width:0}to{width:155.7px}}
+@keyframes s10{from{stroke-dashoffset:1}to{stroke-dashoffset:0}}
+@keyframes c11{from{width:0}to{width:156.7px}}
+@keyframes s12{from{stroke-dashoffset:1}to{stroke-dashoffset:0}}
+@keyframes s13{from{stroke-dashoffset:1}to{stroke-dashoffset:0}}
+@keyframes s14{from{stroke-dashoffset:1}to{stroke-dashoffset:0}}
+@keyframes c15{from{width:0}to{width:184.7px}}
+@keyframes c16{from{width:0}to{width:183.7px}}
+@keyframes c17{from{width:0}to{width:118.3px}}
+@keyframes c18{from{width:0}to{width:220.5px}}
+</style>
+<g class="scene">
+<clipPath id="c0-clip"><rect class="s-clip" x="23.9" y="14.1" width="0" height="40.7" style="--t0:0.00s;--t1:0.92s;animation-name:c0"/></clipPath>
+<text class="s-text t-ink" x="30.0" y="42.0" font-size="25" clip-path="url(#c0-clip)">tools in another process</text>
+<path class="s-line t-accent" d="M30.0 51.2C44.0 50.7 80.5 48.5 113.1 49.0C145.8 49.6 192.9 54.4 225.9 54.6C258.8 54.7 296.6 50.6 310.7 49.9M30.2 52.1C44.3 51.6 80.5 46.5 113.1 47.3C145.8 48.1 193.1 56.1 226.0 56.9C258.9 57.7 296.6 53.0 310.4 52.0" pathLength="1" style="--t0:1.00s;--t1:0.86s;animation-name:s1;stroke-width:2.6"/>
+<path class="s-line t-ink" d="M28.9 85.0C65.0 91.1 98.9 90.7 199.3 85.6M30.1 88.4C94.0 90.1 159.4 88.3 201.4 87.1M198.9 88.0C201.9 105.9 201.4 124.1 201.7 135.5M198.9 88.2C200.9 107.1 200.3 122.5 199.0 134.4M202.5 131.5C134.6 132.1 69.9 133.4 31.8 132.5M200.9 132.5C154.9 135.9 110.1 137.1 29.4 134.7M27.7 136.7C30.2 117.8 27.4 100.1 32.9 86.3M29.3 135.0C30.7 120.9 28.3 110.8 29.1 87.1" pathLength="1" style="--t0:2.16s;--t1:1.35s;animation-name:s2;stroke-width:2.2"/>
+<clipPath id="c3-clip"><rect class="s-clip" x="80.1" y="98.6" width="0" height="26.0" style="--t0:3.66s;--t1:0.38s;animation-name:c3"/></clipPath>
+<text class="s-text t-ink" x="83.8" y="116.4" font-size="16" clip-path="url(#c3-clip)">your agent</text>
+<path class="s-line t-ink" d="M467.2 89.5C507.5 85.8 541.1 87.1 641.1 89.2M470.7 87.3C502.8 91.7 537.3 92.1 639.0 86.7M638.2 88.4C641.0 105.5 641.6 126.2 640.7 131.1M640.9 88.5C641.0 98.2 641.9 112.0 641.1 133.4M641.1 134.2C604.5 128.8 573.1 129.2 471.6 134.9M641.0 133.8C600.4 134.8 558.0 132.7 469.3 133.2M469.7 133.3C469.4 123.7 469.9 113.8 470.8 87.5M471.2 135.0C471.4 123.1 469.8 114.3 471.3 87.1" pathLength="1" style="--t0:3.66s;--t1:1.33s;animation-name:s4;stroke-width:2.2"/>
+<clipPath id="c5-clip"><rect class="s-clip" x="517.9" y="99.4" width="0" height="20.3" style="--t0:5.14s;--t1:0.38s;animation-name:c5"/></clipPath>
+<text class="s-text t-ink" x="521.1" y="116.4" font-size="16" clip-path="url(#c5-clip)">MCP server</text>
+<path class="s-line t-ink" d="M30.7 168.5C82.9 168.1 137.2 166.5 288.8 168.0M29.5 167.7C126.9 167.3 223.0 167.2 290.5 167.4M289.2 166.4C291.5 178.7 289.6 186.9 289.7 195.2M290.9 168.0C289.9 179.4 290.6 191.0 290.0 196.4M290.8 194.8C203.9 199.1 118.3 199.1 29.8 197.0M289.4 196.5C226.1 198.7 162.1 199.0 29.3 195.9M28.2 197.1C31.5 186.9 30.2 179.7 31.1 166.2M30.5 196.6C30.4 187.0 29.4 176.7 30.3 167.4" pathLength="1" style="--t0:5.20s;--t1:1.78s;animation-name:s6;stroke-width:2.2"/>
+<clipPath id="c7-clip"><rect class="s-clip" x="84.2" y="172.9" width="0" height="18.4" style="--t0:7.09s;--t1:0.89s;animation-name:c7"/></clipPath>
+<text class="s-text t-ink" x="86.3" y="185.7" font-size="11" clip-path="url(#c7-clip)">{&quot;jsonrpc&quot;:&quot;2.0&quot;,&quot;method&quot;:&quot;initialize&quot;}</text>
+<path class="s-line t-ink" d="M29.9 203.8C84.1 205.4 138.3 204.6 289.7 202.8M29.7 204.6C132.1 204.6 233.5 204.0 289.4 204.7M288.8 202.6C290.8 214.5 289.6 224.2 289.1 232.2M290.2 204.1C289.6 211.8 289.5 218.8 289.5 231.8M290.2 232.1C199.1 233.5 110.3 233.1 29.7 231.3M289.4 231.7C233.0 232.0 174.5 232.1 30.7 232.6M29.4 231.1C31.0 226.5 31.7 220.4 29.9 202.9M29.8 232.6C30.7 224.3 30.2 214.8 29.8 203.4" pathLength="1" style="--t0:7.09s;--t1:1.77s;animation-name:s8;stroke-width:2.2"/>
+<clipPath id="c9-clip"><rect class="s-clip" x="82.7" y="208.9" width="0" height="18.4" style="--t0:8.98s;--t1:0.89s;animation-name:c9"/></clipPath>
+<text class="s-text t-ink" x="84.8" y="221.7" font-size="11" clip-path="url(#c9-clip)">{&quot;jsonrpc&quot;:&quot;2.0&quot;,&quot;method&quot;:&quot;tools/list&quot;}</text>
+<path class="s-line t-ink" d="M29.1 239.0C82.4 237.9 136.4 237.9 290.6 240.5M30.0 240.1C85.2 241.8 141.4 240.8 289.7 240.5M288.3 238.9C289.5 250.3 288.9 261.5 288.6 269.3M289.6 240.3C290.5 249.9 289.5 259.5 290.7 267.2M289.5 269.4C197.2 270.7 102.4 270.0 29.6 268.4M289.4 268.3C186.5 265.4 82.9 266.7 30.6 267.9M30.5 268.6C30.4 260.5 29.5 249.9 28.6 239.7M30.9 268.6C29.2 259.8 29.2 253.0 29.3 239.4" pathLength="1" style="--t0:8.98s;--t1:1.78s;animation-name:s10;stroke-width:2.2"/>
+<clipPath id="c11-clip"><rect class="s-clip" x="82.2" y="244.9" width="0" height="18.4" style="--t0:10.86s;--t1:0.89s;animation-name:c11"/></clipPath>
+<text class="s-text t-ink" x="84.3" y="257.7" font-size="11" clip-path="url(#c11-clip)">{&quot;jsonrpc&quot;:&quot;2.0&quot;,&quot;method&quot;:&quot;tools/call&quot;}</text>
+<path class="s-line t-ink" d="M240.0 109.7C292.4 115.6 349.6 113.6 461.6 109.6M239.0 110.8C316.0 107.3 393.4 108.4 462.5 111.9" pathLength="1" style="--t0:10.86s;--t1:0.69s;animation-name:s12;stroke-width:2.2"/>
+<path class="s-line t-ink" d="M461.3 111.7C459.0 110.3 454.8 106.8 450.4 106.2M462.2 111.0C458.0 109.2 453.9 106.5 451.4 105.6" pathLength="1" style="--t0:11.64s;--t1:0.18s;animation-name:s13;stroke-width:2.2"/>
+<path class="s-line t-ink" d="M461.9 111.9C458.8 113.7 456.9 113.8 451.4 115.2M461.6 111.6C460.1 112.0 456.7 113.8 451.8 116.3" pathLength="1" style="--t0:11.91s;--t1:0.18s;animation-name:s14;stroke-width:2.2"/>
+<clipPath id="c15-clip"><rect class="s-clip" x="265.1" y="130.9" width="0" height="24.8" style="--t0:12.26s;--t1:1.27s;animation-name:c15"/></clipPath>
+<text class="s-text t-muted" x="268.0" y="148.0" font-size="15" clip-path="url(#c15-clip)">stdin / stdout, one JSON per line</text>
+<clipPath id="c16-clip"><rect class="s-clip" x="337.0" y="182.1" width="0" height="26.0" style="--t0:13.71s;--t1:1.04s;animation-name:c16"/></clipPath>
+<text class="s-text t-ink" x="340.0" y="200.0" font-size="16" clip-path="url(#c16-clip)">names come back namespaced:</text>
+<clipPath id="c17-clip"><rect class="s-clip" x="336.3" y="206.2" width="0" height="22.4" style="--t0:14.83s;--t1:0.77s;animation-name:c17"/></clipPath>
+<text class="s-text t-accent" x="340.0" y="224.0" font-size="16" clip-path="url(#c17-clip)">files.read, not read</text>
+<clipPath id="c18-clip"><rect class="s-clip" x="26.6" y="283.3" width="0" height="24.4" style="--t0:15.76s;--t1:1.58s;animation-name:c18"/></clipPath>
+<text class="s-text t-bad" x="30.0" y="300.0" font-size="15" clip-path="url(#c18-clip)">a server that will not start is a warning</text>
+</g>
+</svg>

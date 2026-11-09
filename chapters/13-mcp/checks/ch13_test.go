@@ -9,10 +9,10 @@ import (
 	"strings"
 	"testing"
 
-	"agent/internal/blackbox"
-	"agent/internal/fake"
-	"agent/internal/grader"
-	"agent/internal/hints"
+	"github.com/theakhandpatel/miyagi/internal/blackbox"
+	"github.com/theakhandpatel/miyagi/internal/fake"
+	"github.com/theakhandpatel/miyagi/internal/grader"
+	"github.com/theakhandpatel/miyagi/internal/hints"
 )
 
 // Chapter 13 -- MCP over stdio.

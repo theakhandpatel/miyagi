@@ -1,0 +1,57 @@
+<svg class="scratch" viewBox="0 0 720 288" role="img" aria-label="17 Skill scopes and precedence" data-draw="15.23">
+<title>17 Skill scopes and precedence</title>
+<desc>Skills are read from a user scope and a project scope, and the project wins. Precedence in the catalogue and precedence at invocation are separate code paths, so the copy that was advertised has to be the copy that runs.</desc>
+<style>
+@keyframes c0{from{width:0}to{width:217.3px}}
+@keyframes s1{from{stroke-dashoffset:1}to{stroke-dashoffset:0}}
+@keyframes s2{from{stroke-dashoffset:1}to{stroke-dashoffset:0}}
+@keyframes c3{from{width:0}to{width:97.1px}}
+@keyframes c4{from{width:0}to{width:65.3px}}
+@keyframes f5{from{opacity:0}to{opacity:1}}
+@keyframes s6{from{stroke-dashoffset:1}to{stroke-dashoffset:0}}
+@keyframes c7{from{width:0}to{width:76.9px}}
+@keyframes c8{from{width:0}to{width:80.3px}}
+@keyframes s9{from{stroke-dashoffset:1}to{stroke-dashoffset:0}}
+@keyframes s10{from{stroke-dashoffset:1}to{stroke-dashoffset:0}}
+@keyframes s11{from{stroke-dashoffset:1}to{stroke-dashoffset:0}}
+@keyframes s12{from{stroke-dashoffset:1}to{stroke-dashoffset:0}}
+@keyframes c13{from{width:0}to{width:48.5px}}
+@keyframes c14{from{width:0}to{width:131.9px}}
+@keyframes c15{from{width:0}to{width:184.8px}}
+@keyframes c16{from{width:0}to{width:149.9px}}
+@keyframes c17{from{width:0}to{width:173.6px}}
+@keyframes c18{from{width:0}to{width:152.8px}}
+</style>
+<g class="scene">
+<clipPath id="c0-clip"><rect class="s-clip" x="23.9" y="14.2" width="0" height="40.6" style="--t0:0.00s;--t1:0.85s;animation-name:c0"/></clipPath>
+<text class="s-text t-ink" x="30.0" y="42.0" font-size="25" clip-path="url(#c0-clip)">two scopes, one winner</text>
+<path class="s-line t-accent" d="M30.9 52.6C44.6 51.6 79.7 46.8 112.0 47.1C144.2 47.4 191.8 54.3 224.2 54.6C256.6 54.9 293.0 49.6 306.4 48.8M31.1 50.4C45.2 49.6 81.3 46.7 113.1 47.2C144.9 47.7 189.9 52.9 221.9 53.4C253.8 53.9 290.8 51.1 304.7 50.2" pathLength="1" style="--t0:0.93s;--t1:0.85s;animation-name:s1;stroke-width:2.6"/>
+<path class="s-line t-muted" d="M27.7 83.4C75.8 79.4 120.4 82.6 247.5 83.2M30.8 84.1C99.7 82.8 171.8 81.5 251.0 84.7M252.9 84.3C252.3 97.6 252.7 110.8 252.0 119.8M250.5 84.7C249.2 97.0 250.7 107.9 250.1 116.7M248.5 119.2C194.0 120.3 136.4 119.6 29.8 120.1M249.0 117.4C200.7 121.6 149.8 121.9 28.9 116.9M27.4 119.8C30.5 109.4 32.2 97.4 28.0 84.7M31.1 118.0C30.3 105.0 28.5 93.5 29.5 85.0" pathLength="1" style="--t0:2.06s;--t1:1.56s;animation-name:s2;stroke-width:2.2"/>
+<clipPath id="c3-clip"><rect class="s-clip" x="92.2" y="89.0" width="0" height="24.8" style="--t0:3.78s;--t1:0.58s;animation-name:c3"/></clipPath>
+<text class="s-text t-muted" x="95.5" y="106.1" font-size="15" clip-path="url(#c3-clip)">~/.config/agent</text>
+<clipPath id="c4-clip"><rect class="s-clip" x="26.7" y="126.9" width="0" height="20.8" style="--t0:3.78s;--t1:0.38s;animation-name:c4"/></clipPath>
+<text class="s-text t-muted" x="30.0" y="140.0" font-size="15" clip-path="url(#c4-clip)">user scope</text>
+<path class="s-fill t-good" d="M30 162L250 162L250 196L30 196Z" style="--t0:4.24s;--t1:0.22s;animation-name:f5"/>
+<path class="s-line t-good" d="M31.4 160.1C78.0 164.5 122.2 163.9 249.1 164.3M31.3 161.2C106.2 162.7 180.1 163.3 249.0 162.4M252.2 162.7C249.9 175.1 251.4 190.5 251.1 193.5M249.5 163.0C251.9 167.7 252.0 175.5 249.3 196.8M252.4 194.3C189.3 200.6 129.9 199.2 29.5 195.0M249.1 196.5C204.6 195.3 160.1 195.3 28.8 196.3M29.3 194.4C29.6 185.2 28.7 172.8 31.9 163.9M29.9 196.0C30.9 184.8 29.9 174.1 28.7 162.9" pathLength="1" style="--t0:4.24s;--t1:1.55s;animation-name:s6;stroke-width:2.2"/>
+<clipPath id="c7-clip"><rect class="s-clip" x="102.3" y="167.0" width="0" height="24.8" style="--t0:5.94s;--t1:0.50s;animation-name:c7"/></clipPath>
+<text class="s-text t-good" x="105.2" y="184.1" font-size="15" clip-path="url(#c7-clip)">.agent/skills</text>
+<clipPath id="c8-clip"><rect class="s-clip" x="26.9" y="201.3" width="0" height="24.4" style="--t0:5.94s;--t1:0.50s;animation-name:c8"/></clipPath>
+<text class="s-text t-good" x="30.0" y="218.0" font-size="15" clip-path="url(#c8-clip)">project scope</text>
+<path class="s-line t-good" d="M258.2 180.0C277.2 177.0 295.1 180.1 305.4 177.1M259.3 179.4C270.9 179.9 286.6 179.8 305.2 180.0" pathLength="1" style="--t0:6.58s;--t1:0.18s;animation-name:s9;stroke-width:2.2"/>
+<path class="s-line t-good" d="M306.2 178.8C302.4 175.7 297.5 176.3 296.4 174.6M305.9 179.7C301.6 176.8 298.1 176.2 294.5 173.3" pathLength="1" style="--t0:6.85s;--t1:0.18s;animation-name:s10;stroke-width:2.2"/>
+<path class="s-line t-good" d="M306.3 178.7C302.2 181.3 298.7 181.1 295.5 184.0M306.2 179.6C303.4 180.4 300.8 181.5 294.6 184.7" pathLength="1" style="--t0:7.12s;--t1:0.18s;animation-name:s11;stroke-width:2.2"/>
+<path class="s-line t-ink" d="M311.9 97.4C348.2 100.1 387.1 100.7 493.4 101.3M311.7 99.2C368.8 103.3 425.3 103.1 492.8 100.5M494.6 97.7C493.1 122.3 490.8 139.8 491.8 159.1M492.0 100.4C492.5 121.7 489.8 142.4 493.1 159.0M489.4 161.5C420.1 162.1 346.6 160.0 309.5 160.0M491.6 158.8C455.2 162.7 416.3 162.4 312.9 160.8M314.7 161.0C314.9 146.1 311.2 133.4 315.0 99.4M311.6 159.9C313.8 146.7 312.8 129.9 313.0 100.8" pathLength="1" style="--t0:7.47s;--t1:1.48s;animation-name:s12;stroke-width:2.2"/>
+<clipPath id="c13-clip"><rect class="s-clip" x="378.6" y="116.8" width="0" height="27.7" style="--t0:9.10s;--t1:0.30s;animation-name:c13"/></clipPath>
+<text class="s-text t-ink" x="382.4" y="135.8" font-size="17" clip-path="url(#c13-clip)">deploy</text>
+<clipPath id="c14-clip"><rect class="s-clip" x="308.7" y="167.3" width="0" height="24.4" style="--t0:9.10s;--t1:0.88s;animation-name:c14"/></clipPath>
+<text class="s-text t-good" x="312.0" y="184.0" font-size="15" clip-path="url(#c14-clip)">one entry, project wins</text>
+<clipPath id="c15-clip"><rect class="s-clip" x="308.6" y="191.3" width="0" height="24.4" style="--t0:10.07s;--t1:1.23s;animation-name:c15"/></clipPath>
+<text class="s-text t-muted" x="312.0" y="208.0" font-size="15" clip-path="url(#c15-clip)">an absent directory adds nothing</text>
+<clipPath id="c16-clip"><rect class="s-clip" x="516.4" y="99.3" width="0" height="24.4" style="--t0:11.48s;--t1:1.04s;animation-name:c16"/></clipPath>
+<text class="s-text t-ink" x="520.0" y="116.0" font-size="15" clip-path="url(#c16-clip)">the catalogue said project,</text>
+<clipPath id="c17-clip"><rect class="s-clip" x="517.1" y="123.3" width="0" height="24.4" style="--t0:12.60s;--t1:1.15s;animation-name:c17"/></clipPath>
+<text class="s-text t-accent" x="520.0" y="140.0" font-size="15" clip-path="url(#c17-clip)">so invocation must run project</text>
+<clipPath id="c18-clip"><rect class="s-clip" x="516.4" y="169.3" width="0" height="24.4" style="--t0:13.83s;--t1:1.00s;animation-name:c18"/></clipPath>
+<text class="s-text t-bad" x="520.0" y="186.0" font-size="15" clip-path="url(#c18-clip)">two code paths, one answer</text>
+</g>
+</svg>

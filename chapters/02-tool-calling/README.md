@@ -46,6 +46,9 @@ no call, is a conversation every provider rejects.
 The reply streams, so the call streams with it. The first piece names the call. Later
 pieces carry only the group number and a few characters of the argument text.
 
+```diagram mechanism
+```
+
 ```
   piece 1:  index 0 · id call_1 · name read     the identity arrives once
   piece 2:  index 0 · arguments {"pa            no id, no name

@@ -1,0 +1,51 @@
+<svg class="scratch" viewBox="0 0 720 300" role="img" aria-label="19 Session storage" data-draw="15.12">
+<title>19 Session storage</title>
+<desc>A conversation is rows in a database, not a file you name. The next ordinal is computed inside the same transaction as the insert, so two writers cannot claim the same position.</desc>
+<style>
+@keyframes c0{from{width:0}to{width:272.3px}}
+@keyframes s1{from{stroke-dashoffset:1}to{stroke-dashoffset:0}}
+@keyframes s2{from{stroke-dashoffset:1}to{stroke-dashoffset:0}}
+@keyframes c3{from{width:0}to{width:53.0px}}
+@keyframes s4{from{stroke-dashoffset:1}to{stroke-dashoffset:0}}
+@keyframes c5{from{width:0}to{width:60.0px}}
+@keyframes c6{from{width:0}to{width:143.2px}}
+@keyframes c7{from{width:0}to{width:109.8px}}
+@keyframes s8{from{stroke-dashoffset:1}to{stroke-dashoffset:0}}
+@keyframes s9{from{stroke-dashoffset:1}to{stroke-dashoffset:0}}
+@keyframes s10{from{stroke-dashoffset:1}to{stroke-dashoffset:0}}
+@keyframes f11{from{opacity:0}to{opacity:1}}
+@keyframes s12{from{stroke-dashoffset:1}to{stroke-dashoffset:0}}
+@keyframes c13{from{width:0}to{width:46.9px}}
+@keyframes c14{from{width:0}to{width:169.3px}}
+@keyframes c15{from{width:0}to{width:195.9px}}
+@keyframes c16{from{width:0}to{width:230.7px}}
+</style>
+<g class="scene">
+<clipPath id="c0-clip"><rect class="s-clip" x="24.6" y="14.2" width="0" height="40.5" style="--t0:0.00s;--t1:1.04s;animation-name:c0"/></clipPath>
+<text class="s-text t-ink" x="30.0" y="42.0" font-size="25" clip-path="url(#c0-clip)">one conversation, many rows</text>
+<path class="s-line t-accent" d="M29.4 52.3C44.6 51.6 85.2 47.7 121.0 48.0C156.9 48.3 208.7 53.5 244.5 53.9C280.3 54.3 320.5 51.3 335.7 50.6M28.1 50.9C43.4 49.7 84.2 45.6 120.4 46.1C156.7 46.6 209.6 53.2 245.7 53.9C281.7 54.7 321.9 51.3 336.8 50.7" pathLength="1" style="--t0:1.12s;--t1:0.95s;animation-name:s1;stroke-width:2.6"/>
+<path class="s-line t-ink" d="M32.2 84.5C74.0 85.6 116.5 85.3 239.2 86.4M31.2 82.7C111.1 82.6 194.1 81.4 240.9 82.8M241.9 81.5C241.7 91.3 239.6 103.8 239.1 117.0M239.8 84.9C240.4 92.9 240.0 98.9 239.2 117.4M241.8 115.7C155.9 121.5 74.1 119.9 28.8 119.2M240.7 119.0C197.2 115.9 150.6 115.8 31.2 117.4M27.2 119.4C31.3 108.2 29.3 100.0 31.5 82.9M30.5 117.4C29.2 108.4 29.2 96.5 29.8 84.4" pathLength="1" style="--t0:2.36s;--t1:1.50s;animation-name:s2;stroke-width:2.2"/>
+<clipPath id="c3-clip"><rect class="s-clip" x="109.3" y="90.6" width="0" height="18.6" style="--t0:4.01s;--t1:0.31s;animation-name:c3"/></clipPath>
+<text class="s-text t-ink" x="112.2" y="106.1" font-size="15" clip-path="url(#c3-clip)">sessions</text>
+<path class="s-line t-ink" d="M30.7 125.1C76.2 122.2 118.4 123.3 240.8 126.3M29.0 126.4C75.5 126.4 117.8 124.4 238.8 127.1M241.2 123.9C240.7 138.8 239.7 147.5 238.2 160.7M238.8 127.2C238.8 134.4 240.0 147.1 241.3 161.5M240.6 160.0C198.6 160.6 151.9 163.5 28.6 158.0M240.8 159.5C158.8 163.6 79.1 163.1 31.2 160.8M29.1 158.0C30.4 147.9 31.8 139.4 29.4 126.1M29.3 159.4C29.8 149.2 30.6 141.1 28.9 126.3" pathLength="1" style="--t0:4.01s;--t1:1.51s;animation-name:s4;stroke-width:2.2"/>
+<clipPath id="c5-clip"><rect class="s-clip" x="105.8" y="135.1" width="0" height="20.7" style="--t0:5.67s;--t1:0.31s;animation-name:c5"/></clipPath>
+<text class="s-text t-ink" x="108.9" y="148.1" font-size="15" clip-path="url(#c5-clip)">messages</text>
+<clipPath id="c6-clip"><rect class="s-clip" x="26.7" y="167.3" width="0" height="24.4" style="--t0:5.67s;--t1:0.96s;animation-name:c6"/></clipPath>
+<text class="s-text t-bad" x="30.0" y="184.0" font-size="15" clip-path="url(#c6-clip)">one file per conversation</text>
+<clipPath id="c7-clip"><rect class="s-clip" x="27.1" y="189.3" width="0" height="24.4" style="--t0:6.71s;--t1:0.69s;animation-name:c7"/></clipPath>
+<text class="s-text t-bad" x="30.0" y="206.0" font-size="15" clip-path="url(#c7-clip)">stops working here</text>
+<path class="s-line t-ink" d="M248.2 145.5C259.8 146.1 269.3 145.9 299.2 143.1M247.5 146.1C268.6 144.9 288.0 144.6 300.5 145.0" pathLength="1" style="--t0:7.56s;--t1:0.18s;animation-name:s8;stroke-width:2.2"/>
+<path class="s-line t-ink" d="M300.8 145.9C296.6 145.0 294.3 141.8 290.4 139.1M300.3 144.9C296.8 143.5 292.0 142.0 289.1 140.4" pathLength="1" style="--t0:7.83s;--t1:0.18s;animation-name:s9;stroke-width:2.2"/>
+<path class="s-line t-ink" d="M300.8 145.8C296.9 147.8 294.0 146.5 288.2 149.3M299.4 145.0C298.1 145.6 295.1 147.9 288.7 149.4" pathLength="1" style="--t0:8.10s;--t1:0.18s;animation-name:s10;stroke-width:2.2"/>
+<path class="s-fill t-good" d="M306 92L516 92L516 188L306 188Z" style="--t0:8.45s;--t1:0.22s;animation-name:f11"/>
+<path class="s-line t-good" d="M305.2 90.7C348.8 91.3 393.8 93.6 513.7 91.2M306.1 92.5C386.7 92.4 466.5 92.3 516.6 93.2M517.7 92.9C515.7 113.7 516.9 136.2 518.9 190.3M515.3 92.6C515.4 114.9 516.8 136.0 516.2 187.7M517.1 185.8C443.3 191.5 373.3 188.7 308.2 187.0M514.7 188.6C432.4 187.8 349.9 187.1 306.5 189.2M308.5 188.6C304.7 166.4 309.3 151.2 306.5 89.6M304.9 187.4C304.8 150.2 305.7 111.0 307.2 92.2" pathLength="1" style="--t0:8.45s;--t1:1.88s;animation-name:s12;stroke-width:2.2"/>
+<clipPath id="c13-clip"><rect class="s-clip" x="388.5" y="126.1" width="0" height="29.3" style="--t0:10.48s;--t1:0.30s;animation-name:c13"/></clipPath>
+<text class="s-text t-good" x="392.0" y="146.1" font-size="18" clip-path="url(#c13-clip)">sqlite</text>
+<clipPath id="c14-clip"><rect class="s-clip" x="302.4" y="201.3" width="0" height="19.9" style="--t0:10.56s;--t1:1.19s;animation-name:c14"/></clipPath>
+<text class="s-text t-accent" x="306.0" y="218.0" font-size="15" clip-path="url(#c14-clip)">the next ordinal is read inside</text>
+<clipPath id="c15-clip"><rect class="s-clip" x="302.4" y="225.3" width="0" height="19.9" style="--t0:11.83s;--t1:1.31s;animation-name:c15"/></clipPath>
+<text class="s-text t-accent" x="306.0" y="242.0" font-size="15" clip-path="url(#c15-clip)">the same transaction as the insert</text>
+<clipPath id="c16-clip"><rect class="s-clip" x="302.4" y="255.3" width="0" height="24.4" style="--t0:13.22s;--t1:1.50s;animation-name:c16"/></clipPath>
+<text class="s-text t-muted" x="306.0" y="272.0" font-size="15" clip-path="url(#c16-clip)">two writers cannot pick the same number</text>
+</g>
+</svg>

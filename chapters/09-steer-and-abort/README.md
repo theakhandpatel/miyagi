@@ -27,6 +27,9 @@ possible: stop it, and say something during it. Both need the same thing, a boun
 where a new event enters without corrupting the conversation. That boundary is the end
 of a turn.
 
+```diagram mechanism
+```
+
 ```mermaid
 flowchart TD
     A["turn_start"] --> B["stream the reply"]

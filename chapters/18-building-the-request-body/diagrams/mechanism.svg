@@ -1,0 +1,70 @@
+<svg class="scratch" viewBox="0 0 720 300" role="img" aria-label="18 Building the request body" data-draw="16.36">
+<title>18 Building the request body</title>
+<desc>Three fields are always present, two appear only when set, and one must be present even when it is zero. Sending a zero-valued optional field is a different request, not the same one.</desc>
+<style>
+@keyframes c0{from{width:0}to{width:234.8px}}
+@keyframes s1{from{stroke-dashoffset:1}to{stroke-dashoffset:0}}
+@keyframes f2{from{opacity:0}to{opacity:1}}
+@keyframes s3{from{stroke-dashoffset:1}to{stroke-dashoffset:0}}
+@keyframes c4{from{width:0}to{width:40.4px}}
+@keyframes f5{from{opacity:0}to{opacity:1}}
+@keyframes s6{from{stroke-dashoffset:1}to{stroke-dashoffset:0}}
+@keyframes c7{from{width:0}to{width:60.0px}}
+@keyframes f8{from{opacity:0}to{opacity:1}}
+@keyframes s9{from{stroke-dashoffset:1}to{stroke-dashoffset:0}}
+@keyframes c10{from{width:0}to{width:46.4px}}
+@keyframes c11{from{width:0}to{width:43.0px}}
+@keyframes f12{from{opacity:0}to{opacity:1}}
+@keyframes s13{from{stroke-dashoffset:1}to{stroke-dashoffset:0}}
+@keyframes c14{from{width:0}to{width:35.5px}}
+@keyframes f15{from{opacity:0}to{opacity:1}}
+@keyframes s16{from{stroke-dashoffset:1}to{stroke-dashoffset:0}}
+@keyframes c17{from{width:0}to{width:76.9px}}
+@keyframes c18{from{width:0}to{width:81.6px}}
+@keyframes f19{from{opacity:0}to{opacity:1}}
+@keyframes s20{from{stroke-dashoffset:1}to{stroke-dashoffset:0}}
+@keyframes c21{from{width:0}to{width:75.3px}}
+@keyframes c22{from{width:0}to{width:135.2px}}
+@keyframes c23{from{width:0}to{width:156.7px}}
+@keyframes c24{from{width:0}to{width:125.0px}}
+</style>
+<g class="scene">
+<clipPath id="c0-clip"><rect class="s-clip" x="24.4" y="14.1" width="0" height="40.6" style="--t0:0.00s;--t1:0.92s;animation-name:c0"/></clipPath>
+<text class="s-text t-ink" x="30.0" y="42.0" font-size="25" clip-path="url(#c0-clip)">what the body always has</text>
+<path class="s-line t-accent" d="M30.3 52.4C44.9 51.8 82.8 46.8 116.6 47.3C150.4 47.7 199.3 54.8 233.0 55.2C266.7 55.6 304.4 50.2 318.9 49.5M32.0 50.2C46.7 49.4 84.8 45.7 118.4 46.9C151.9 48.0 199.7 56.5 233.5 57.0C267.3 57.4 306.7 50.7 321.4 49.5" pathLength="1" style="--t0:1.00s;--t1:0.89s;animation-name:s1;stroke-width:2.6"/>
+<path class="s-fill t-good" d="M30 84L230 84L230 118L30 118Z" style="--t0:2.18s;--t1:0.22s;animation-name:f2"/>
+<path class="s-line t-good" d="M29.9 83.9C71.8 79.0 112.2 80.5 228.3 82.1M29.7 84.7C80.2 85.0 131.4 85.0 231.0 83.8M229.4 85.9C229.0 94.5 231.2 107.3 230.6 115.4M230.2 84.8C230.5 98.3 229.5 108.7 231.2 118.6M230.1 117.5C184.5 117.3 139.3 118.8 29.3 119.7M231.2 116.8C185.9 117.3 141.8 118.8 28.7 117.1M27.3 119.6C28.6 105.4 28.4 94.9 32.7 83.8M30.8 117.7C31.3 106.7 30.4 95.0 29.7 83.2" pathLength="1" style="--t0:2.18s;--t1:1.44s;animation-name:s3;stroke-width:2.2"/>
+<clipPath id="c4-clip"><rect class="s-clip" x="110.5" y="89.4" width="0" height="19.8" style="--t0:3.78s;--t1:0.30s;animation-name:c4"/></clipPath>
+<text class="s-text t-good" x="113.7" y="106.1" font-size="15" clip-path="url(#c4-clip)">model</text>
+<path class="s-fill t-good" d="M30 126L230 126L230 160L30 160Z" style="--t0:3.78s;--t1:0.22s;animation-name:f5"/>
+<path class="s-line t-good" d="M28.4 124.5C74.1 122.7 114.1 125.7 229.9 127.3M30.1 125.7C86.4 121.7 141.4 123.7 228.9 125.4M228.7 128.3C228.0 135.9 231.2 151.0 229.7 159.1M229.1 127.1C228.9 133.1 229.5 143.3 230.3 159.6M228.9 161.9C180.1 156.3 133.5 157.0 29.0 158.4M231.3 160.0C152.0 157.9 71.2 156.3 31.3 160.5M29.2 158.2C32.3 152.0 29.6 141.9 30.6 127.0M29.6 159.7C28.9 150.5 31.7 139.6 28.8 125.1" pathLength="1" style="--t0:3.78s;--t1:1.43s;animation-name:s6;stroke-width:2.2"/>
+<clipPath id="c7-clip"><rect class="s-clip" x="100.8" y="135.1" width="0" height="20.7" style="--t0:5.36s;--t1:0.31s;animation-name:c7"/></clipPath>
+<text class="s-text t-good" x="103.9" y="148.1" font-size="15" clip-path="url(#c7-clip)">messages</text>
+<path class="s-fill t-good" d="M30 168L230 168L230 202L30 202Z" style="--t0:5.36s;--t1:0.22s;animation-name:f8"/>
+<path class="s-line t-good" d="M32.2 170.5C70.9 171.8 110.7 170.8 231.6 167.2M30.6 166.7C89.9 165.4 148.7 166.6 229.4 167.1M228.0 170.7C231.7 177.4 229.9 194.7 228.7 202.8M231.1 169.4C230.3 177.6 229.4 188.5 229.4 200.6M227.6 200.9C181.0 200.7 127.7 200.7 28.8 202.6M228.7 203.1C155.3 202.8 80.6 203.6 31.3 201.3M31.1 202.8C31.4 191.7 32.0 181.2 28.5 170.2M31.5 201.7C29.5 194.2 30.1 184.2 31.0 167.1" pathLength="1" style="--t0:5.36s;--t1:1.42s;animation-name:s9;stroke-width:2.2"/>
+<clipPath id="c10-clip"><rect class="s-clip" x="107.6" y="173.4" width="0" height="19.9" style="--t0:6.93s;--t1:0.30s;animation-name:c10"/></clipPath>
+<text class="s-text t-good" x="110.5" y="190.1" font-size="15" clip-path="url(#c10-clip)">stream</text>
+<clipPath id="c11-clip"><rect class="s-clip" x="26.6" y="209.4" width="0" height="24.2" style="--t0:6.93s;--t1:0.30s;animation-name:c11"/></clipPath>
+<text class="s-text t-good" x="30.0" y="226.0" font-size="15" clip-path="url(#c11-clip)">always</text>
+<path class="s-fill t-accent" d="M300 84L510 84L510 118L300 118Z" style="--t0:7.37s;--t1:0.22s;animation-name:f12"/>
+<path class="s-line t-accent" d="M302.2 82.2C342.7 83.8 387.7 82.6 512.1 84.2M301.2 83.9C352.4 82.3 402.9 83.4 510.7 83.5M509.2 83.3C508.1 94.6 507.6 103.2 508.3 118.7M509.7 84.5C509.1 97.8 510.0 111.6 509.2 118.8M509.4 117.6C431.7 117.2 354.1 117.5 302.6 117.5M509.2 119.1C467.6 119.3 424.8 117.5 300.7 119.0M302.6 118.8C299.6 106.4 300.0 95.6 301.7 82.5M299.3 117.7C301.0 109.7 300.9 101.9 301.1 83.0" pathLength="1" style="--t0:7.37s;--t1:1.50s;animation-name:s13;stroke-width:2.2"/>
+<clipPath id="c14-clip"><rect class="s-clip" x="388.0" y="89.4" width="0" height="19.8" style="--t0:9.02s;--t1:0.30s;animation-name:c14"/></clipPath>
+<text class="s-text t-accent" x="391.7" y="106.1" font-size="15" clip-path="url(#c14-clip)">tools</text>
+<path class="s-fill t-accent" d="M300 126L510 126L510 160L300 160Z" style="--t0:9.02s;--t1:0.22s;animation-name:f15"/>
+<path class="s-line t-accent" d="M300.7 128.1C344.9 127.6 389.6 127.8 508.4 124.0M299.0 124.9C356.1 126.1 413.3 126.5 511.2 125.1M508.5 125.7C507.1 136.1 507.6 147.0 507.4 162.4M508.6 126.8C510.5 135.5 510.0 143.2 511.3 159.9M508.2 161.9C427.1 156.3 347.9 155.9 302.4 161.6M509.3 159.6C431.8 157.1 350.6 157.6 300.6 159.7M298.5 157.4C298.7 153.0 302.5 148.6 299.6 125.7M301.1 159.7C298.5 146.6 299.2 132.9 300.3 125.0" pathLength="1" style="--t0:9.02s;--t1:1.49s;animation-name:s16;stroke-width:2.2"/>
+<clipPath id="c17-clip"><rect class="s-clip" x="367.3" y="131.4" width="0" height="24.4" style="--t0:10.67s;--t1:0.42s;animation-name:c17"/></clipPath>
+<text class="s-text t-accent" x="371.0" y="148.1" font-size="15" clip-path="url(#c17-clip)">temperature</text>
+<clipPath id="c18-clip"><rect class="s-clip" x="296.7" y="167.3" width="0" height="24.4" style="--t0:10.67s;--t1:0.50s;animation-name:c18"/></clipPath>
+<text class="s-text t-accent" x="300.0" y="184.0" font-size="15" clip-path="url(#c18-clip)">only when set</text>
+<path class="s-fill t-bad" d="M300 216L510 216L510 250L300 250Z" style="--t0:11.31s;--t1:0.22s;animation-name:f19"/>
+<path class="s-line t-bad" d="M299.2 216.7C341.9 217.4 386.2 213.8 510.0 217.2M299.5 216.6C359.9 217.9 421.0 217.6 509.2 214.8M507.8 216.0C512.1 225.5 507.7 238.7 512.5 248.1M510.6 217.1C509.0 228.0 509.9 239.4 510.4 248.9M512.2 249.0C427.8 248.6 341.7 247.5 302.2 248.4M509.4 250.7C435.4 250.2 360.4 250.3 300.5 251.1M300.4 250.0C297.7 240.7 299.0 229.9 297.5 216.9M299.9 249.7C299.1 238.4 300.6 225.5 299.4 215.0" pathLength="1" style="--t0:11.31s;--t1:1.50s;animation-name:s20;stroke-width:2.2"/>
+<clipPath id="c21-clip"><rect class="s-clip" x="368.1" y="221.4" width="0" height="20.6" style="--t0:12.95s;--t1:0.38s;animation-name:c21"/></clipPath>
+<text class="s-text t-bad" x="371.3" y="238.1" font-size="15" clip-path="url(#c21-clip)">max_tokens</text>
+<clipPath id="c22-clip"><rect class="s-clip" x="296.9" y="251.3" width="0" height="24.4" style="--t0:12.95s;--t1:0.85s;animation-name:c22"/></clipPath>
+<text class="s-text t-bad" x="300.0" y="268.0" font-size="15" clip-path="url(#c22-clip)">present even when zero</text>
+<clipPath id="c23-clip"><rect class="s-clip" x="536.6" y="93.3" width="0" height="24.4" style="--t0:13.96s;--t1:1.08s;animation-name:c23"/></clipPath>
+<text class="s-text t-ink" x="540.0" y="110.0" font-size="15" clip-path="url(#c23-clip)">a zero-valued optional field</text>
+<clipPath id="c24-clip"><rect class="s-clip" x="537.0" y="117.3" width="0" height="24.4" style="--t0:15.12s;--t1:0.85s;animation-name:c24"/></clipPath>
+<text class="s-text t-muted" x="540.0" y="134.0" font-size="15" clip-path="url(#c24-clip)">is a different request</text>
+</g>
+</svg>

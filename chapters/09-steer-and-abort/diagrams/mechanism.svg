@@ -1,0 +1,46 @@
+<svg class="scratch" viewBox="0 0 720 288" role="img" aria-label="09 Steer and abort" data-draw="11.92">
+<title>09 Steer and abort</title>
+<desc>An abort keeps the text that already arrived and still writes the session. A queued message is not injected mid-stream: it enters at the turn boundary, so the history stays valid.</desc>
+<style>
+@keyframes c0{from{width:0}to{width:206.8px}}
+@keyframes s1{from{stroke-dashoffset:1}to{stroke-dashoffset:0}}
+@keyframes s2{from{stroke-dashoffset:1}to{stroke-dashoffset:0}}
+@keyframes s3{from{stroke-dashoffset:1}to{stroke-dashoffset:0}}
+@keyframes s4{from{stroke-dashoffset:1}to{stroke-dashoffset:0}}
+@keyframes s5{from{stroke-dashoffset:1}to{stroke-dashoffset:0}}
+@keyframes c6{from{width:0}to{width:130.3px}}
+@keyframes c7{from{width:0}to{width:209.8px}}
+@keyframes f8{from{opacity:0}to{opacity:1}}
+@keyframes s9{from{stroke-dashoffset:1}to{stroke-dashoffset:0}}
+@keyframes c10{from{width:0}to{width:101.0px}}
+@keyframes s11{from{stroke-dashoffset:1}to{stroke-dashoffset:0}}
+@keyframes s12{from{stroke-dashoffset:1}to{stroke-dashoffset:0}}
+@keyframes s13{from{stroke-dashoffset:1}to{stroke-dashoffset:0}}
+@keyframes c14{from{width:0}to{width:169.1px}}
+@keyframes c15{from{width:0}to{width:159.8px}}
+</style>
+<g class="scene">
+<clipPath id="c0-clip"><rect class="s-clip" x="23.9" y="14.2" width="0" height="40.6" style="--t0:0.00s;--t1:0.81s;animation-name:c0"/></clipPath>
+<text class="s-text t-ink" x="30.0" y="42.0" font-size="25" clip-path="url(#c0-clip)">two ways to interrupt</text>
+<path class="s-line t-accent" d="M31.3 52.9C45.5 51.9 82.9 46.9 115.6 47.5C148.3 48.0 194.6 55.7 227.6 56.2C260.6 56.7 299.0 51.5 313.5 50.5M29.5 51.0C44.0 50.4 82.5 48.6 115.8 49.1C149.2 49.6 196.6 53.9 229.7 54.0C262.8 54.0 300.5 50.3 314.5 49.5" pathLength="1" style="--t0:0.89s;--t1:0.87s;animation-name:s1;stroke-width:2.6"/>
+<path class="s-line t-ink" d="M29.1 101.1C117.3 100.5 204.7 100.5 330.3 100.7M29.6 100.1C134.8 102.1 239.9 101.5 330.4 100.1" pathLength="1" style="--t0:2.05s;--t1:0.93s;animation-name:s2;stroke-width:2.2"/>
+<path class="s-line t-muted" d="M379.0 100.3C424.9 99.3 472.1 97.2 560.1 101.0M379.4 100.0C422.9 98.8 465.3 98.9 559.7 100.1" pathLength="1" style="--t0:3.11s;--t1:0.56s;animation-name:s3;stroke-width:2.2"/>
+<path class="s-line t-bad" d="M329.1 81.1C334.1 93.8 336.1 105.6 337.8 117.6M330.8 83.7C333.8 96.0 336.3 105.5 339.0 116.2" pathLength="1" style="--t0:3.77s;--t1:0.18s;animation-name:s4;stroke-width:2.6"/>
+<path class="s-line t-bad" d="M381.1 85.9C375.1 98.5 375.2 109.9 371.2 117.8M379.2 84.0C377.4 93.8 373.9 103.3 371.0 115.1" pathLength="1" style="--t0:4.06s;--t1:0.18s;animation-name:s5;stroke-width:2.6"/>
+<clipPath id="c6-clip"><rect class="s-clip" x="26.2" y="129.0" width="0" height="27.7" style="--t0:4.35s;--t1:0.77s;animation-name:c6"/></clipPath>
+<text class="s-text t-good" x="30.0" y="148.0" font-size="17" clip-path="url(#c6-clip)">what arrived is kept</text>
+<clipPath id="c7-clip"><rect class="s-clip" x="26.3" y="154.1" width="0" height="22.5" style="--t0:5.20s;--t1:1.42s;animation-name:c7"/></clipPath>
+<text class="s-text t-muted" x="30.0" y="172.0" font-size="16" clip-path="url(#c7-clip)">exit 130, and still write the session</text>
+<path class="s-fill t-accent" d="M30 200L230 200L230 242L30 242Z" style="--t0:6.83s;--t1:0.22s;animation-name:f8"/>
+<path class="s-line t-accent" d="M30.5 200.6C70.7 197.9 110.7 199.4 231.3 202.0M29.4 200.5C77.5 195.4 125.0 196.4 228.8 200.4M230.9 199.6C227.2 216.2 231.8 233.5 231.3 243.1M230.3 199.8C229.8 208.0 230.1 219.8 230.9 241.1M230.8 241.6C166.4 237.0 100.4 240.1 28.2 242.6M230.0 242.7C171.7 238.5 109.9 237.7 30.0 241.6M28.1 239.6C30.0 231.4 28.6 221.2 31.8 202.0M30.6 241.1C28.3 228.4 31.2 213.3 28.7 200.3" pathLength="1" style="--t0:6.83s;--t1:1.49s;animation-name:s9;stroke-width:2.2"/>
+<clipPath id="c10-clip"><rect class="s-clip" x="80.3" y="208.6" width="0" height="26.0" style="--t0:8.46s;--t1:0.54s;animation-name:c10"/></clipPath>
+<text class="s-text t-accent" x="83.8" y="226.4" font-size="16" clip-path="url(#c10-clip)">queued message</text>
+<path class="s-line t-accent" d="M237.3 222.3C254.7 223.1 271.1 221.3 298.6 221.7M239.2 221.8C259.4 219.9 281.1 221.2 299.3 219.8" pathLength="1" style="--t0:8.46s;--t1:0.19s;animation-name:s11;stroke-width:2.2"/>
+<path class="s-line t-accent" d="M301.1 222.4C297.0 219.1 294.0 217.6 289.6 216.9M299.6 220.4C297.1 219.7 293.3 218.6 288.8 215.7" pathLength="1" style="--t0:8.74s;--t1:0.18s;animation-name:s12;stroke-width:2.2"/>
+<path class="s-line t-accent" d="M299.2 219.9C294.8 221.9 290.6 226.2 288.1 227.2M299.9 221.5C295.9 222.1 292.3 225.5 289.7 226.6" pathLength="1" style="--t0:9.01s;--t1:0.18s;animation-name:s13;stroke-width:2.2"/>
+<clipPath id="c14-clip"><rect class="s-clip" x="302.3" y="196.1" width="0" height="26.0" style="--t0:9.36s;--t1:1.04s;animation-name:c14"/></clipPath>
+<text class="s-text t-accent" x="306.0" y="214.0" font-size="16" clip-path="url(#c14-clip)">enters at the turn boundary</text>
+<clipPath id="c15-clip"><rect class="s-clip" x="303.0" y="220.1" width="0" height="21.2" style="--t0:10.48s;--t1:1.04s;animation-name:c15"/></clipPath>
+<text class="s-text t-muted" x="306.0" y="238.0" font-size="16" clip-path="url(#c15-clip)">not in the middle of a turn</text>
+</g>
+</svg>

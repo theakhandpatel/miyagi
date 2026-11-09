@@ -19,6 +19,9 @@ You edit `agent/provider_openai.go` and `agent/cmd/agent/main.go`. You also crea
 
 One exit condition, and one ceiling.
 
+```diagram mechanism
+```
+
 ```mermaid
 flowchart TD
     A["turn_start"] --> B["ask the model"]

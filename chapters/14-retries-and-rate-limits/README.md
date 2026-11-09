@@ -20,6 +20,9 @@ You edit `agent/provider_openai.go` and `agent/cmd/agent/main.go`. You also crea
 
 Not every error deserves another attempt.
 
+```diagram mechanism
+```
+
 | Status | Meaning | Try again? |
 |---|---|---|
 | 429 | busy | yes, when the server says |

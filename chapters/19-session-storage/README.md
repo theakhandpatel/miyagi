@@ -27,6 +27,9 @@ You edit `agent/cmd/agent/main.go`. You also create one new file, `agent/store.g
 The previous chapters wrote one JSONL file that you named yourself. That works for a
 single transcript and fails as soon as there are twenty, because:
 
+```diagram mechanism
+```
+
 | Problem | Consequence |
 |---|---|
 | no identity | you cannot resume without the exact filename |

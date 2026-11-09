@@ -1,0 +1,60 @@
+<svg class="scratch" viewBox="0 0 720 300" role="img" aria-label="01 Talk to the model" data-draw="20.52">
+<title>01 Talk to the model</title>
+<desc>The reply streams as frames. Each delta is appended to the text so far; assigning instead of appending keeps only the last one.</desc>
+<style>
+@keyframes c0{from{width:0}to{width:215.3px}}
+@keyframes s1{from{stroke-dashoffset:1}to{stroke-dashoffset:0}}
+@keyframes s2{from{stroke-dashoffset:1}to{stroke-dashoffset:0}}
+@keyframes c3{from{width:0}to{width:135.8px}}
+@keyframes s4{from{stroke-dashoffset:1}to{stroke-dashoffset:0}}
+@keyframes c5{from{width:0}to{width:76.5px}}
+@keyframes s6{from{stroke-dashoffset:1}to{stroke-dashoffset:0}}
+@keyframes s7{from{stroke-dashoffset:1}to{stroke-dashoffset:0}}
+@keyframes s8{from{stroke-dashoffset:1}to{stroke-dashoffset:0}}
+@keyframes c9{from{width:0}to{width:166.2px}}
+@keyframes c10{from{width:0}to{width:98.7px}}
+@keyframes s11{from{stroke-dashoffset:1}to{stroke-dashoffset:0}}
+@keyframes c12{from{width:0}to{width:203.3px}}
+@keyframes s13{from{stroke-dashoffset:1}to{stroke-dashoffset:0}}
+@keyframes c14{from{width:0}to{width:210.5px}}
+@keyframes s15{from{stroke-dashoffset:1}to{stroke-dashoffset:0}}
+@keyframes c16{from{width:0}to{width:61.2px}}
+@keyframes f17{from{opacity:0}to{opacity:1}}
+@keyframes s18{from{stroke-dashoffset:1}to{stroke-dashoffset:0}}
+@keyframes c19{from{width:0}to{width:73.2px}}
+@keyframes c20{from{width:0}to{width:122.7px}}
+</style>
+<g class="scene">
+<clipPath id="c0-clip"><rect class="s-clip" x="24.6" y="14.2" width="0" height="40.6" style="--t0:0.00s;--t1:0.85s;animation-name:c0"/></clipPath>
+<text class="s-text t-ink" x="30.0" y="42.0" font-size="25" clip-path="url(#c0-clip)">one request, one reply</text>
+<path class="s-line t-accent" d="M29.0 52.6C40.6 51.6 71.9 46.4 99.3 46.8C126.8 47.3 166.5 54.7 193.7 55.1C220.9 55.6 251.2 50.6 262.6 49.6M30.7 51.2C42.6 50.8 73.3 47.6 100.3 48.4C127.4 49.1 166.0 55.6 193.2 55.7C220.3 55.7 251.9 49.5 263.3 48.6" pathLength="1" style="--t0:0.93s;--t1:0.72s;animation-name:s1;stroke-width:2.6"/>
+<path class="s-line t-ink" d="M28.1 77.8C71.7 76.3 113.4 76.0 239.8 75.5M30.6 77.0C105.4 77.7 180.7 78.3 239.2 76.0M238.8 75.0C238.0 91.1 240.8 102.8 240.7 116.3M240.1 74.9C240.5 87.0 239.6 101.8 238.6 115.4M237.8 113.9C159.7 116.4 81.8 117.8 32.0 115.0M240.9 115.3C161.7 115.3 86.3 113.4 31.1 116.3M28.8 115.4C29.6 103.7 31.1 83.9 29.7 73.3M30.0 117.2C29.4 102.3 31.0 87.3 30.8 75.7" pathLength="1" style="--t0:1.94s;--t1:1.54s;animation-name:s2;stroke-width:2.2"/>
+<clipPath id="c3-clip"><rect class="s-clip" x="67.9" y="84.0" width="0" height="24.8" style="--t0:3.63s;--t1:0.77s;animation-name:c3"/></clipPath>
+<text class="s-text t-ink" x="70.9" y="101.1" font-size="15" clip-path="url(#c3-clip)">POST chat/completions</text>
+<path class="s-line t-ink" d="M31.9 132.4C73.9 134.0 115.3 135.2 241.4 129.4M31.1 132.0C109.1 135.5 188.5 135.3 239.7 131.7M238.1 131.3C237.1 146.6 240.9 160.8 239.8 174.0M239.0 131.2C238.8 146.0 239.4 161.8 240.8 173.4M241.8 172.3C155.1 169.4 70.3 170.2 31.7 173.1M241.0 172.4C168.0 174.3 96.1 174.7 31.0 171.0M30.7 173.9C28.7 159.0 33.6 152.2 27.5 130.5M28.8 173.2C30.0 160.3 29.4 146.4 29.9 131.7" pathLength="1" style="--t0:3.63s;--t1:1.55s;animation-name:s4;stroke-width:2.2"/>
+<clipPath id="c5-clip"><rect class="s-clip" x="97.5" y="140.4" width="0" height="19.9" style="--t0:5.33s;--t1:0.46s;animation-name:c5"/></clipPath>
+<text class="s-text t-ink" x="100.4" y="157.1" font-size="15" clip-path="url(#c5-clip)">stream: true</text>
+<path class="s-line t-ink" d="M249.6 98.3C265.1 98.0 281.2 95.7 301.0 95.1M248.8 95.7C265.4 95.3 282.0 95.1 300.5 95.7" pathLength="1" style="--t0:5.33s;--t1:0.18s;animation-name:s6;stroke-width:2.2"/>
+<path class="s-line t-ink" d="M299.9 94.7C297.3 96.0 293.8 93.5 289.2 92.2M300.3 96.0C296.8 94.4 295.6 92.9 289.4 90.6" pathLength="1" style="--t0:5.60s;--t1:0.18s;animation-name:s7;stroke-width:2.2"/>
+<path class="s-line t-ink" d="M298.9 96.0C297.5 96.3 291.5 98.3 288.1 101.6M299.5 95.8C296.7 97.2 292.1 100.2 288.5 100.6" pathLength="1" style="--t0:5.87s;--t1:0.18s;animation-name:s8;stroke-width:2.2"/>
+<clipPath id="c9-clip"><rect class="s-clip" x="302.1" y="74.1" width="0" height="26.0" style="--t0:6.22s;--t1:1.04s;animation-name:c9"/></clipPath>
+<text class="s-text t-ink" x="306.0" y="92.0" font-size="16" clip-path="url(#c9-clip)">the reply arrives in frames</text>
+<clipPath id="c10-clip"><rect class="s-clip" x="303.0" y="98.2" width="0" height="26.0" style="--t0:7.34s;--t1:0.62s;animation-name:c10"/></clipPath>
+<text class="s-text t-muted" x="306.0" y="116.0" font-size="16" clip-path="url(#c10-clip)">not in one piece</text>
+<path class="s-line t-ink" d="M30.1 190.0C123.8 192.5 218.6 191.6 499.5 190.5M29.9 190.0C193.6 189.0 358.0 188.7 499.7 189.9M499.1 191.4C499.1 199.7 499.1 208.3 499.1 214.5M499.8 189.2C499.5 198.8 500.1 206.8 499.8 215.8M500.7 215.4C347.5 215.9 195.8 215.9 30.0 216.7M499.7 215.7C335.0 215.0 170.9 215.1 30.1 215.8M28.9 215.1C30.4 208.6 28.1 199.5 29.2 191.2M30.9 216.7C29.5 209.6 29.2 204.8 29.5 189.7" pathLength="1" style="--t0:8.13s;--t1:3.05s;animation-name:s11;stroke-width:2.2"/>
+<clipPath id="c12-clip"><rect class="s-clip" x="164.0" y="193.1" width="0" height="17.2" style="--t0:11.29s;--t1:1.53s;animation-name:c12"/></clipPath>
+<text class="s-text t-ink" x="166.7" y="207.1" font-size="12" clip-path="url(#c12-clip)">data: {&quot;choices&quot;:[{&quot;delta&quot;:{&quot;content&quot;:&quot;The &quot;}}]}</text>
+<path class="s-line t-ink" d="M29.7 223.6C124.4 223.2 219.2 222.8 500.0 223.8M30.0 223.7C204.2 224.3 377.7 223.8 499.8 223.8M498.7 225.6C502.0 233.4 499.1 243.5 498.5 249.6M499.1 223.4C501.1 234.7 500.7 243.5 499.2 249.2M500.3 250.1C339.7 248.9 181.2 248.8 29.9 249.7M499.7 250.0C346.7 251.5 193.4 251.4 30.1 250.3M30.0 250.7C29.8 242.4 29.5 237.7 31.5 222.3M30.2 250.7C29.8 239.6 30.0 230.4 30.8 223.7" pathLength="1" style="--t0:11.29s;--t1:3.06s;animation-name:s13;stroke-width:2.2"/>
+<clipPath id="c14-clip"><rect class="s-clip" x="160.3" y="227.1" width="0" height="20.1" style="--t0:14.45s;--t1:1.53s;animation-name:c14"/></clipPath>
+<text class="s-text t-ink" x="163.0" y="241.1" font-size="12" clip-path="url(#c14-clip)">data: {&quot;choices&quot;:[{&quot;delta&quot;:{&quot;content&quot;:&quot;quick &quot;}}]}</text>
+<path class="s-line t-ink" d="M29.2 258.8C123.5 258.9 218.2 258.8 500.5 258.8M30.1 258.3C214.1 259.7 398.2 259.7 500.0 257.7M498.3 256.3C500.8 267.2 498.5 275.1 501.6 284.6M500.3 257.5C500.2 265.4 500.7 271.6 500.5 284.4M500.0 283.2C333.6 283.7 166.6 283.3 29.9 284.3M499.7 284.4C357.6 283.8 216.0 283.6 30.1 283.9M31.2 282.6C29.2 274.6 31.0 265.6 30.3 257.0M29.5 284.7C30.1 274.9 30.7 266.4 30.3 257.7" pathLength="1" style="--t0:14.45s;--t1:3.06s;animation-name:s15;stroke-width:2.2"/>
+<clipPath id="c16-clip"><rect class="s-clip" x="235.0" y="261.2" width="0" height="17.1" style="--t0:17.63s;--t1:0.46s;animation-name:c16"/></clipPath>
+<text class="s-text t-ink" x="237.7" y="275.1" font-size="12" clip-path="url(#c16-clip)">data: [DONE]</text>
+<path class="s-fill t-good" d="M520 190L690 190L690 250L520 250Z" style="--t0:17.75s;--t1:0.22s;animation-name:f17"/>
+<path class="s-line t-good" d="M521.3 192.5C553.5 194.6 586.4 189.8 688.2 191.6M518.7 191.1C581.2 188.3 642.2 187.8 689.0 189.0M687.6 190.1C692.3 210.5 690.8 227.7 691.3 252.5M691.1 188.6C691.0 202.1 692.2 215.3 689.7 248.9M690.5 250.6C644.8 247.3 594.5 251.5 517.6 252.4M689.7 249.6C638.1 253.4 585.5 252.6 519.5 250.0M519.3 250.3C521.8 234.9 522.0 223.3 521.5 191.9M518.7 251.2C518.9 235.7 520.0 221.2 519.8 189.3" pathLength="1" style="--t0:17.75s;--t1:1.42s;animation-name:s18;stroke-width:2.2"/>
+<clipPath id="c19-clip"><rect class="s-clip" x="569.2" y="207.6" width="0" height="25.2" style="--t0:19.32s;--t1:0.42s;animation-name:c19"/></clipPath>
+<text class="s-text t-good" x="574.8" y="225.4" font-size="16" clip-path="url(#c19-clip)">joined text</text>
+<clipPath id="c20-clip"><rect class="s-clip" x="516.6" y="251.3" width="0" height="24.4" style="--t0:19.32s;--t1:0.81s;animation-name:c20"/></clipPath>
+<text class="s-text t-good" x="520.0" y="268.0" font-size="15" clip-path="url(#c20-clip)">append, do not assign</text>
+</g>
+</svg>

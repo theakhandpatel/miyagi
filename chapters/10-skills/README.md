@@ -53,6 +53,9 @@ flowchart LR
 The prompt builder from the prompt-assembly chapter takes contributors. The catalogue
 is one:
 
+```diagram mechanism
+```
+
 ```go
 system, err := agent.BuildSystemPrompt(ctx, agent.BasePrompt,
 	&agent.AgentsFile{Root: root},

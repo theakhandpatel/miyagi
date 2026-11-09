@@ -32,6 +32,9 @@ from.
 You edit `agent/cmd/agent/main.go`. You also create one new file, `agent/config.go`, holding the two config types, the loader and `Describe`.
 ## Three sources, in order
 
+```diagram mechanism
+```
+
 ```
   agent.json in ~/.config/agent      lowest priority
   agent.json in the project

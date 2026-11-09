@@ -1,0 +1,55 @@
+<svg class="scratch" viewBox="0 0 720 300" role="img" aria-label="07 Sessions" data-draw="20.18">
+<title>07 Sessions</title>
+<desc>A session is an append-only log. The system message is deliberately not in the file: it is rebuilt from the current prompt and contributors, so a session resumed next week follows today’s instructions.</desc>
+<style>
+@keyframes c0{from{width:0}to{width:200.3px}}
+@keyframes s1{from{stroke-dashoffset:1}to{stroke-dashoffset:0}}
+@keyframes s2{from{stroke-dashoffset:1}to{stroke-dashoffset:0}}
+@keyframes c3{from{width:0}to{width:117.2px}}
+@keyframes s4{from{stroke-dashoffset:1}to{stroke-dashoffset:0}}
+@keyframes c5{from{width:0}to{width:117.9px}}
+@keyframes s6{from{stroke-dashoffset:1}to{stroke-dashoffset:0}}
+@keyframes c7{from{width:0}to{width:146.8px}}
+@keyframes s8{from{stroke-dashoffset:1}to{stroke-dashoffset:0}}
+@keyframes c9{from{width:0}to{width:130.0px}}
+@keyframes s10{from{stroke-dashoffset:1}to{stroke-dashoffset:0}}
+@keyframes s11{from{stroke-dashoffset:1}to{stroke-dashoffset:0}}
+@keyframes s12{from{stroke-dashoffset:1}to{stroke-dashoffset:0}}
+@keyframes f13{from{opacity:0}to{opacity:1}}
+@keyframes s14{from{stroke-dashoffset:1}to{stroke-dashoffset:0}}
+@keyframes c15{from{width:0}to{width:50.7px}}
+@keyframes c16{from{width:0}to{width:151.6px}}
+@keyframes c17{from{width:0}to{width:225.9px}}
+@keyframes c18{from{width:0}to{width:293.0px}}
+</style>
+<g class="scene">
+<clipPath id="c0-clip"><rect class="s-clip" x="24.4" y="14.1" width="0" height="40.7" style="--t0:0.00s;--t1:0.81s;animation-name:c0"/></clipPath>
+<text class="s-text t-ink" x="30.0" y="42.0" font-size="25" clip-path="url(#c0-clip)">a log, not a snapshot</text>
+<path class="s-line t-accent" d="M29.0 52.7C42.6 52.2 78.9 48.0 110.5 48.6C142.2 49.2 187.5 56.1 218.7 56.3C250.0 56.5 284.7 50.8 298.1 49.7M31.3 51.4C45.1 50.3 80.9 46.5 111.9 47.4C142.9 48.3 186.3 56.0 217.5 56.8C248.7 57.5 285.3 53.4 299.0 52.0" pathLength="1" style="--t0:0.89s;--t1:0.83s;animation-name:s1;stroke-width:2.6"/>
+<path class="s-line t-ink" d="M30.6 79.8C101.0 79.5 171.8 79.3 379.8 79.4M29.6 79.7C158.7 78.6 287.7 77.8 379.5 79.8M381.1 81.5C378.6 85.6 379.3 95.6 378.9 104.7M380.6 79.7C379.9 88.1 379.4 97.2 379.3 106.8M378.8 105.1C243.8 105.0 109.4 104.4 29.6 106.7M380.4 105.6C270.1 107.2 159.7 107.0 30.1 105.6M29.0 104.8C29.6 100.0 31.0 91.2 29.0 78.7M30.7 105.8C30.4 100.4 31.1 96.3 30.9 80.5" pathLength="1" style="--t0:2.01s;--t1:2.31s;animation-name:s2;stroke-width:2.2"/>
+<clipPath id="c3-clip"><rect class="s-clip" x="147.0" y="83.9" width="0" height="18.4" style="--t0:4.43s;--t1:1.12s;animation-name:c3"/></clipPath>
+<text class="s-text t-ink" x="149.1" y="96.7" font-size="11" clip-path="url(#c3-clip)">{&quot;type&quot;:&quot;header&quot;,&quot;version&quot;:1}</text>
+<path class="s-line t-ink" d="M29.9 113.2C102.0 115.1 172.7 115.6 380.5 114.8M29.8 114.4C165.9 114.0 302.1 114.0 379.8 113.7M380.7 115.7C381.6 122.9 379.3 127.3 378.3 139.7M380.0 113.9C380.8 118.8 379.5 125.3 380.6 140.2M380.6 140.1C310.1 137.7 238.6 139.1 29.5 139.3M380.4 140.1C277.9 138.4 176.4 138.1 30.1 140.2M30.1 140.4C29.0 132.1 28.9 122.6 31.3 113.4M30.0 139.8C30.1 130.5 29.4 121.8 30.4 114.5" pathLength="1" style="--t0:4.43s;--t1:2.32s;animation-name:s4;stroke-width:2.2"/>
+<clipPath id="c5-clip"><rect class="s-clip" x="146.6" y="117.9" width="0" height="16.0" style="--t0:6.85s;--t1:1.16s;animation-name:c5"/></clipPath>
+<text class="s-text t-ink" x="148.7" y="130.7" font-size="11" clip-path="url(#c5-clip)">{&quot;role&quot;:&quot;user&quot;,&quot;content&quot;:&quot;...&quot;}</text>
+<path class="s-line t-ink" d="M29.2 148.9C100.6 147.8 171.2 146.6 378.9 147.9M30.0 148.0C104.2 149.4 177.7 149.1 380.0 147.5M380.3 146.3C380.3 156.7 378.6 162.5 381.4 174.8M379.3 148.1C379.9 154.7 379.5 162.0 380.0 173.7M380.1 175.1C304.0 172.7 227.8 171.5 29.4 174.2M380.5 174.6C286.8 174.9 193.1 175.6 30.0 173.7M31.3 172.3C28.4 169.5 30.3 160.9 30.0 148.1M29.3 173.8C30.4 165.7 30.2 157.8 29.9 148.5" pathLength="1" style="--t0:6.85s;--t1:2.32s;animation-name:s6;stroke-width:2.2"/>
+<clipPath id="c7-clip"><rect class="s-clip" x="132.1" y="151.9" width="0" height="16.0" style="--t0:9.28s;--t1:1.16s;animation-name:c7"/></clipPath>
+<text class="s-text t-ink" x="134.3" y="164.7" font-size="11" clip-path="url(#c7-clip)">{&quot;role&quot;:&quot;assistant&quot;,&quot;tool_calls&quot;:[...]}</text>
+<path class="s-line t-ink" d="M30.9 182.3C101.6 183.4 172.0 182.9 379.6 180.9M30.2 181.6C111.3 179.4 192.1 180.0 380.2 182.6M379.9 180.6C379.7 190.5 378.6 197.7 380.9 209.8M380.5 182.3C379.6 190.6 380.1 200.4 379.5 208.9M379.5 207.8C298.0 205.4 217.0 206.2 29.3 209.1M380.5 207.9C294.6 207.3 209.9 206.7 30.0 208.3M28.8 207.9C31.4 198.1 31.8 192.3 28.8 182.8M30.4 207.8C30.7 201.0 29.2 192.0 29.4 182.5" pathLength="1" style="--t0:9.28s;--t1:2.32s;animation-name:s8;stroke-width:2.2"/>
+<clipPath id="c9-clip"><rect class="s-clip" x="140.5" y="185.9" width="0" height="18.4" style="--t0:11.70s;--t1:1.16s;animation-name:c9"/></clipPath>
+<text class="s-text t-ink" x="142.7" y="198.7" font-size="11" clip-path="url(#c9-clip)">{&quot;role&quot;:&quot;tool&quot;,&quot;content&quot;:&quot;alpha&quot;}</text>
+<path class="s-line t-ink" d="M393.5 119.0C404.8 121.2 418.8 120.4 442.3 120.6M392.4 120.9C402.0 118.1 411.8 118.6 439.0 120.7" pathLength="1" style="--t0:11.78s;--t1:0.18s;animation-name:s10;stroke-width:2.2"/>
+<path class="s-line t-ink" d="M439.6 120.3C437.7 118.8 433.3 116.8 430.6 113.7M440.5 120.6C437.1 118.7 433.6 116.9 428.9 114.9" pathLength="1" style="--t0:12.05s;--t1:0.18s;animation-name:s11;stroke-width:2.2"/>
+<path class="s-line t-ink" d="M439.1 121.5C436.2 119.9 435.7 122.2 429.1 125.3M439.4 120.3C437.1 121.4 436.0 122.0 429.8 125.3" pathLength="1" style="--t0:12.32s;--t1:0.18s;animation-name:s12;stroke-width:2.2"/>
+<path class="s-fill t-good" d="M446 80L690 80L690 200L446 200Z" style="--t0:12.67s;--t1:0.22s;animation-name:f13"/>
+<path class="s-line t-good" d="M444.3 78.0C494.3 76.3 545.5 78.5 688.2 80.7M446.6 81.1C532.6 82.8 622.0 82.2 691.2 79.4M691.6 79.9C685.4 106.4 689.9 136.0 691.9 201.1M690.5 79.3C692.4 123.8 690.5 167.2 689.8 198.6M691.8 198.1C612.1 198.7 528.5 196.4 448.3 199.4M689.0 201.2C618.1 201.4 544.7 200.5 445.6 200.9M443.6 197.2C447.1 173.1 444.0 146.4 443.3 82.5M445.6 199.6C446.8 168.2 445.7 133.7 445.9 80.8" pathLength="1" style="--t0:12.67s;--t1:2.23s;animation-name:s14;stroke-width:2.2"/>
+<clipPath id="c15-clip"><rect class="s-clip" x="543.5" y="126.2" width="0" height="29.2" style="--t0:15.05s;--t1:0.30s;animation-name:c15"/></clipPath>
+<text class="s-text t-good" x="547.2" y="146.1" font-size="18" clip-path="url(#c15-clip)">replay</text>
+<clipPath id="c16-clip"><rect class="s-clip" x="442.6" y="205.3" width="0" height="24.4" style="--t0:15.05s;--t1:1.00s;animation-name:c16"/></clipPath>
+<text class="s-text t-good" x="446.0" y="222.0" font-size="15" clip-path="url(#c16-clip)">append only, never rewrite</text>
+<clipPath id="c17-clip"><rect class="s-clip" x="26.1" y="232.1" width="0" height="26.0" style="--t0:16.23s;--t1:1.46s;animation-name:c17"/></clipPath>
+<text class="s-text t-ink" x="30.0" y="250.0" font-size="16" clip-path="url(#c17-clip)">the system message is not in the file.</text>
+<clipPath id="c18-clip"><rect class="s-clip" x="26.8" y="256.1" width="0" height="26.0" style="--t0:17.78s;--t1:2.00s;animation-name:c18"/></clipPath>
+<text class="s-text t-muted" x="30.0" y="274.0" font-size="16" clip-path="url(#c18-clip)">it is rebuilt, so a prompt fix reaches old sessions.</text>
+</g>
+</svg>

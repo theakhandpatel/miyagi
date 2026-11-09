@@ -22,6 +22,9 @@ Seven fields, and every one of them is a decision about presence.
 You edit `agent/provider_openai.go` and `agent/cmd/agent/main.go`. You also create one new file, `agent/request.go`, holding `BuildRequestBody`.
 ## Three fields are always there
 
+```diagram mechanism
+```
+
 ```
   model      which model to ask
   messages   the conversation, in order

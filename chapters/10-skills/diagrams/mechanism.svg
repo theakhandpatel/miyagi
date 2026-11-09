@@ -1,0 +1,55 @@
+<svg class="scratch" viewBox="0 0 720 300" role="img" aria-label="10 Skills: advertise" data-draw="15.76">
+<title>10 Skills: advertise</title>
+<desc>A skill is advertised by its name and description only. The body stays out of the prompt until the model asks for it, which is what lets a repository carry more skills than fit in the budget.</desc>
+<style>
+@keyframes c0{from{width:0}to{width:254.4px}}
+@keyframes s1{from{stroke-dashoffset:1}to{stroke-dashoffset:0}}
+@keyframes s2{from{stroke-dashoffset:1}to{stroke-dashoffset:0}}
+@keyframes c3{from{width:0}to{width:56.9px}}
+@keyframes s4{from{stroke-dashoffset:1}to{stroke-dashoffset:0}}
+@keyframes c5{from{width:0}to{width:86.7px}}
+@keyframes s6{from{stroke-dashoffset:1}to{stroke-dashoffset:0}}
+@keyframes c7{from{width:0}to{width:73.5px}}
+@keyframes s8{from{stroke-dashoffset:1}to{stroke-dashoffset:0}}
+@keyframes c9{from{width:0}to{width:32.4px}}
+@keyframes s10{from{stroke-dashoffset:1}to{stroke-dashoffset:0}}
+@keyframes s11{from{stroke-dashoffset:1}to{stroke-dashoffset:0}}
+@keyframes s12{from{stroke-dashoffset:1}to{stroke-dashoffset:0}}
+@keyframes f13{from{opacity:0}to{opacity:1}}
+@keyframes s14{from{stroke-dashoffset:1}to{stroke-dashoffset:0}}
+@keyframes c15{from{width:0}to{width:71.7px}}
+@keyframes c16{from{width:0}to{width:137.5px}}
+@keyframes c17{from{width:0}to{width:177.4px}}
+@keyframes c18{from{width:0}to{width:180.8px}}
+</style>
+<g class="scene">
+<clipPath id="c0-clip"><rect class="s-clip" x="23.9" y="14.1" width="0" height="40.7" style="--t0:0.00s;--t1:1.00s;animation-name:c0"/></clipPath>
+<text class="s-text t-ink" x="30.0" y="42.0" font-size="25" clip-path="url(#c0-clip)">the model sees a catalogue</text>
+<path class="s-line t-accent" d="M30.4 52.5C45.4 51.6 85.3 47.0 121.1 47.5C157.0 48.1 209.4 55.6 245.4 56.0C281.3 56.4 321.7 50.8 336.9 50.0M29.4 53.5C45.1 52.6 88.0 48.0 123.6 48.2C159.2 48.3 207.6 54.1 243.2 54.5C278.8 54.9 321.8 51.3 337.4 50.6" pathLength="1" style="--t0:1.08s;--t1:0.95s;animation-name:s1;stroke-width:2.6"/>
+<path class="s-line t-ink" d="M27.5 85.1C72.8 81.3 115.0 81.0 242.1 85.0M30.9 85.1C108.2 84.1 187.4 83.8 238.7 83.4M237.4 85.2C239.9 94.1 240.2 108.1 239.9 120.7M240.0 83.9C239.8 91.5 240.7 101.0 238.9 118.9M242.5 115.8C178.8 117.3 117.3 117.2 27.7 118.1M239.5 118.2C179.5 120.2 119.8 120.5 29.9 117.8M28.0 115.4C26.7 105.1 29.5 98.1 30.6 85.1M30.3 116.8C29.3 105.9 30.1 96.5 28.8 82.5" pathLength="1" style="--t0:2.32s;--t1:1.51s;animation-name:s2;stroke-width:2.2"/>
+<clipPath id="c3-clip"><rect class="s-clip" x="107.3" y="89.4" width="0" height="19.8" style="--t0:3.98s;--t1:0.31s;animation-name:c3"/></clipPath>
+<text class="s-text t-ink" x="110.6" y="106.1" font-size="15" clip-path="url(#c3-clip)">SKILL.md</text>
+<path class="s-line t-ink" d="M30.8 127.9C74.2 127.5 116.5 128.2 239.1 127.3M29.2 128.1C112.3 129.2 195.4 128.5 239.6 127.5M241.6 129.0C239.3 138.3 240.2 152.7 239.4 161.0M239.3 128.1C239.7 138.6 239.4 150.9 240.6 162.0M240.7 162.1C175.0 163.0 111.6 162.5 28.5 163.3M239.8 162.8C185.2 160.8 129.4 160.8 29.9 162.7M30.0 162.0C31.1 147.7 31.2 134.5 29.1 129.4M29.5 161.3C29.9 151.8 30.9 142.7 30.6 127.1" pathLength="1" style="--t0:3.98s;--t1:1.50s;animation-name:s4;stroke-width:2.2"/>
+<clipPath id="c5-clip"><rect class="s-clip" x="92.3" y="134.9" width="0" height="21.2" style="--t0:5.63s;--t1:0.62s;animation-name:c5"/></clipPath>
+<text class="s-text t-ink" x="95.1" y="149.4" font-size="13" clip-path="url(#c5-clip)">--- name: deploy</text>
+<path class="s-line t-ink" d="M29.9 171.0C72.4 172.5 114.5 174.1 240.0 173.2M29.5 171.5C76.0 174.3 121.2 174.7 239.9 171.3M241.2 173.2C238.7 185.8 240.2 194.6 238.8 206.0M240.5 172.3C240.6 178.2 239.3 185.1 240.1 205.4M240.0 207.5C174.1 205.2 105.3 207.5 31.6 205.4M239.8 205.9C189.4 208.2 139.3 208.0 29.8 206.0M31.1 207.5C30.5 196.0 29.1 188.1 31.4 170.5M30.5 205.3C30.3 197.3 29.9 189.2 30.1 172.9" pathLength="1" style="--t0:5.63s;--t1:1.50s;animation-name:s6;stroke-width:2.2"/>
+<clipPath id="c7-clip"><rect class="s-clip" x="98.9" y="178.9" width="0" height="21.2" style="--t0:7.28s;--t1:0.62s;animation-name:c7"/></clipPath>
+<text class="s-text t-ink" x="101.9" y="193.4" font-size="13" clip-path="url(#c7-clip)">description: ...</text>
+<path class="s-line t-muted" d="M28.3 218.3C74.2 216.7 115.4 215.5 241.6 215.9M29.7 216.9C80.1 214.3 129.3 214.4 240.4 217.1M241.3 218.4C241.6 230.4 239.0 239.3 237.2 251.8M239.8 216.8C239.4 224.3 238.8 234.9 239.3 251.0M238.7 249.6C170.3 251.0 98.8 248.8 32.4 251.1M239.7 250.9C195.6 249.5 149.3 248.8 29.6 248.7M27.8 249.1C30.0 237.1 30.9 223.8 30.3 214.6M29.7 248.8C29.8 243.1 29.9 236.3 29.3 217.5" pathLength="1" style="--t0:7.28s;--t1:1.50s;animation-name:s8;stroke-width:2.2"/>
+<clipPath id="c9-clip"><rect class="s-clip" x="119.5" y="221.4" width="0" height="24.4" style="--t0:8.93s;--t1:0.30s;animation-name:c9"/></clipPath>
+<text class="s-text t-muted" x="122.7" y="238.1" font-size="15" clip-path="url(#c9-clip)">body</text>
+<path class="s-line t-good" d="M249.1 146.8C261.2 142.5 270.8 144.3 298.4 145.1M248.4 144.7C267.2 145.7 283.4 145.1 300.7 143.9" pathLength="1" style="--t0:8.99s;--t1:0.18s;animation-name:s10;stroke-width:2.2"/>
+<path class="s-line t-good" d="M299.1 145.9C295.8 142.8 292.9 140.5 288.6 140.3M299.5 144.8C295.1 143.2 291.5 141.3 289.1 139.7" pathLength="1" style="--t0:9.26s;--t1:0.18s;animation-name:s11;stroke-width:2.2"/>
+<path class="s-line t-good" d="M299.7 143.5C294.6 147.7 292.5 148.4 289.4 150.5M299.3 144.8C296.0 147.1 292.6 147.6 289.6 149.8" pathLength="1" style="--t0:9.53s;--t1:0.18s;animation-name:s12;stroke-width:2.2"/>
+<path class="s-fill t-good" d="M306 110L556 110L556 180L306 180Z" style="--t0:9.88s;--t1:0.22s;animation-name:f13"/>
+<path class="s-line t-good" d="M305.8 109.4C356.0 112.2 408.6 109.5 556.6 107.9M305.8 110.3C398.4 114.9 489.0 113.2 557.0 109.2M553.1 108.6C556.7 130.3 554.4 150.0 553.7 179.9M555.5 109.6C556.5 130.0 556.1 150.0 555.9 181.1M557.6 178.1C497.1 179.4 443.3 178.3 307.0 178.1M556.2 179.8C488.4 181.7 421.2 181.5 305.2 179.1M303.3 182.6C305.1 158.1 308.4 140.9 305.6 109.8M304.7 178.8C304.7 166.5 306.4 150.7 306.2 111.4" pathLength="1" style="--t0:9.88s;--t1:1.98s;animation-name:s14;stroke-width:2.2"/>
+<clipPath id="c15-clip"><rect class="s-clip" x="396.0" y="131.1" width="0" height="29.3" style="--t0:12.01s;--t1:0.35s;animation-name:c15"/></clipPath>
+<text class="s-text t-good" x="400.1" y="151.1" font-size="18" clip-path="url(#c15-clip)">catalogue</text>
+<clipPath id="c16-clip"><rect class="s-clip" x="303.2" y="183.3" width="0" height="24.4" style="--t0:12.01s;--t1:0.88s;animation-name:c16"/></clipPath>
+<text class="s-text t-good" x="306.0" y="200.0" font-size="15" clip-path="url(#c16-clip)">name + description only</text>
+<clipPath id="c17-clip"><rect class="s-clip" x="302.1" y="218.1" width="0" height="26.0" style="--t0:13.05s;--t1:1.12s;animation-name:c17"/></clipPath>
+<text class="s-text t-ink" x="306.0" y="236.0" font-size="16" clip-path="url(#c17-clip)">the body is not in the prompt</text>
+<clipPath id="c18-clip"><rect class="s-clip" x="302.1" y="242.1" width="0" height="26.0" style="--t0:14.25s;--t1:1.12s;animation-name:c18"/></clipPath>
+<text class="s-text t-muted" x="306.0" y="260.0" font-size="16" clip-path="url(#c18-clip)">the model asks for it by name</text>
+</g>
+</svg>

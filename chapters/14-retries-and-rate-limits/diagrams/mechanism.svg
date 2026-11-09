@@ -1,0 +1,55 @@
+<svg class="scratch" viewBox="0 0 720 288" role="img" aria-label="14 Retries and rate limits" data-draw="13.78">
+<title>14 Retries and rate limits</title>
+<desc>A 429 or a 5xx is worth another attempt; a 400 is not. The wait doubles up to a ceiling, Retry-After wins when the server supplies it, and a cancelled context stops the run immediately.</desc>
+<style>
+@keyframes c0{from{width:0}to{width:307.0px}}
+@keyframes s1{from{stroke-dashoffset:1}to{stroke-dashoffset:0}}
+@keyframes f2{from{opacity:0}to{opacity:1}}
+@keyframes s3{from{stroke-dashoffset:1}to{stroke-dashoffset:0}}
+@keyframes c4{from{width:0}to{width:29.7px}}
+@keyframes c5{from{width:0}to{width:110.9px}}
+@keyframes f6{from{opacity:0}to{opacity:1}}
+@keyframes s7{from{stroke-dashoffset:1}to{stroke-dashoffset:0}}
+@keyframes c8{from{width:0}to{width:31.4px}}
+@keyframes c9{from{width:0}to{width:110.9px}}
+@keyframes f10{from{opacity:0}to{opacity:1}}
+@keyframes s11{from{stroke-dashoffset:1}to{stroke-dashoffset:0}}
+@keyframes c12{from{width:0}to{width:30.6px}}
+@keyframes c13{from{width:0}to{width:179.1px}}
+@keyframes c14{from{width:0}to{width:100.2px}}
+@keyframes c15{from{width:0}to{width:106.2px}}
+@keyframes c16{from{width:0}to{width:172.2px}}
+@keyframes c17{from{width:0}to{width:200.5px}}
+</style>
+<g class="scene">
+<clipPath id="c0-clip"><rect class="s-clip" x="25.4" y="14.1" width="0" height="40.6" style="--t0:0.00s;--t1:1.23s;animation-name:c0"/></clipPath>
+<text class="s-text t-ink" x="30.0" y="42.0" font-size="25" clip-path="url(#c0-clip)">not every error deserves a retry</text>
+<path class="s-line t-accent" d="M29.2 51.6C47.0 51.2 94.7 48.4 135.5 49.0C176.3 49.6 233.1 55.1 274.0 55.2C314.8 55.2 362.9 50.2 380.6 49.4M30.1 53.1C47.8 52.4 96.0 48.8 136.9 49.4C177.9 50.1 235.1 57.1 275.8 57.0C316.4 56.8 363.6 49.7 380.8 48.5" pathLength="1" style="--t0:1.31s;--t1:1.08s;animation-name:s1;stroke-width:2.6"/>
+<path class="s-fill t-accent" d="M30 88L180 88L180 128L30 128Z" style="--t0:2.68s;--t1:0.22s;animation-name:f2"/>
+<path class="s-line t-accent" d="M31.5 85.6C61.0 90.6 90.8 88.3 180.3 90.5M28.8 89.1C76.6 85.6 122.8 85.4 181.3 89.0M181.4 89.6C178.7 100.2 179.9 115.5 180.2 125.1M178.6 88.3C177.9 98.4 177.8 106.2 180.1 127.2M178.5 129.5C125.9 130.2 74.8 128.0 31.3 126.0M180.4 128.9C143.3 128.5 102.6 128.0 29.2 128.9M27.7 130.5C26.9 117.3 28.2 110.7 31.7 85.4M29.0 128.8C28.8 118.3 30.3 109.7 29.2 88.3" pathLength="1" style="--t0:2.68s;--t1:1.17s;animation-name:s3;stroke-width:2.2"/>
+<clipPath id="c4-clip"><rect class="s-clip" x="91.0" y="95.7" width="0" height="21.6" style="--t0:4.00s;--t1:0.30s;animation-name:c4"/></clipPath>
+<text class="s-text t-accent" x="94.6" y="113.8" font-size="17" clip-path="url(#c4-clip)">429</text>
+<clipPath id="c5-clip"><rect class="s-clip" x="192.4" y="94.2" width="0" height="26.0" style="--t0:4.00s;--t1:0.69s;animation-name:c5"/></clipPath>
+<text class="s-text t-accent" x="196.0" y="112.0" font-size="16" clip-path="url(#c5-clip)">wait and try again</text>
+<path class="s-fill t-accent" d="M30 148L180 148L180 188L30 188Z" style="--t0:4.77s;--t1:0.22s;animation-name:f6"/>
+<path class="s-line t-accent" d="M29.8 150.0C63.5 151.7 93.0 151.0 182.1 148.1M29.4 148.0C79.0 146.9 130.8 145.9 179.0 148.7M180.7 149.9C177.7 159.8 180.0 177.5 179.3 186.7M180.5 148.6C180.8 158.3 179.2 170.2 179.2 189.3M177.0 186.1C122.1 186.9 70.6 189.9 31.1 188.4M180.5 187.2C145.3 187.8 112.5 186.9 29.1 187.5M29.6 187.1C32.0 174.5 30.7 161.0 29.6 146.6M30.9 188.8C29.4 180.3 31.7 172.7 31.4 148.3" pathLength="1" style="--t0:4.77s;--t1:1.17s;animation-name:s7;stroke-width:2.2"/>
+<clipPath id="c8-clip"><rect class="s-clip" x="90.2" y="155.7" width="0" height="21.5" style="--t0:6.09s;--t1:0.30s;animation-name:c8"/></clipPath>
+<text class="s-text t-accent" x="93.8" y="173.8" font-size="17" clip-path="url(#c8-clip)">5xx</text>
+<clipPath id="c9-clip"><rect class="s-clip" x="192.4" y="154.2" width="0" height="26.0" style="--t0:6.09s;--t1:0.69s;animation-name:c9"/></clipPath>
+<text class="s-text t-accent" x="196.0" y="172.0" font-size="16" clip-path="url(#c9-clip)">wait and try again</text>
+<path class="s-fill t-bad" d="M30 208L180 208L180 248L30 248Z" style="--t0:6.86s;--t1:0.22s;animation-name:f10"/>
+<path class="s-line t-bad" d="M28.1 208.5C60.0 206.9 89.1 207.9 177.9 205.7M29.9 206.8C84.3 208.3 135.8 209.4 179.6 208.3M180.0 210.3C182.8 219.3 180.1 239.4 178.4 248.4M179.5 208.9C179.1 221.3 179.1 237.2 181.3 248.3M181.6 248.8C124.3 249.6 66.3 245.7 30.8 250.8M180.6 248.5C150.3 249.9 119.4 248.6 29.0 249.1M31.5 249.7C31.1 231.8 27.2 217.3 27.4 207.8M29.7 248.8C30.1 234.2 30.1 219.8 30.5 208.3" pathLength="1" style="--t0:6.86s;--t1:1.17s;animation-name:s11;stroke-width:2.2"/>
+<clipPath id="c12-clip"><rect class="s-clip" x="90.5" y="215.7" width="0" height="21.5" style="--t0:8.19s;--t1:0.30s;animation-name:c12"/></clipPath>
+<text class="s-text t-bad" x="94.2" y="233.8" font-size="17" clip-path="url(#c12-clip)">400</text>
+<clipPath id="c13-clip"><rect class="s-clip" x="192.1" y="214.1" width="0" height="26.0" style="--t0:8.19s;--t1:1.15s;animation-name:c13"/></clipPath>
+<text class="s-text t-bad" x="196.0" y="232.0" font-size="16" clip-path="url(#c13-clip)">the request is wrong: fail now</text>
+<clipPath id="c14-clip"><rect class="s-clip" x="426.1" y="94.1" width="0" height="21.2" style="--t0:9.52s;--t1:0.62s;animation-name:c14"/></clipPath>
+<text class="s-text t-ink" x="430.0" y="112.0" font-size="16" clip-path="url(#c14-clip)">the wait doubles</text>
+<clipPath id="c15-clip"><rect class="s-clip" x="426.4" y="118.2" width="0" height="26.0" style="--t0:10.22s;--t1:0.69s;animation-name:c15"/></clipPath>
+<text class="s-text t-muted" x="430.0" y="136.0" font-size="16" clip-path="url(#c15-clip)">1s, 2s, 4s, capped</text>
+<clipPath id="c16-clip"><rect class="s-clip" x="426.6" y="168.1" width="0" height="26.0" style="--t0:10.99s;--t1:1.04s;animation-name:c16"/></clipPath>
+<text class="s-text t-good" x="430.0" y="186.0" font-size="16" clip-path="url(#c16-clip)">Retry-After wins when given</text>
+<clipPath id="c17-clip"><rect class="s-clip" x="426.4" y="218.2" width="0" height="26.0" style="--t0:12.11s;--t1:1.27s;animation-name:c17"/></clipPath>
+<text class="s-text t-bad" x="430.0" y="236.0" font-size="16" clip-path="url(#c17-clip)">a cancelled context stops at once</text>
+</g>
+</svg>

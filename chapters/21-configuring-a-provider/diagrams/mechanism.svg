@@ -1,0 +1,64 @@
+<svg class="scratch" viewBox="0 0 720 300" role="img" aria-label="21 Configuring a provider" data-draw="17.89">
+<title>21 Configuring a provider</title>
+<desc>Four sources resolve in order, and the first match wins. The key lives in a file named by api_key_file rather than an environment variable, because the environment is readable in a process listing.</desc>
+<style>
+@keyframes c0{from{width:0}to{width:264.6px}}
+@keyframes s1{from{stroke-dashoffset:1}to{stroke-dashoffset:0}}
+@keyframes s2{from{stroke-dashoffset:1}to{stroke-dashoffset:0}}
+@keyframes c3{from{width:0}to{width:30.1px}}
+@keyframes s4{from{stroke-dashoffset:1}to{stroke-dashoffset:0}}
+@keyframes c5{from{width:0}to{width:77.7px}}
+@keyframes s6{from{stroke-dashoffset:1}to{stroke-dashoffset:0}}
+@keyframes c7{from{width:0}to{width:84.1px}}
+@keyframes s8{from{stroke-dashoffset:1}to{stroke-dashoffset:0}}
+@keyframes c9{from{width:0}to{width:69.1px}}
+@keyframes c10{from{width:0}to{width:96.8px}}
+@keyframes s11{from{stroke-dashoffset:1}to{stroke-dashoffset:0}}
+@keyframes s12{from{stroke-dashoffset:1}to{stroke-dashoffset:0}}
+@keyframes s13{from{stroke-dashoffset:1}to{stroke-dashoffset:0}}
+@keyframes f14{from{opacity:0}to{opacity:1}}
+@keyframes s15{from{stroke-dashoffset:1}to{stroke-dashoffset:0}}
+@keyframes c16{from{width:0}to{width:60.5px}}
+@keyframes c17{from{width:0}to{width:186.9px}}
+@keyframes c18{from{width:0}to{width:83.6px}}
+@keyframes c19{from{width:0}to{width:152.2px}}
+@keyframes c20{from{width:0}to{width:159.8px}}
+@keyframes c21{from{width:0}to{width:204.3px}}
+</style>
+<g class="scene">
+<clipPath id="c0-clip"><rect class="s-clip" x="24.4" y="14.1" width="0" height="40.7" style="--t0:0.00s;--t1:1.00s;animation-name:c0"/></clipPath>
+<text class="s-text t-ink" x="30.0" y="42.0" font-size="25" clip-path="url(#c0-clip)">where a setting comes from</text>
+<path class="s-line t-accent" d="M31.2 50.8C47.0 50.4 87.4 48.5 124.4 49.2C161.5 49.9 216.2 54.9 253.7 54.9C291.1 55.0 333.7 50.1 349.3 49.3M28.0 52.2C44.1 51.4 89.4 46.8 126.8 47.3C164.3 47.7 215.5 54.7 252.6 55.0C289.8 55.3 333.7 49.8 349.7 49.1" pathLength="1" style="--t0:1.08s;--t1:0.99s;animation-name:s1;stroke-width:2.6"/>
+<path class="s-line t-ink" d="M31.2 85.2C70.0 84.4 108.7 85.6 220.7 84.3M29.1 83.9C78.7 86.2 128.4 87.4 220.7 83.6M220.7 84.5C220.8 95.3 221.9 105.6 221.7 113.6M219.4 84.8C220.3 93.4 220.8 100.1 220.9 112.1M219.9 111.5C158.7 111.5 94.1 113.7 28.2 112.2M219.8 112.0C144.8 113.6 71.2 113.2 30.8 111.9M27.8 112.7C30.7 102.1 30.8 88.4 29.3 81.8M29.9 111.2C29.9 104.4 29.1 96.8 30.0 83.8" pathLength="1" style="--t0:2.36s;--t1:1.35s;animation-name:s2;stroke-width:2.2"/>
+<clipPath id="c3-clip"><rect class="s-clip" x="110.7" y="86.4" width="0" height="24.4" style="--t0:3.82s;--t1:0.30s;animation-name:c3"/></clipPath>
+<text class="s-text t-ink" x="114.2" y="103.1" font-size="15" clip-path="url(#c3-clip)">flag</text>
+<path class="s-line t-ink" d="M30.0 122.1C71.9 118.2 110.3 120.6 222.1 120.6M29.5 121.1C84.3 120.1 137.7 120.7 219.0 121.4M220.2 122.8C220.1 132.9 221.8 145.0 221.0 148.5M220.8 123.0C220.0 131.2 219.4 143.1 220.3 149.4M218.9 151.5C154.7 151.4 88.4 153.1 28.1 152.0M219.9 151.0C150.4 148.4 80.1 149.9 30.7 151.1M29.2 148.2C29.9 143.8 28.2 135.1 32.2 120.7M29.1 149.2C30.3 143.8 30.0 136.9 29.4 121.8" pathLength="1" style="--t0:3.82s;--t1:1.34s;animation-name:s4;stroke-width:2.2"/>
+<clipPath id="c5-clip"><rect class="s-clip" x="86.9" y="124.4" width="0" height="19.8" style="--t0:5.28s;--t1:0.42s;animation-name:c5"/></clipPath>
+<text class="s-text t-ink" x="90.4" y="141.1" font-size="15" clip-path="url(#c5-clip)">environment</text>
+<path class="s-line t-ink" d="M28.7 159.0C69.3 157.5 107.5 161.1 219.0 161.2M29.8 160.5C87.8 159.4 144.8 159.4 219.4 159.1M219.7 161.0C219.3 165.0 221.8 173.2 220.4 187.7M220.0 159.0C221.1 165.7 219.4 172.6 219.6 188.8M217.8 187.0C150.6 187.0 82.8 188.1 27.9 187.3M220.0 187.7C153.7 190.8 89.0 189.8 30.7 188.0M30.6 188.1C29.2 179.9 30.0 166.2 30.6 159.6M30.4 187.2C30.7 183.2 31.0 177.1 31.0 159.8" pathLength="1" style="--t0:5.28s;--t1:1.34s;animation-name:s6;stroke-width:2.2"/>
+<clipPath id="c7-clip"><rect class="s-clip" x="83.7" y="162.4" width="0" height="24.4" style="--t0:6.74s;--t1:0.54s;animation-name:c7"/></clipPath>
+<text class="s-text t-ink" x="86.9" y="179.1" font-size="15" clip-path="url(#c7-clip)">project config</text>
+<path class="s-line t-ink" d="M31.9 195.8C71.2 201.1 109.0 201.6 220.3 197.4M30.2 197.7C91.2 198.7 154.1 200.3 219.9 199.0M219.1 199.3C217.7 202.6 221.0 212.5 219.7 227.0M219.2 197.3C220.0 205.8 219.5 215.6 219.0 226.1M221.2 227.0C146.6 226.9 77.2 227.4 32.1 227.1M220.0 226.6C159.3 225.6 98.0 226.5 30.6 224.9M32.0 228.0C28.5 217.2 31.8 213.0 29.1 198.4M29.5 225.2C31.1 214.8 29.7 206.0 30.3 197.8" pathLength="1" style="--t0:6.74s;--t1:1.34s;animation-name:s8;stroke-width:2.2"/>
+<clipPath id="c9-clip"><rect class="s-clip" x="91.2" y="200.4" width="0" height="24.4" style="--t0:8.20s;--t1:0.42s;animation-name:c9"/></clipPath>
+<text class="s-text t-ink" x="94.5" y="217.1" font-size="15" clip-path="url(#c9-clip)">user config</text>
+<clipPath id="c10-clip"><rect class="s-clip" x="26.6" y="233.3" width="0" height="19.9" style="--t0:8.20s;--t1:0.62s;animation-name:c10"/></clipPath>
+<text class="s-text t-good" x="30.0" y="250.0" font-size="15" clip-path="url(#c10-clip)">first match wins</text>
+<path class="s-line t-ink" d="M229.7 159.2C245.7 158.4 267.1 160.2 284.5 157.5M226.7 160.0C249.0 160.6 267.1 160.9 281.3 159.3" pathLength="1" style="--t0:8.96s;--t1:0.18s;animation-name:s11;stroke-width:2.2"/>
+<path class="s-line t-ink" d="M282.9 159.5C279.9 158.7 274.0 155.3 272.3 154.0M282.7 160.1C279.4 158.5 276.2 157.5 270.6 154.8" pathLength="1" style="--t0:9.23s;--t1:0.18s;animation-name:s12;stroke-width:2.2"/>
+<path class="s-line t-ink" d="M282.0 159.3C278.9 160.1 273.7 163.8 270.3 164.2M281.5 159.5C278.6 161.0 275.1 162.9 271.7 165.1" pathLength="1" style="--t0:9.50s;--t1:0.18s;animation-name:s13;stroke-width:2.2"/>
+<path class="s-fill t-good" d="M288 108L468 108L468 208L288 208Z" style="--t0:9.85s;--t1:0.22s;animation-name:f14"/>
+<path class="s-line t-good" d="M286.2 107.7C324.7 106.3 363.6 104.9 467.3 110.7M288.5 107.0C333.8 108.1 377.8 108.1 468.6 107.2M468.7 106.0C470.5 143.8 469.2 173.9 468.1 207.5M466.6 108.8C466.0 139.7 465.5 172.0 467.3 208.4M467.1 207.5C419.9 207.2 373.6 209.0 289.4 205.8M468.6 207.6C399.8 209.3 333.4 211.1 288.3 206.9M290.3 208.2C284.7 172.9 285.6 137.2 286.0 109.8M289.3 206.9C289.9 172.1 289.6 140.1 289.4 107.6" pathLength="1" style="--t0:9.85s;--t1:1.72s;animation-name:s15;stroke-width:2.2"/>
+<clipPath id="c16-clip"><rect class="s-clip" x="348.6" y="144.8" width="0" height="22.5" style="--t0:11.72s;--t1:0.31s;animation-name:c16"/></clipPath>
+<text class="s-text t-good" x="352.1" y="163.8" font-size="17" clip-path="url(#c16-clip)">resolved</text>
+<clipPath id="c17-clip"><rect class="s-clip" x="496.1" y="94.1" width="0" height="26.0" style="--t0:11.80s;--t1:1.31s;animation-name:c17"/></clipPath>
+<text class="s-text t-ink" x="500.0" y="112.0" font-size="16" clip-path="url(#c17-clip)">the key is a file, not a variable:</text>
+<clipPath id="c18-clip"><rect class="s-clip" x="496.4" y="120.2" width="0" height="26.0" style="--t0:13.19s;--t1:0.46s;animation-name:c18"/></clipPath>
+<text class="s-text t-accent" x="500.0" y="138.0" font-size="16" clip-path="url(#c18-clip)">api_key_file</text>
+<clipPath id="c19-clip"><rect class="s-clip" x="496.6" y="163.3" width="0" height="19.9" style="--t0:13.73s;--t1:1.00s;animation-name:c19"/></clipPath>
+<text class="s-text t-muted" x="500.0" y="180.0" font-size="15" clip-path="url(#c19-clip)">an environment variable is</text>
+<clipPath id="c20-clip"><rect class="s-clip" x="496.9" y="185.3" width="0" height="24.4" style="--t0:14.81s;--t1:1.12s;animation-name:c20"/></clipPath>
+<text class="s-text t-muted" x="500.0" y="202.0" font-size="15" clip-path="url(#c20-clip)">readable in a process listing</text>
+<clipPath id="c21-clip"><rect class="s-clip" x="496.6" y="233.3" width="0" height="24.4" style="--t0:16.06s;--t1:1.42s;animation-name:c21"/></clipPath>
+<text class="s-text t-good" x="500.0" y="250.0" font-size="15" clip-path="url(#c21-clip)">and the tool can say what it resolved</text>
+</g>
+</svg>

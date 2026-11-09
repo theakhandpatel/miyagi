@@ -1,0 +1,53 @@
+<svg class="scratch" viewBox="0 0 720 288" role="img" aria-label="05 The agent loop" data-draw="10.66">
+<title>05 The agent loop</title>
+<desc>A turn asks, runs the tools it was asked for, and answers. The loop continues while the model asks for tools; a turn with no call ends it, and a positive step cap ends a model that never stops.</desc>
+<style>
+@keyframes c0{from{width:0}to{width:89.6px}}
+@keyframes s1{from{stroke-dashoffset:1}to{stroke-dashoffset:0}}
+@keyframes c2{from{width:0}to{width:34.9px}}
+@keyframes s3{from{stroke-dashoffset:1}to{stroke-dashoffset:0}}
+@keyframes c4{from{width:0}to{width:75.9px}}
+@keyframes s5{from{stroke-dashoffset:1}to{stroke-dashoffset:0}}
+@keyframes c6{from{width:0}to{width:60.7px}}
+@keyframes s7{from{stroke-dashoffset:1}to{stroke-dashoffset:0}}
+@keyframes s8{from{stroke-dashoffset:1}to{stroke-dashoffset:0}}
+@keyframes s9{from{stroke-dashoffset:1}to{stroke-dashoffset:0}}
+@keyframes s10{from{stroke-dashoffset:1}to{stroke-dashoffset:0}}
+@keyframes s11{from{stroke-dashoffset:1}to{stroke-dashoffset:0}}
+@keyframes s12{from{stroke-dashoffset:1}to{stroke-dashoffset:0}}
+@keyframes s13{from{stroke-dashoffset:1}to{stroke-dashoffset:0}}
+@keyframes s14{from{stroke-dashoffset:1}to{stroke-dashoffset:0}}
+@keyframes s15{from{stroke-dashoffset:1}to{stroke-dashoffset:0}}
+@keyframes c16{from{width:0}to{width:78.8px}}
+@keyframes c17{from{width:0}to{width:123.1px}}
+@keyframes c18{from{width:0}to{width:129.9px}}
+</style>
+<g class="scene">
+<clipPath id="c0-clip"><rect class="s-clip" x="24.6" y="14.2" width="0" height="33.1" style="--t0:0.00s;--t1:0.31s;animation-name:c0"/></clipPath>
+<text class="s-text t-ink" x="30.0" y="42.0" font-size="25" clip-path="url(#c0-clip)">one turn</text>
+<path class="s-line t-ink" d="M32.2 76.4C56.4 77.3 82.5 81.0 159.6 78.8M28.5 78.8C69.5 76.7 107.4 77.6 160.8 76.7M164.8 77.3C160.5 96.2 164.2 116.3 163.0 126.7M160.7 77.3C160.6 89.4 161.8 103.1 161.8 126.7M161.2 127.6C129.1 124.0 96.3 123.5 30.1 128.8M161.0 126.0C118.1 124.6 75.4 124.6 30.6 127.4M28.5 124.5C29.8 109.4 29.9 95.3 30.7 77.6M28.8 126.2C28.8 114.7 31.1 103.6 31.2 76.5" pathLength="1" style="--t0:0.47s;--t1:1.10s;animation-name:s1;stroke-width:2.2"/>
+<clipPath id="c2-clip"><rect class="s-clip" x="79.5" y="86.6" width="0" height="26.5" style="--t0:1.72s;--t1:0.30s;animation-name:c2"/></clipPath>
+<text class="s-text t-ink" x="84.0" y="108.8" font-size="20" clip-path="url(#c2-clip)">ask</text>
+<path class="s-line t-ink" d="M210.5 80.8C238.9 79.0 264.6 78.3 341.4 76.4M209.1 77.7C251.5 77.9 294.7 78.0 341.5 79.4M344.1 77.7C343.7 95.9 342.5 112.6 342.1 128.4M342.7 77.6C341.8 92.9 341.6 111.2 340.9 125.7M339.8 124.3C305.6 126.6 272.6 125.4 209.9 125.1M341.1 127.3C302.7 126.3 261.5 125.9 210.5 126.0M210.4 127.1C209.0 106.0 212.5 90.2 208.6 78.8M210.6 126.2C209.5 117.0 209.6 107.2 210.4 79.5" pathLength="1" style="--t0:1.72s;--t1:1.10s;animation-name:s3;stroke-width:2.2"/>
+<clipPath id="c4-clip"><rect class="s-clip" x="239.1" y="86.5" width="0" height="26.5" style="--t0:2.98s;--t1:0.35s;animation-name:c4"/></clipPath>
+<text class="s-text t-ink" x="243.2" y="108.8" font-size="20" clip-path="url(#c4-clip)">run tools</text>
+<path class="s-line t-ink" d="M388.8 79.3C415.4 79.8 440.8 80.8 523.2 80.0M389.6 76.6C433.4 79.1 478.9 81.3 522.1 79.0M523.4 78.1C522.9 86.0 522.7 95.6 521.2 124.1M521.6 77.9C521.9 86.8 523.2 97.1 523.0 124.8M524.3 127.0C482.1 123.3 448.9 127.2 389.6 127.5M521.2 125.6C484.2 126.0 447.5 125.1 390.4 124.6M392.3 123.6C388.1 112.1 389.0 98.4 392.5 80.0M389.4 126.2C390.2 106.6 391.0 88.6 389.5 79.5" pathLength="1" style="--t0:2.98s;--t1:1.10s;animation-name:s5;stroke-width:2.2"/>
+<clipPath id="c6-clip"><rect class="s-clip" x="426.6" y="91.2" width="0" height="21.8" style="--t0:4.23s;--t1:0.30s;animation-name:c6"/></clipPath>
+<text class="s-text t-ink" x="431.1" y="108.8" font-size="20" clip-path="url(#c6-clip)">answer</text>
+<path class="s-line t-ink" d="M167.4 102.4C172.4 101.2 183.2 100.2 202.7 102.9M165.2 103.2C176.7 101.7 188.6 101.7 203.5 100.8" pathLength="1" style="--t0:4.23s;--t1:0.18s;animation-name:s7;stroke-width:2.2"/>
+<path class="s-line t-ink" d="M204.3 103.4C199.6 98.9 199.6 100.6 194.5 96.0M204.1 101.2C201.8 100.5 199.1 99.9 193.3 96.9" pathLength="1" style="--t0:4.50s;--t1:0.18s;animation-name:s8;stroke-width:2.2"/>
+<path class="s-line t-ink" d="M203.7 102.3C199.8 102.7 199.2 105.5 193.5 106.1M203.3 102.5C200.8 103.1 196.9 105.0 193.8 106.7" pathLength="1" style="--t0:4.77s;--t1:0.18s;animation-name:s9;stroke-width:2.2"/>
+<path class="s-line t-ink" d="M344.4 99.5C352.3 102.1 361.9 103.9 381.7 101.5M345.3 101.3C360.6 102.2 373.3 100.2 384.3 102.3" pathLength="1" style="--t0:5.12s;--t1:0.18s;animation-name:s10;stroke-width:2.2"/>
+<path class="s-line t-ink" d="M383.6 101.5C380.0 99.7 374.6 97.3 371.7 95.4M383.3 102.6C381.4 100.0 378.9 99.2 373.7 97.4" pathLength="1" style="--t0:5.39s;--t1:0.18s;animation-name:s11;stroke-width:2.2"/>
+<path class="s-line t-ink" d="M383.0 102.5C379.6 105.2 376.3 106.6 372.1 107.9M383.6 102.6C380.3 103.4 378.6 105.2 372.4 107.4" pathLength="1" style="--t0:5.66s;--t1:0.18s;animation-name:s12;stroke-width:2.2"/>
+<path class="s-line t-ink" d="M455.6 147.1C342.1 146.1 229.6 148.3 95.0 146.9M456.3 148.6C332.7 145.7 210.2 145.0 95.9 148.8" pathLength="1" style="--t0:6.09s;--t1:1.11s;animation-name:s13;stroke-width:2.2"/>
+<path class="s-line t-ink" d="M96.9 146.5C100.3 147.9 101.9 151.5 108.4 151.8M96.3 148.6C99.0 149.5 100.1 149.5 106.9 153.4" pathLength="1" style="--t0:7.29s;--t1:0.18s;animation-name:s14;stroke-width:2.2"/>
+<path class="s-line t-ink" d="M97.2 147.2C99.7 146.5 103.5 146.1 106.5 142.3M96.4 148.5C98.6 146.3 102.3 145.0 106.9 143.7" pathLength="1" style="--t0:7.56s;--t1:0.18s;animation-name:s15;stroke-width:2.2"/>
+<clipPath id="c16-clip"><rect class="s-clip" x="192.9" y="156.2" width="0" height="26.0" style="--t0:7.91s;--t1:0.50s;animation-name:c16"/></clipPath>
+<text class="s-text t-accent" x="196.0" y="174.0" font-size="16" clip-path="url(#c16-clip)">still asking?</text>
+<clipPath id="c17-clip"><rect class="s-clip" x="26.9" y="227.0" width="0" height="22.5" style="--t0:8.64s;--t1:0.77s;animation-name:c17"/></clipPath>
+<text class="s-text t-good" x="30.0" y="246.0" font-size="17" clip-path="url(#c17-clip)">no tool call ends it</text>
+<clipPath id="c18-clip"><rect class="s-clip" x="375.9" y="227.0" width="0" height="27.7" style="--t0:9.49s;--t1:0.77s;animation-name:c18"/></clipPath>
+<text class="s-text t-bad" x="380.0" y="246.0" font-size="17" clip-path="url(#c18-clip)">the step cap ends it</text>
+</g>
+</svg>

@@ -42,6 +42,9 @@ flowchart LR
 
 Content-addressed, so the same output reuses the same file:
 
+```diagram mechanism
+```
+
 ```
   sha256(content) → 3f2a91c4b7de0011...
   path            → <root>/.agent-results/3f2a91c4b7de0011.txt

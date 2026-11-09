@@ -48,6 +48,9 @@ flowchart LR
 4. Equal priorities are broken by scope name, so the result never depends on the order
    the caller listed the scopes.
 
+```diagram mechanism
+```
+
 Rule 4 is the one that prevents a bug you would only see on someone else's machine.
 
 ## The winner has to be the one that runs

@@ -21,6 +21,9 @@ Every request carries the schema of every tool it advertises: name, description,
 JSON Schema for the arguments. That is paid on every turn, whether or not the model
 calls anything.
 
+```diagram mechanism
+```
+
 In one measured harness, thirteen tools accounted for 15,560 bytes of a 23,884 byte
 request. Two thirds of the request was definitions, before any conversation existed.
 

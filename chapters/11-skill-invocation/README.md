@@ -21,6 +21,9 @@ You may edit `agent/skill.go` and `agent/cmd/agent/main.go`.
 A tool call is the model's decision. A skill invocation is yours: you type
 `/deploy staging`, and the program expands it before the model sees anything.
 
+```diagram mechanism
+```
+
 ```
   typed:   /deploy staging eu-west
   sent:    Check the tests pass, then deploy to staging in eu-west.

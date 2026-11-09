@@ -20,6 +20,9 @@ You edit `agent/cmd/agent/main.go`. You also create one new file, `agent/mcp.go`
 MCP is described in terms of capabilities, resources and sampling. The transport is
 smaller than any of that:
 
+```diagram mechanism
+```
+
 ```
   your process                              server process
   ────────────                              ──────────────

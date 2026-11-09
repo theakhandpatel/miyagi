@@ -1,0 +1,12 @@
+{
+  "name": "miyagi-diagrams",
+  "private": true,
+  "description": "Generates the hand-drawn chapter diagrams. A maintainer tool: taking the course needs no Node.",
+  "scripts": {
+    "build": "node build.js"
+  },
+  "dependencies": {
+    "opentype.js": "^2.0.0",
+    "roughjs": "^4.6.6"
+  }
+}

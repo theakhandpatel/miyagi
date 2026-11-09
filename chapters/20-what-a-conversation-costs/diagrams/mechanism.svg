@@ -1,0 +1,61 @@
+<svg class="scratch" viewBox="0 0 720 300" role="img" aria-label="20 What a conversation costs" data-draw="15.85">
+<title>20 What a conversation costs</title>
+<desc>Usage arrives once, on the final message of the stream, so a stream that never ends reports nothing. Tokens and cost are stored as two records, and money is kept in integer micros rather than a float.</desc>
+<style>
+@keyframes c0{from{width:0}to{width:281.8px}}
+@keyframes s1{from{stroke-dashoffset:1}to{stroke-dashoffset:0}}
+@keyframes s2{from{stroke-dashoffset:1}to{stroke-dashoffset:0}}
+@keyframes c3{from{width:0}to{width:63.2px}}
+@keyframes s4{from{stroke-dashoffset:1}to{stroke-dashoffset:0}}
+@keyframes c5{from{width:0}to{width:83.5px}}
+@keyframes f6{from{opacity:0}to{opacity:1}}
+@keyframes s7{from{stroke-dashoffset:1}to{stroke-dashoffset:0}}
+@keyframes c8{from{width:0}to{width:38.6px}}
+@keyframes s9{from{stroke-dashoffset:1}to{stroke-dashoffset:0}}
+@keyframes s10{from{stroke-dashoffset:1}to{stroke-dashoffset:0}}
+@keyframes s11{from{stroke-dashoffset:1}to{stroke-dashoffset:0}}
+@keyframes s12{from{stroke-dashoffset:1}to{stroke-dashoffset:0}}
+@keyframes c13{from{width:0}to{width:47.4px}}
+@keyframes s14{from{stroke-dashoffset:1}to{stroke-dashoffset:0}}
+@keyframes c15{from{width:0}to{width:33.7px}}
+@keyframes c16{from{width:0}to{width:117.9px}}
+@keyframes c17{from{width:0}to{width:143.1px}}
+@keyframes c18{from{width:0}to{width:77.9px}}
+@keyframes c19{from{width:0}to{width:144.0px}}
+@keyframes c20{from{width:0}to{width:93.2px}}
+</style>
+<g class="scene">
+<clipPath id="c0-clip"><rect class="s-clip" x="24.4" y="14.1" width="0" height="40.7" style="--t0:0.00s;--t1:1.15s;animation-name:c0"/></clipPath>
+<text class="s-text t-ink" x="30.0" y="42.0" font-size="25" clip-path="url(#c0-clip)">usage arrives once, at the end</text>
+<path class="s-line t-accent" d="M28.9 52.7C45.6 51.6 91.0 46.2 129.9 46.8C168.8 47.3 223.8 55.1 262.3 55.8C300.8 56.5 344.6 51.6 360.7 50.7M28.9 51.0C45.1 49.9 90.0 46.5 128.4 47.1C166.9 47.7 221.2 53.6 259.6 54.3C298.0 55.0 341.9 52.2 358.8 51.3" pathLength="1" style="--t0:1.23s;--t1:1.02s;animation-name:s1;stroke-width:2.6"/>
+<path class="s-line t-muted" d="M29.1 85.1C70.0 85.1 108.2 88.7 220.0 85.6M30.0 83.2C90.8 84.8 154.9 85.0 221.0 84.6M218.4 83.1C218.4 94.2 218.1 100.3 217.7 118.6M219.5 85.0C220.4 94.2 220.5 102.7 220.2 119.3M218.0 119.4C154.3 118.8 81.7 113.4 28.1 118.8M220.3 118.6C182.0 114.3 144.6 115.5 31.3 117.6M27.1 119.2C28.1 110.2 30.2 97.5 30.3 81.9M30.2 117.2C30.2 107.1 31.1 98.0 29.9 82.6" pathLength="1" style="--t0:2.54s;--t1:1.39s;animation-name:s2;stroke-width:2.2"/>
+<clipPath id="c3-clip"><rect class="s-clip" x="94.2" y="89.4" width="0" height="24.4" style="--t0:4.08s;--t1:0.35s;animation-name:c3"/></clipPath>
+<text class="s-text t-muted" x="97.1" y="106.1" font-size="15" clip-path="url(#c3-clip)">streaming</text>
+<path class="s-line t-ink" d="M27.4 125.5C72.5 121.3 110.4 120.7 221.8 125.2M30.6 127.1C97.0 128.7 161.6 127.9 218.6 126.2M217.7 125.5C217.4 135.6 218.1 144.0 222.8 162.3M221.4 127.3C218.8 135.7 220.5 147.8 219.4 160.3M222.6 158.0C149.9 157.5 76.2 157.3 27.9 157.2M220.4 158.9C147.0 159.3 77.4 160.1 31.2 161.2M29.0 157.8C27.1 143.9 32.6 130.9 28.2 125.1M29.0 159.2C29.5 150.9 28.1 142.6 29.0 124.6" pathLength="1" style="--t0:4.08s;--t1:1.39s;animation-name:s4;stroke-width:2.2"/>
+<clipPath id="c5-clip"><rect class="s-clip" x="84.0" y="131.4" width="0" height="24.4" style="--t0:5.62s;--t1:0.50s;animation-name:c5"/></clipPath>
+<text class="s-text t-ink" x="87.4" y="148.1" font-size="15" clip-path="url(#c5-clip)">final message</text>
+<path class="s-fill t-accent" d="M30 168L220 168L220 202L30 202Z" style="--t0:5.62s;--t1:0.22s;animation-name:f6"/>
+<path class="s-line t-accent" d="M31.6 166.0C69.0 171.0 106.5 166.0 217.6 170.8M31.1 168.0C100.2 165.1 168.3 166.5 219.3 167.8M217.0 167.8C221.1 177.1 216.8 187.7 221.9 200.0M220.4 166.6C221.5 180.3 221.7 196.0 221.5 201.3M221.1 202.7C145.4 202.1 70.7 201.1 27.6 201.6M220.5 202.2C152.9 199.9 86.2 200.3 31.1 201.7M30.9 202.3C32.2 190.5 29.1 183.8 32.1 168.3M30.9 201.2C30.0 194.6 29.5 187.3 31.2 166.5" pathLength="1" style="--t0:5.62s;--t1:1.37s;animation-name:s7;stroke-width:2.2"/>
+<clipPath id="c8-clip"><rect class="s-clip" x="106.5" y="177.1" width="0" height="20.7" style="--t0:7.15s;--t1:0.30s;animation-name:c8"/></clipPath>
+<text class="s-text t-accent" x="109.8" y="190.1" font-size="15" clip-path="url(#c8-clip)">usage</text>
+<path class="s-line t-ink" d="M226.3 186.6C247.2 188.7 263.5 186.3 283.1 187.0M226.8 185.0C246.2 183.1 262.7 184.5 283.1 184.7" pathLength="1" style="--t0:7.21s;--t1:0.18s;animation-name:s9;stroke-width:2.2"/>
+<path class="s-line t-ink" d="M281.0 184.5C279.1 183.5 276.6 182.2 272.4 179.7M281.2 184.9C279.1 183.4 277.2 182.0 271.4 180.1" pathLength="1" style="--t0:7.48s;--t1:0.18s;animation-name:s10;stroke-width:2.2"/>
+<path class="s-line t-ink" d="M280.5 184.7C277.7 187.4 276.6 188.2 271.0 191.0M282.2 184.7C279.7 185.6 275.9 188.3 271.5 189.9" pathLength="1" style="--t0:7.75s;--t1:0.18s;animation-name:s11;stroke-width:2.2"/>
+<path class="s-line t-ink" d="M289.5 95.2C328.9 94.8 371.8 95.3 486.5 94.1M286.9 97.1C351.9 94.1 415.8 92.7 488.6 96.2M486.2 98.5C486.9 109.4 489.9 126.4 489.5 133.9M487.0 96.7C487.0 107.3 489.0 117.9 489.2 134.5M485.5 137.3C429.2 131.2 370.0 136.0 289.7 134.5M489.0 136.1C411.6 131.7 335.4 132.2 288.4 134.8M290.4 136.4C288.4 127.5 291.1 112.7 287.3 98.7M286.6 135.1C287.9 122.1 289.7 104.9 289.3 97.4" pathLength="1" style="--t0:8.10s;--t1:1.45s;animation-name:s12;stroke-width:2.2"/>
+<clipPath id="c13-clip"><rect class="s-clip" x="365.1" y="103.6" width="0" height="21.1" style="--t0:9.70s;--t1:0.30s;animation-name:c13"/></clipPath>
+<text class="s-text t-ink" x="369.0" y="121.4" font-size="16" clip-path="url(#c13-clip)">tokens</text>
+<path class="s-line t-ink" d="M287.9 143.8C331.1 146.4 373.8 148.5 488.1 147.3M287.4 146.1C355.4 145.8 423.1 146.4 489.2 145.9M485.5 148.8C490.4 159.0 488.5 178.3 488.6 185.6M488.9 147.0C488.3 160.2 485.8 174.9 488.3 186.5M489.6 184.3C424.8 183.7 358.8 182.3 289.5 186.7M489.0 187.3C415.0 187.4 344.7 187.5 288.3 186.2M286.3 189.0C287.5 168.7 287.6 159.1 285.2 143.9M288.5 185.1C288.5 174.0 288.1 158.0 288.5 147.4" pathLength="1" style="--t0:9.70s;--t1:1.48s;animation-name:s14;stroke-width:2.2"/>
+<clipPath id="c15-clip"><rect class="s-clip" x="371.9" y="153.6" width="0" height="21.0" style="--t0:11.33s;--t1:0.30s;animation-name:c15"/></clipPath>
+<text class="s-text t-ink" x="375.6" y="171.4" font-size="16" clip-path="url(#c15-clip)">cost</text>
+<clipPath id="c16-clip"><rect class="s-clip" x="284.4" y="191.3" width="0" height="21.0" style="--t0:11.33s;--t1:0.77s;animation-name:c16"/></clipPath>
+<text class="s-text t-good" x="288.0" y="208.0" font-size="15" clip-path="url(#c16-clip)">two records, not one</text>
+<clipPath id="c17-clip"><rect class="s-clip" x="516.9" y="99.3" width="0" height="24.4" style="--t0:12.28s;--t1:0.92s;animation-name:c17"/></clipPath>
+<text class="s-text t-ink" x="520.0" y="116.0" font-size="15" clip-path="url(#c17-clip)">money in integer micros,</text>
+<clipPath id="c18-clip"><rect class="s-clip" x="517.2" y="123.3" width="0" height="19.9" style="--t0:13.29s;--t1:0.50s;animation-name:c18"/></clipPath>
+<text class="s-text t-bad" x="520.0" y="140.0" font-size="15" clip-path="url(#c18-clip)">never a float</text>
+<clipPath id="c19-clip"><rect class="s-clip" x="516.6" y="169.3" width="0" height="19.9" style="--t0:13.87s;--t1:0.92s;animation-name:c19"/></clipPath>
+<text class="s-text t-ink" x="520.0" y="186.0" font-size="15" clip-path="url(#c19-clip)">a stream that never ends</text>
+<clipPath id="c20-clip"><rect class="s-clip" x="516.9" y="193.3" width="0" height="24.4" style="--t0:14.87s;--t1:0.58s;animation-name:c20"/></clipPath>
+<text class="s-text t-muted" x="520.0" y="210.0" font-size="15" clip-path="url(#c20-clip)">reports nothing</text>
+</g>
+</svg>

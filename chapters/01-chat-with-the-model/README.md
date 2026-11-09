@@ -66,6 +66,9 @@ above is the place to check, and `AGENT_DEBUG=1` prints what was sent.
 `text/event-stream`: a sequence of lines, each beginning `data:` followed by a JSON
 object. One object per line, one new piece of text per object.
 
+```diagram mechanism
+```
+
 ```
 data: {"choices":[{"delta":{"content":"The "}}]}
 data: {"choices":[{"delta":{"content":"quick "}}]}

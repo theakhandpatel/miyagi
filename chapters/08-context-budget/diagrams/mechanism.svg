@@ -1,0 +1,54 @@
+<svg class="scratch" viewBox="0 0 720 320" role="img" aria-label="08 Context budget" data-draw="13.14">
+<title>08 Context budget</title>
+<desc>A request carries the system message, the conversation and the tool schemas. Schemas are a floor under the cost, so pruning the conversation cannot rescue a request whose schemas already fill the window.</desc>
+<style>
+@keyframes c0{from{width:0}to{width:214.4px}}
+@keyframes s1{from{stroke-dashoffset:1}to{stroke-dashoffset:0}}
+@keyframes f2{from{opacity:0}to{opacity:1}}
+@keyframes s3{from{stroke-dashoffset:1}to{stroke-dashoffset:0}}
+@keyframes c4{from{width:0}to{width:53.1px}}
+@keyframes f5{from{opacity:0}to{opacity:1}}
+@keyframes s6{from{stroke-dashoffset:1}to{stroke-dashoffset:0}}
+@keyframes c7{from{width:0}to{width:87.6px}}
+@keyframes f8{from{opacity:0}to{opacity:1}}
+@keyframes s9{from{stroke-dashoffset:1}to{stroke-dashoffset:0}}
+@keyframes c10{from{width:0}to{width:89.4px}}
+@keyframes s11{from{stroke-dashoffset:1}to{stroke-dashoffset:0}}
+@keyframes c12{from{width:0}to{width:65.3px}}
+@keyframes c13{from{width:0}to{width:129.4px}}
+@keyframes c14{from{width:0}to{width:102.8px}}
+@keyframes s15{from{stroke-dashoffset:1}to{stroke-dashoffset:0}}
+@keyframes s16{from{stroke-dashoffset:1}to{stroke-dashoffset:0}}
+@keyframes s17{from{stroke-dashoffset:1}to{stroke-dashoffset:0}}
+@keyframes c18{from{width:0}to{width:174.4px}}
+</style>
+<g class="scene">
+<clipPath id="c0-clip"><rect class="s-clip" x="24.4" y="14.1" width="0" height="40.7" style="--t0:0.00s;--t1:0.85s;animation-name:c0"/></clipPath>
+<text class="s-text t-ink" x="30.0" y="42.0" font-size="25" clip-path="url(#c0-clip)">what a request carries</text>
+<path class="s-line t-accent" d="M30.8 50.8C45.3 50.0 83.0 47.4 116.8 48.0C150.5 48.6 199.3 54.2 233.3 54.5C267.4 54.9 306.3 50.9 320.9 50.2M31.0 50.4C46.1 49.7 85.5 47.1 119.1 48.0C152.6 48.8 198.8 55.1 232.4 55.4C265.9 55.7 305.8 50.6 320.4 49.9" pathLength="1" style="--t0:0.93s;--t1:0.89s;animation-name:s1;stroke-width:2.6"/>
+<path class="s-fill t-accent" d="M70 216L260 216L260 250L70 250Z" style="--t0:2.11s;--t1:0.22s;animation-name:f2"/>
+<path class="s-line t-ink" d="M68.0 216.1C108.5 214.3 146.4 212.0 260.5 213.4M70.6 215.9C127.5 216.4 183.9 215.9 258.7 214.5M258.4 214.1C260.4 225.6 257.3 233.5 262.7 249.5M260.7 215.7C259.9 227.7 259.7 242.0 259.9 250.2M258.9 251.6C194.9 253.5 124.8 248.5 68.5 251.2M260.5 251.3C201.3 247.8 143.0 248.6 70.1 249.3M68.2 247.8C73.3 238.3 67.7 227.5 67.0 218.9M70.9 249.4C70.4 237.5 69.4 225.4 68.5 215.1" pathLength="1" style="--t0:2.11s;--t1:1.38s;animation-name:s3;stroke-width:2.2"/>
+<clipPath id="c4-clip"><rect class="s-clip" x="139.3" y="219.9" width="0" height="27.6" style="--t0:3.64s;--t1:0.30s;animation-name:c4"/></clipPath>
+<text class="s-text t-ink" x="142.6" y="238.8" font-size="17" clip-path="url(#c4-clip)">system</text>
+<path class="s-fill t-violet" d="M70 162L260 162L260 212L70 212Z" style="--t0:3.64s;--t1:0.22s;animation-name:f5"/>
+<path class="s-line t-ink" d="M72.3 160.6C111.0 162.0 148.5 161.4 262.3 163.0M71.2 160.8C130.8 164.2 193.6 165.9 259.3 163.1M257.7 160.4C259.7 174.8 263.6 182.8 261.8 213.2M259.6 162.0C258.1 173.4 259.5 188.7 259.0 211.2M257.5 210.2C190.4 212.2 119.3 212.4 68.3 209.6M260.6 211.6C207.2 215.8 151.9 216.3 70.1 212.8M70.1 212.4C72.6 201.3 70.5 187.4 70.9 160.1M69.7 211.4C70.9 195.8 70.6 179.2 70.7 161.1" pathLength="1" style="--t0:3.64s;--t1:1.48s;animation-name:s6;stroke-width:2.2"/>
+<clipPath id="c7-clip"><rect class="s-clip" x="122.0" y="173.9" width="0" height="22.5" style="--t0:5.27s;--t1:0.46s;animation-name:c7"/></clipPath>
+<text class="s-text t-ink" x="125.9" y="192.8" font-size="17" clip-path="url(#c7-clip)">conversation</text>
+<path class="s-fill t-good" d="M70 108L260 108L260 158L70 158Z" style="--t0:5.27s;--t1:0.22s;animation-name:f8"/>
+<path class="s-line t-ink" d="M70.6 111.0C107.5 102.3 144.7 103.3 258.1 106.6M68.7 108.7C137.0 104.6 200.4 105.5 259.9 108.8M263.0 106.8C256.9 120.6 261.8 131.1 260.9 160.9M258.6 108.3C261.3 123.1 261.1 140.1 261.1 159.3M262.1 158.9C186.0 160.9 113.8 160.2 68.0 158.0M260.6 158.9C210.2 157.4 160.7 157.5 70.0 157.4M72.0 161.0C69.8 143.7 71.1 128.0 68.8 107.3M68.5 157.4C68.6 144.1 69.1 128.9 69.9 107.1" pathLength="1" style="--t0:5.27s;--t1:1.50s;animation-name:s9;stroke-width:2.2"/>
+<clipPath id="c10-clip"><rect class="s-clip" x="121.2" y="119.8" width="0" height="22.6" style="--t0:6.92s;--t1:0.46s;animation-name:c10"/></clipPath>
+<text class="s-text t-ink" x="125.3" y="138.8" font-size="17" clip-path="url(#c10-clip)">tool schemas</text>
+<path class="s-line t-bad" d="M300.2 101.9C398.3 104.9 493.9 105.2 690.8 102.8M300.0 101.7C444.6 103.9 589.7 104.3 689.6 101.7" pathLength="1" style="--t0:7.00s;--t1:1.20s;animation-name:s11;stroke-width:2.4"/>
+<clipPath id="c12-clip"><rect class="s-clip" x="562.4" y="73.3" width="0" height="19.8" style="--t0:8.34s;--t1:0.38s;animation-name:c12"/></clipPath>
+<text class="s-text t-bad" x="566.0" y="90.0" font-size="15" clip-path="url(#c12-clip)">the window</text>
+<clipPath id="c13-clip"><rect class="s-clip" x="316.7" y="250.1" width="0" height="26.0" style="--t0:8.90s;--t1:0.77s;animation-name:c13"/></clipPath>
+<text class="s-text t-ink" x="320.0" y="268.0" font-size="16" clip-path="url(#c13-clip)">pruning reaches only</text>
+<clipPath id="c14-clip"><rect class="s-clip" x="316.1" y="274.1" width="0" height="21.2" style="--t0:9.75s;--t1:0.62s;animation-name:c14"/></clipPath>
+<text class="s-text t-accent" x="320.0" y="292.0" font-size="16" clip-path="url(#c14-clip)">the middle block</text>
+<path class="s-line t-accent" d="M450.5 257.9C424.8 237.0 401.5 211.1 371.9 194.3M451.9 255.0C425.7 237.4 398.7 214.1 371.2 192.4" pathLength="1" style="--t0:10.45s;--t1:0.31s;animation-name:s15;stroke-width:2.2"/>
+<path class="s-line t-accent" d="M370.7 190.8C373.8 196.8 377.5 198.8 378.0 204.1M372.5 191.4C373.9 195.1 373.9 196.3 377.1 202.2" pathLength="1" style="--t0:10.85s;--t1:0.18s;animation-name:s16;stroke-width:2.2"/>
+<path class="s-line t-accent" d="M373.0 192.5C376.1 192.5 380.7 194.9 383.5 194.0M372.3 191.3C375.4 192.6 380.1 193.7 382.9 194.3" pathLength="1" style="--t0:11.12s;--t1:0.18s;animation-name:s17;stroke-width:2.2"/>
+<clipPath id="c18-clip"><rect class="s-clip" x="26.6" y="271.3" width="0" height="24.4" style="--t0:11.55s;--t1:1.19s;animation-name:c18"/></clipPath>
+<text class="s-text t-muted" x="30.0" y="288.0" font-size="15" clip-path="url(#c18-clip)">fit before sending, never after</text>
+</g>
+</svg>

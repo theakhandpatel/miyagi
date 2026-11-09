@@ -29,6 +29,9 @@ that touches the disk.
 and description to decide whether to call it. The schema tells it what arguments to
 write. Your function receives those arguments as JSON and returns text.
 
+```diagram mechanism
+```
+
 ```
    model: "call read with {path: 'notes.txt'}"
      ↓

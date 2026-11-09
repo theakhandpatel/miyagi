@@ -19,6 +19,9 @@ You edit `agent/events.go` and `agent/cmd/agent/main.go`. You also create one ne
 
 A request costs tokens in three places:
 
+```diagram mechanism
+```
+
 ```
   system message      about 50 tokens
   conversation        grows every turn

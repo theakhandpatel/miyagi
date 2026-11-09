@@ -1,0 +1,73 @@
+<svg class="scratch" viewBox="0 0 720 300" role="img" aria-label="06 Prompt assembly" data-draw="17.15">
+<title>06 Prompt assembly</title>
+<desc>The system message is assembled from a base prompt and every contributor, and is rebuilt on each run rather than stored, so a change to AGENTS.md reaches a session that already exists.</desc>
+<style>
+@keyframes c0{from{width:0}to{width:266.0px}}
+@keyframes s1{from{stroke-dashoffset:1}to{stroke-dashoffset:0}}
+@keyframes s2{from{stroke-dashoffset:1}to{stroke-dashoffset:0}}
+@keyframes c3{from{width:0}to{width:74.4px}}
+@keyframes f4{from{opacity:0}to{opacity:1}}
+@keyframes s5{from{stroke-dashoffset:1}to{stroke-dashoffset:0}}
+@keyframes c6{from{width:0}to{width:70.6px}}
+@keyframes s7{from{stroke-dashoffset:1}to{stroke-dashoffset:0}}
+@keyframes c8{from{width:0}to{width:67.3px}}
+@keyframes s9{from{stroke-dashoffset:1}to{stroke-dashoffset:0}}
+@keyframes s10{from{stroke-dashoffset:1}to{stroke-dashoffset:0}}
+@keyframes s11{from{stroke-dashoffset:1}to{stroke-dashoffset:0}}
+@keyframes s12{from{stroke-dashoffset:1}to{stroke-dashoffset:0}}
+@keyframes s13{from{stroke-dashoffset:1}to{stroke-dashoffset:0}}
+@keyframes s14{from{stroke-dashoffset:1}to{stroke-dashoffset:0}}
+@keyframes s15{from{stroke-dashoffset:1}to{stroke-dashoffset:0}}
+@keyframes s16{from{stroke-dashoffset:1}to{stroke-dashoffset:0}}
+@keyframes s17{from{stroke-dashoffset:1}to{stroke-dashoffset:0}}
+@keyframes f18{from{opacity:0}to{opacity:1}}
+@keyframes s19{from{stroke-dashoffset:1}to{stroke-dashoffset:0}}
+@keyframes c20{from{width:0}to{width:109.7px}}
+@keyframes s21{from{stroke-dashoffset:1}to{stroke-dashoffset:0}}
+@keyframes s22{from{stroke-dashoffset:1}to{stroke-dashoffset:0}}
+@keyframes s23{from{stroke-dashoffset:1}to{stroke-dashoffset:0}}
+@keyframes c24{from{width:0}to{width:134.9px}}
+@keyframes c25{from{width:0}to{width:137.8px}}
+@keyframes c26{from{width:0}to{width:120.2px}}
+@keyframes c27{from{width:0}to{width:160.0px}}
+</style>
+<g class="scene">
+<clipPath id="c0-clip"><rect class="s-clip" x="23.9" y="14.1" width="0" height="40.7" style="--t0:0.00s;--t1:1.04s;animation-name:c0"/></clipPath>
+<text class="s-text t-ink" x="30.0" y="42.0" font-size="25" clip-path="url(#c0-clip)">the system message is built</text>
+<path class="s-line t-accent" d="M30.3 52.2C45.1 51.7 85.2 47.6 120.0 47.9C154.8 48.2 204.2 53.6 239.3 53.9C274.5 54.3 315.8 50.7 330.9 49.9M29.5 51.1C44.5 50.5 85.9 46.9 120.9 47.7C155.9 48.4 204.7 54.8 239.4 55.4C274.2 56.0 314.3 52.5 329.3 51.4" pathLength="1" style="--t0:1.12s;--t1:0.93s;animation-name:s1;stroke-width:2.6"/>
+<path class="s-line t-ink" d="M28.9 81.0C70.3 81.5 110.2 82.9 228.7 81.7M30.2 80.7C76.6 82.6 122.9 84.8 228.9 82.6M229.3 82.9C231.0 91.9 230.4 106.5 229.6 118.3M231.4 81.5C228.7 91.0 230.4 103.4 230.8 115.5M231.0 115.6C185.2 117.9 142.6 119.7 29.6 118.0M228.7 115.5C164.2 119.5 101.1 118.0 30.4 114.9M28.4 114.3C32.5 105.5 30.7 90.9 29.5 80.7M31.5 115.9C29.8 109.9 30.0 102.0 31.3 81.7" pathLength="1" style="--t0:2.33s;--t1:1.44s;animation-name:s2;stroke-width:2.2"/>
+<clipPath id="c3-clip"><rect class="s-clip" x="93.6" y="87.4" width="0" height="24.4" style="--t0:3.92s;--t1:0.38s;animation-name:c3"/></clipPath>
+<text class="s-text t-ink" x="96.5" y="104.1" font-size="15" clip-path="url(#c3-clip)">BasePrompt</text>
+<path class="s-fill t-accent" d="M30 126L230 126L230 160L30 160Z" style="--t0:3.92s;--t1:0.22s;animation-name:f4"/>
+<path class="s-line t-accent" d="M27.4 123.6C72.6 120.1 112.2 123.1 230.3 123.6M30.7 126.4C80.2 124.0 130.2 122.7 229.5 126.3M228.6 127.3C228.7 135.4 229.1 146.2 228.7 158.0M230.3 125.8C231.4 137.5 231.6 150.6 229.9 158.6M229.7 162.0C180.8 164.3 136.7 160.0 29.4 158.8M228.7 160.6C170.3 159.4 110.4 160.2 30.3 160.3M30.3 160.8C31.5 154.1 27.2 139.9 27.4 125.9M30.3 159.9C30.4 145.8 31.4 135.0 30.5 125.7" pathLength="1" style="--t0:3.92s;--t1:1.44s;animation-name:s5;stroke-width:2.2"/>
+<clipPath id="c6-clip"><rect class="s-clip" x="95.4" y="131.4" width="0" height="19.8" style="--t0:5.51s;--t1:0.35s;animation-name:c6"/></clipPath>
+<text class="s-text t-accent" x="98.8" y="148.1" font-size="15" clip-path="url(#c6-clip)">AGENTS.md</text>
+<path class="s-line t-muted" d="M31.3 171.7C69.4 171.2 108.7 170.3 232.0 170.8M31.2 169.4C86.4 169.8 140.2 167.7 230.0 169.9M227.9 171.6C227.7 184.8 229.2 192.0 227.8 203.7M229.2 170.1C229.8 177.3 228.6 187.2 229.0 204.6M228.4 203.0C181.7 205.3 130.9 205.6 29.2 204.9M228.8 203.1C173.6 199.3 119.8 199.7 30.3 203.0M32.2 201.4C30.6 189.8 29.6 181.3 31.3 171.1M29.1 203.9C29.7 191.6 28.4 178.6 29.6 169.7" pathLength="1" style="--t0:5.51s;--t1:1.43s;animation-name:s7;stroke-width:2.2"/>
+<clipPath id="c8-clip"><rect class="s-clip" x="97.1" y="175.4" width="0" height="19.9" style="--t0:7.09s;--t1:0.46s;animation-name:c8"/></clipPath>
+<text class="s-text t-muted" x="100.0" y="192.1" font-size="15" clip-path="url(#c8-clip)">skills later</text>
+<path class="s-line t-muted" d="M239.4 98.1C250.9 100.5 267.3 97.9 296.2 101.3M238.0 98.3C257.2 98.5 278.1 99.6 295.4 98.9" pathLength="1" style="--t0:7.09s;--t1:0.18s;animation-name:s9;stroke-width:2.2"/>
+<path class="s-line t-muted" d="M296.7 98.0C293.8 96.1 288.1 95.7 286.3 94.4M295.9 99.4C293.2 98.4 292.2 96.9 284.6 93.9" pathLength="1" style="--t0:7.36s;--t1:0.18s;animation-name:s10;stroke-width:2.2"/>
+<path class="s-line t-muted" d="M294.8 99.0C294.4 99.3 291.6 101.2 286.0 105.1M295.5 98.5C293.2 100.5 290.6 101.4 284.5 103.4" pathLength="1" style="--t0:7.63s;--t1:0.18s;animation-name:s11;stroke-width:2.2"/>
+<path class="s-line t-accent" d="M238.3 141.9C257.8 146.3 275.3 145.5 298.4 145.4M237.7 142.7C255.4 144.9 272.8 144.1 295.5 141.9" pathLength="1" style="--t0:7.98s;--t1:0.18s;animation-name:s12;stroke-width:2.2"/>
+<path class="s-line t-accent" d="M295.1 143.0C292.7 140.7 291.6 140.9 284.5 137.7M296.6 142.6C292.8 141.0 288.9 140.2 284.5 138.4" pathLength="1" style="--t0:8.25s;--t1:0.18s;animation-name:s13;stroke-width:2.2"/>
+<path class="s-line t-accent" d="M296.8 144.3C292.9 143.4 290.0 146.2 285.8 147.0M296.2 143.1C292.1 144.9 289.4 146.9 285.6 147.8" pathLength="1" style="--t0:8.52s;--t1:0.18s;animation-name:s14;stroke-width:2.2"/>
+<path class="s-line t-muted" d="M239.6 189.4C258.0 189.3 275.0 187.2 298.1 186.0M237.5 188.0C256.1 188.4 274.7 188.8 296.4 186.4" pathLength="1" style="--t0:8.87s;--t1:0.18s;animation-name:s15;stroke-width:2.2"/>
+<path class="s-line t-muted" d="M296.5 187.1C292.6 185.9 287.0 183.9 285.6 183.1M295.3 187.4C291.8 185.7 287.5 183.6 285.7 182.1" pathLength="1" style="--t0:9.14s;--t1:0.18s;animation-name:s16;stroke-width:2.2"/>
+<path class="s-line t-muted" d="M294.6 188.0C293.4 189.0 291.4 190.5 285.1 192.5M296.1 187.7C292.8 188.9 289.9 190.3 284.7 191.8" pathLength="1" style="--t0:9.41s;--t1:0.18s;animation-name:s17;stroke-width:2.2"/>
+<path class="s-fill t-good" d="M302 82L510 82L510 204L302 204Z" style="--t0:9.76s;--t1:0.22s;animation-name:f18"/>
+<path class="s-line t-good" d="M303.2 84.6C342.8 79.1 386.8 77.9 512.5 83.8M301.1 82.5C347.5 79.9 395.1 80.6 511.3 82.3M509.1 80.3C509.0 116.4 505.7 151.1 507.4 203.5M510.9 81.2C508.6 121.7 509.2 159.9 508.8 203.8M510.3 203.7C433.2 205.9 358.8 206.5 299.7 203.8M509.3 203.1C445.4 206.9 383.1 207.4 301.7 204.7M299.6 201.5C301.3 163.4 300.1 117.4 300.5 79.4M301.9 203.9C301.0 167.9 302.0 131.0 301.8 81.5" pathLength="1" style="--t0:9.76s;--t1:2.04s;animation-name:s19;stroke-width:2.2"/>
+<clipPath id="c20-clip"><rect class="s-clip" x="352.0" y="129.9" width="0" height="27.6" style="--t0:11.96s;--t1:0.54s;animation-name:c20"/></clipPath>
+<text class="s-text t-good" x="355.3" y="148.8" font-size="17" clip-path="url(#c20-clip)">system message</text>
+<path class="s-line t-good" d="M513.7 142.2C522.6 145.6 533.9 144.8 560.1 144.4M513.1 143.5C532.0 142.0 548.8 141.9 559.6 141.8" pathLength="1" style="--t0:12.06s;--t1:0.18s;animation-name:s21;stroke-width:2.2"/>
+<path class="s-line t-good" d="M560.3 141.5C557.6 142.9 556.5 140.6 549.3 138.2M560.6 143.6C556.4 142.2 552.8 139.5 548.6 138.4" pathLength="1" style="--t0:12.33s;--t1:0.18s;animation-name:s22;stroke-width:2.2"/>
+<path class="s-line t-good" d="M561.4 142.6C558.9 144.9 554.2 145.4 550.6 148.2M559.4 143.4C556.9 145.4 552.8 146.8 549.2 148.1" pathLength="1" style="--t0:12.60s;--t1:0.18s;animation-name:s23;stroke-width:2.2"/>
+<clipPath id="c24-clip"><rect class="s-clip" x="562.3" y="114.2" width="0" height="26.0" style="--t0:12.95s;--t1:0.85s;animation-name:c24"/></clipPath>
+<text class="s-text t-good" x="566.0" y="132.0" font-size="16" clip-path="url(#c24-clip)">first in every request</text>
+<clipPath id="c25-clip"><rect class="s-clip" x="562.4" y="138.1" width="0" height="22.5" style="--t0:13.87s;--t1:0.88s;animation-name:c25"/></clipPath>
+<text class="s-text t-good" x="566.0" y="156.0" font-size="16" clip-path="url(#c25-clip)">and rebuilt, not stored</text>
+<clipPath id="c26-clip"><rect class="s-clip" x="26.5" y="222.2" width="0" height="21.2" style="--t0:14.94s;--t1:0.73s;animation-name:c26"/></clipPath>
+<text class="s-text t-muted" x="30.0" y="240.0" font-size="16" clip-path="url(#c26-clip)">outermost file wins</text>
+<clipPath id="c27-clip"><rect class="s-clip" x="26.4" y="246.1" width="0" height="21.2" style="--t0:15.75s;--t1:1.00s;animation-name:c27"/></clipPath>
+<text class="s-text t-muted" x="30.0" y="264.0" font-size="16" clip-path="url(#c27-clip)">a Contributor adds a block</text>
+</g>
+</svg>

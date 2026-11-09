@@ -1,0 +1,47 @@
+<svg class="scratch" viewBox="0 0 720 320" role="img" aria-label="11 Skills: invoke" data-draw="14.88">
+<title>11 Skills: invoke</title>
+<desc>A skill invocation is text substitution, not a tool call: you type it, and the body is expanded before the request is sent. Stacked skills expand left to right, and an unknown command becomes text rather than a crash.</desc>
+<style>
+@keyframes c0{from{width:0}to{width:288.4px}}
+@keyframes s1{from{stroke-dashoffset:1}to{stroke-dashoffset:0}}
+@keyframes f2{from{opacity:0}to{opacity:1}}
+@keyframes s3{from{stroke-dashoffset:1}to{stroke-dashoffset:0}}
+@keyframes c4{from{width:0}to{width:92.5px}}
+@keyframes s5{from{stroke-dashoffset:1}to{stroke-dashoffset:0}}
+@keyframes s6{from{stroke-dashoffset:1}to{stroke-dashoffset:0}}
+@keyframes s7{from{stroke-dashoffset:1}to{stroke-dashoffset:0}}
+@keyframes s8{from{stroke-dashoffset:1}to{stroke-dashoffset:0}}
+@keyframes c9{from{width:0}to{width:177.4px}}
+@keyframes c10{from{width:0}to{width:185.3px}}
+@keyframes c11{from{width:0}to{width:145.8px}}
+@keyframes f12{from{opacity:0}to{opacity:1}}
+@keyframes s13{from{stroke-dashoffset:1}to{stroke-dashoffset:0}}
+@keyframes c14{from{width:0}to{width:108.1px}}
+@keyframes c15{from{width:0}to{width:147.3px}}
+</style>
+<g class="scene">
+<clipPath id="c0-clip"><rect class="s-clip" x="24.2" y="14.1" width="0" height="40.6" style="--t0:0.00s;--t1:1.15s;animation-name:c0"/></clipPath>
+<text class="s-text t-ink" x="30.0" y="42.0" font-size="25" clip-path="url(#c0-clip)">you invoke, the model does not</text>
+<path class="s-line t-accent" d="M28.9 51.6C45.4 51.1 89.4 47.2 128.1 47.9C166.8 48.6 222.5 55.5 261.0 55.7C299.5 56.0 342.8 50.4 359.3 49.4M30.1 52.6C46.3 51.7 88.9 46.9 127.3 47.2C165.7 47.4 221.9 53.3 260.5 53.9C299.0 54.6 342.2 51.5 358.6 51.2" pathLength="1" style="--t0:1.23s;--t1:1.02s;animation-name:s1;stroke-width:2.6"/>
+<path class="s-fill t-accent" d="M30 84L430 84L430 118L30 118Z" style="--t0:2.54s;--t1:0.22s;animation-name:f2"/>
+<path class="s-line t-accent" d="M29.9 85.1C111.9 88.4 193.4 87.1 428.5 84.0M29.8 83.4C153.2 86.9 276.0 87.6 429.2 84.7M429.9 86.8C432.6 91.0 428.7 104.6 428.5 116.3M429.6 84.0C431.1 92.8 429.5 104.8 430.0 117.7M429.3 118.9C326.6 113.9 224.3 115.2 31.6 117.8M429.4 117.8C317.5 118.5 206.5 117.7 29.8 118.1M27.9 115.2C30.8 107.1 31.7 89.6 29.4 84.2M30.0 116.6C30.3 107.6 29.0 98.0 28.9 83.7" pathLength="1" style="--t0:2.54s;--t1:2.65s;animation-name:s3;stroke-width:2.2"/>
+<clipPath id="c4-clip"><rect class="s-clip" x="184.5" y="89.0" width="0" height="24.8" style="--t0:5.34s;--t1:0.58s;animation-name:c4"/></clipPath>
+<text class="s-text t-accent" x="187.6" y="106.1" font-size="15" clip-path="url(#c4-clip)">/deploy staging</text>
+<path class="s-line t-accent" d="M224.2 126.3C222.8 133.6 221.4 143.4 223.1 165.7M224.7 127.7C224.2 142.1 224.5 155.2 223.8 164.7" pathLength="1" style="--t0:5.40s;--t1:0.18s;animation-name:s5;stroke-width:2.2"/>
+<path class="s-line t-accent" d="M224.9 164.2C226.4 159.4 226.8 156.0 228.1 154.2M224.5 163.9C225.9 159.6 228.2 156.4 228.7 153.6" pathLength="1" style="--t0:5.67s;--t1:0.18s;animation-name:s6;stroke-width:2.2"/>
+<path class="s-line t-accent" d="M223.3 164.3C224.5 163.1 221.2 158.3 218.5 152.7M224.0 163.3C222.0 159.2 219.2 155.7 219.3 152.9" pathLength="1" style="--t0:5.94s;--t1:0.18s;animation-name:s7;stroke-width:2.2"/>
+<path class="s-line t-ink" d="M28.9 170.2C113.4 168.4 194.6 168.0 429.5 168.6M30.1 170.5C161.3 166.4 294.0 166.6 429.5 170.5M429.2 167.2C431.7 192.7 428.8 213.0 427.6 240.0M428.6 170.3C429.4 194.8 429.3 220.7 429.1 238.8M428.5 239.0C322.9 237.4 212.0 234.9 31.5 241.1M429.4 240.5C327.9 235.9 225.6 236.7 29.8 239.2M29.8 239.7C28.0 224.1 26.3 203.6 27.2 171.3M28.8 238.6C28.8 221.6 28.3 203.1 31.0 169.7" pathLength="1" style="--t0:6.29s;--t1:2.89s;animation-name:s8;stroke-width:2.2"/>
+<clipPath id="c9-clip"><rect class="s-clip" x="142.1" y="193.4" width="0" height="24.4" style="--t0:9.33s;--t1:1.23s;animation-name:c9"/></clipPath>
+<text class="s-text t-ink" x="145.7" y="210.1" font-size="15" clip-path="url(#c9-clip)">the skill body, arguments filled</text>
+<clipPath id="c10-clip"><rect class="s-clip" x="26.1" y="250.2" width="0" height="26.0" style="--t0:9.43s;--t1:1.19s;animation-name:c10"/></clipPath>
+<text class="s-text t-ink" x="30.0" y="268.0" font-size="16" clip-path="url(#c10-clip)">two skills in one prompt stack:</text>
+<clipPath id="c11-clip"><rect class="s-clip" x="26.7" y="273.8" width="0" height="26.4" style="--t0:10.70s;--t1:0.96s;animation-name:c11"/></clipPath>
+<text class="s-text t-muted" x="30.0" y="292.0" font-size="16" clip-path="url(#c11-clip)">/a then /b, left to right</text>
+<path class="s-fill t-bad" d="M470 84L690 84L690 118L470 118Z" style="--t0:11.80s;--t1:0.22s;animation-name:f12"/>
+<path class="s-line t-bad" d="M472.0 83.9C513.9 85.6 560.5 86.2 691.4 85.9M471.3 84.9C537.2 83.5 603.4 83.1 691.0 84.8M689.6 84.2C693.0 91.1 692.4 100.6 692.3 119.5M689.1 83.7C689.8 95.3 689.9 104.7 690.9 118.0M688.2 119.4C605.1 114.2 517.1 115.1 470.6 115.5M689.7 117.3C631.4 118.0 574.9 118.9 469.0 117.3M467.2 120.4C471.8 108.1 467.3 96.3 468.3 82.9M471.4 116.5C469.9 103.8 469.5 91.3 470.3 83.6" pathLength="1" style="--t0:11.80s;--t1:1.57s;animation-name:s13;stroke-width:2.2"/>
+<clipPath id="c14-clip"><rect class="s-clip" x="526.7" y="89.4" width="0" height="19.9" style="--t0:13.52s;--t1:0.58s;animation-name:c14"/></clipPath>
+<text class="s-text t-bad" x="530.1" y="106.1" font-size="15" clip-path="url(#c14-clip)">unknown command</text>
+<clipPath id="c15-clip"><rect class="s-clip" x="466.9" y="123.3" width="0" height="21.1" style="--t0:13.52s;--t1:0.96s;animation-name:c15"/></clipPath>
+<text class="s-text t-bad" x="470.0" y="140.0" font-size="15" clip-path="url(#c15-clip)">becomes text, not a crash</text>
+</g>
+</svg>

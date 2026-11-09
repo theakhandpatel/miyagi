@@ -16,6 +16,9 @@ Both are short. The work is in the three limits every tool needs.
 
 ## The three limits
 
+```diagram mechanism
+```
+
 | Limit | Question | What happens without it |
 |---|---|---|
 | who wrote the arguments | the model, so they cannot be trusted | a path escapes your project |

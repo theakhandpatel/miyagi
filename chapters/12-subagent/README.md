@@ -21,6 +21,9 @@ A parent conversation has one budget and one purpose. "Find every TODO" produces
 twenty file reads of detail, and none of it is useful once the summary exists. Left in
 the parent, it costs context for the rest of the session.
 
+```diagram mechanism
+```
+
 A subagent spends context in a place that gets thrown away.
 
 ```mermaid

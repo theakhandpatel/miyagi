@@ -21,6 +21,9 @@ You edit `agent/cmd/agent/main.go`. You also create one new file, `agent/session
 There are two ways to save a conversation. Write down the current state, or write
 down every change that produced it.
 
+```diagram mechanism
+```
+
 | | Snapshot | Append-only log |
 |---|---|---|
 | crash mid-write | half a file, useless | last line lost, the rest is fine |

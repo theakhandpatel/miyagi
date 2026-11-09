@@ -23,6 +23,9 @@ You edit `agent/store.go` and `agent/cmd/agent/main.go`. You also create one new
 
 The provider reports usage once, on the final message of the stream:
 
+```diagram mechanism
+```
+
 ```json
 {"prompt_tokens": 18400, "completion_tokens": 2100, "total_tokens": 20500}
 ```

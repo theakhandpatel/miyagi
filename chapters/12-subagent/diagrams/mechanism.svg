@@ -1,0 +1,67 @@
+<svg class="scratch" viewBox="0 0 720 300" role="img" aria-label="12 Subagent" data-draw="15.89">
+<title>12 Subagent</title>
+<desc>The child starts from a system message and the task, not the parent’s history, so it spends context that gets thrown away. It cannot recurse because the task tool is absent from its registry.</desc>
+<style>
+@keyframes c0{from{width:0}to{width:215.3px}}
+@keyframes s1{from{stroke-dashoffset:1}to{stroke-dashoffset:0}}
+@keyframes s2{from{stroke-dashoffset:1}to{stroke-dashoffset:0}}
+@keyframes c3{from{width:0}to{width:50.5px}}
+@keyframes c4{from{width:0}to{width:76.8px}}
+@keyframes c5{from{width:0}to{width:85.4px}}
+@keyframes s6{from{stroke-dashoffset:1}to{stroke-dashoffset:0}}
+@keyframes s7{from{stroke-dashoffset:1}to{stroke-dashoffset:0}}
+@keyframes s8{from{stroke-dashoffset:1}to{stroke-dashoffset:0}}
+@keyframes c9{from{width:0}to{width:136.5px}}
+@keyframes f10{from{opacity:0}to{opacity:1}}
+@keyframes s11{from{stroke-dashoffset:1}to{stroke-dashoffset:0}}
+@keyframes c12{from{width:0}to{width:38.1px}}
+@keyframes c13{from{width:0}to{width:91.9px}}
+@keyframes c14{from{width:0}to{width:128.1px}}
+@keyframes s15{from{stroke-dashoffset:1}to{stroke-dashoffset:0}}
+@keyframes c16{from{width:0}to{width:31.5px}}
+@keyframes s17{from{stroke-dashoffset:1}to{stroke-dashoffset:0}}
+@keyframes c18{from{width:0}to{width:35.5px}}
+@keyframes s19{from{stroke-dashoffset:1}to{stroke-dashoffset:0}}
+@keyframes c20{from{width:0}to{width:32.2px}}
+@keyframes c21{from{width:0}to{width:74.5px}}
+@keyframes c22{from{width:0}to{width:119.8px}}
+</style>
+<g class="scene">
+<clipPath id="c0-clip"><rect class="s-clip" x="23.9" y="14.1" width="0" height="40.7" style="--t0:0.00s;--t1:0.85s;animation-name:c0"/></clipPath>
+<text class="s-text t-ink" x="30.0" y="42.0" font-size="25" clip-path="url(#c0-clip)">the child starts empty</text>
+<path class="s-line t-accent" d="M30.6 50.9C44.2 50.5 78.5 48.5 110.4 49.1C142.2 49.6 189.6 53.8 221.7 54.2C253.8 54.6 289.4 51.9 302.9 51.2M29.2 51.2C42.7 50.5 80.1 48.8 111.9 49.1C143.8 49.4 188.5 52.8 220.3 53.1C252.1 53.4 288.9 51.5 302.7 50.8" pathLength="1" style="--t0:0.93s;--t1:0.84s;animation-name:s1;stroke-width:2.6"/>
+<path class="s-line t-ink" d="M32.1 86.2C71.0 87.4 111.2 83.5 228.5 82.9M31.3 83.7C78.4 81.3 127.1 81.0 231.3 84.2M232.4 82.4C229.3 95.1 227.1 103.7 227.1 123.9M229.3 84.1C231.1 99.2 230.0 112.7 231.0 122.6M230.6 123.5C187.6 124.6 138.2 123.5 32.1 123.1M231.3 123.2C176.4 123.3 121.5 123.2 29.6 124.3M27.8 126.9C27.6 114.3 32.6 103.6 28.1 83.2M29.6 125.3C29.8 113.6 29.4 102.1 29.0 84.9" pathLength="1" style="--t0:2.06s;--t1:1.48s;animation-name:s2;stroke-width:2.2"/>
+<clipPath id="c3-clip"><rect class="s-clip" x="105.6" y="90.9" width="0" height="27.6" style="--t0:3.69s;--t1:0.30s;animation-name:c3"/></clipPath>
+<text class="s-text t-ink" x="109.2" y="109.8" font-size="17" clip-path="url(#c3-clip)">parent</text>
+<clipPath id="c4-clip"><rect class="s-clip" x="26.7" y="129.3" width="0" height="19.9" style="--t0:3.69s;--t1:0.50s;animation-name:c4"/></clipPath>
+<text class="s-text t-muted" x="30.0" y="146.0" font-size="15" clip-path="url(#c4-clip)">20 file reads</text>
+<clipPath id="c5-clip"><rect class="s-clip" x="26.6" y="151.3" width="0" height="19.9" style="--t0:4.27s;--t1:0.62s;animation-name:c5"/></clipPath>
+<text class="s-text t-muted" x="30.0" y="168.0" font-size="15" clip-path="url(#c5-clip)">all in the child</text>
+<path class="s-line t-ink" d="M238.7 102.5C254.0 100.1 270.0 100.6 293.5 104.0M236.9 103.7C256.9 105.9 277.0 104.5 292.1 103.5" pathLength="1" style="--t0:5.02s;--t1:0.18s;animation-name:s6;stroke-width:2.2"/>
+<path class="s-line t-ink" d="M291.0 104.3C290.6 103.2 287.4 101.2 282.3 97.7M291.7 104.4C288.0 102.8 284.9 101.4 280.7 98.4" pathLength="1" style="--t0:5.29s;--t1:0.18s;animation-name:s7;stroke-width:2.2"/>
+<path class="s-line t-ink" d="M292.5 103.8C288.0 105.1 285.8 109.1 279.8 109.7M291.7 103.7C288.2 105.3 284.0 107.5 280.9 109.4" pathLength="1" style="--t0:5.56s;--t1:0.18s;animation-name:s8;stroke-width:2.2"/>
+<clipPath id="c9-clip"><rect class="s-clip" x="296.5" y="78.1" width="0" height="21.2" style="--t0:5.91s;--t1:0.81s;animation-name:c9"/></clipPath>
+<text class="s-text t-good" x="300.0" y="96.0" font-size="16" clip-path="url(#c9-clip)">one result comes back</text>
+<path class="s-fill t-good" d="M300 120L500 120L500 180L300 180Z" style="--t0:6.80s;--t1:0.22s;animation-name:f10"/>
+<path class="s-line t-good" d="M299.0 120.4C339.9 121.2 382.5 119.9 502.4 121.0M300.2 118.9C348.2 121.6 393.7 122.6 501.0 119.9M502.1 121.8C499.9 140.6 501.0 166.3 500.8 177.1M498.8 119.8C499.7 141.9 500.4 163.1 499.0 178.8M499.9 179.6C428.4 180.6 355.7 178.4 300.2 182.3M499.3 178.8C450.1 178.5 398.4 177.9 298.8 179.5M297.1 182.1C300.3 166.6 299.9 151.0 297.1 118.0M301.1 181.3C301.2 158.2 301.7 136.2 300.4 120.8" pathLength="1" style="--t0:6.80s;--t1:1.61s;animation-name:s11;stroke-width:2.2"/>
+<clipPath id="c12-clip"><rect class="s-clip" x="381.8" y="136.8" width="0" height="22.5" style="--t0:8.55s;--t1:0.30s;animation-name:c12"/></clipPath>
+<text class="s-text t-good" x="385.6" y="155.8" font-size="17" clip-path="url(#c12-clip)">child</text>
+<clipPath id="c13-clip"><rect class="s-clip" x="297.2" y="182.6" width="0" height="25.0" style="--t0:8.55s;--t1:0.62s;animation-name:c13"/></clipPath>
+<text class="s-text t-good" x="300.0" y="200.0" font-size="15" clip-path="url(#c13-clip)">[ system, task ]</text>
+<clipPath id="c14-clip"><rect class="s-clip" x="297.2" y="205.3" width="0" height="24.4" style="--t0:9.25s;--t1:0.85s;animation-name:c14"/></clipPath>
+<text class="s-text t-muted" x="300.0" y="222.0" font-size="15" clip-path="url(#c14-clip)">not the parent history</text>
+<path class="s-line t-ink" d="M539.8 86.9C570.7 84.9 599.6 82.1 692.7 85.0M539.4 83.7C576.1 84.5 615.4 86.0 691.4 83.2M691.2 83.5C687.8 94.4 687.3 108.3 687.7 120.1M690.3 83.8C689.8 91.7 690.9 101.0 689.1 119.1M687.6 120.4C640.6 115.5 593.9 116.8 537.7 120.6M690.0 117.5C657.7 121.2 626.0 119.4 540.8 118.1M538.3 115.9C539.9 109.6 537.6 99.5 540.0 81.9M541.4 119.2C541.1 103.4 540.2 91.8 541.1 84.6" pathLength="1" style="--t0:10.28s;--t1:1.15s;animation-name:s15;stroke-width:2.2"/>
+<clipPath id="c16-clip"><rect class="s-clip" x="600.0" y="89.4" width="0" height="19.9" style="--t0:11.57s;--t1:0.30s;animation-name:c16"/></clipPath>
+<text class="s-text t-ink" x="603.1" y="106.1" font-size="15" clip-path="url(#c16-clip)">read</text>
+<path class="s-line t-ink" d="M538.1 129.4C573.2 130.0 601.8 128.8 688.5 126.6M540.0 126.6C581.5 129.9 620.4 130.5 689.0 126.8M690.5 127.9C692.8 137.8 687.3 154.1 692.8 159.8M689.2 128.1C689.5 138.3 689.1 148.2 691.2 162.1M692.2 161.1C636.8 162.1 589.7 162.7 537.5 160.9M690.1 162.8C632.7 161.5 573.0 162.3 540.7 160.6M540.2 162.5C539.0 151.4 540.1 134.9 537.9 127.1M540.2 163.2C541.7 149.1 541.6 138.4 540.2 128.6" pathLength="1" style="--t0:11.57s;--t1:1.14s;animation-name:s17;stroke-width:2.2"/>
+<clipPath id="c18-clip"><rect class="s-clip" x="598.0" y="133.4" width="0" height="19.8" style="--t0:12.86s;--t1:0.30s;animation-name:c18"/></clipPath>
+<text class="s-text t-ink" x="601.4" y="150.1" font-size="15" clip-path="url(#c18-clip)">write</text>
+<path class="s-line t-ink" d="M542.4 171.8C569.7 169.2 603.9 169.7 690.3 174.2M540.5 172.5C583.8 169.4 628.5 169.2 689.7 173.4M689.8 172.3C691.8 187.2 693.4 199.8 691.9 205.5M691.1 172.4C690.9 184.8 689.1 198.4 690.3 205.2M690.8 207.8C639.0 202.8 585.4 208.5 537.2 207.3M690.2 205.0C634.7 207.6 579.9 208.0 540.6 206.2M542.1 203.1C538.1 193.9 542.5 189.8 541.8 172.3M539.0 207.2C538.0 194.9 538.6 185.0 539.4 172.6" pathLength="1" style="--t0:12.86s;--t1:1.13s;animation-name:s19;stroke-width:2.2"/>
+<clipPath id="c20-clip"><rect class="s-clip" x="599.7" y="177.4" width="0" height="19.9" style="--t0:14.14s;--t1:0.30s;animation-name:c20"/></clipPath>
+<text class="s-text t-ink" x="602.8" y="194.1" font-size="15" clip-path="url(#c20-clip)">bash</text>
+<clipPath id="c21-clip"><rect class="s-clip" x="537.2" y="209.3" width="0" height="19.9" style="--t0:14.14s;--t1:0.50s;animation-name:c21"/></clipPath>
+<text class="s-text t-bad" x="540.0" y="226.0" font-size="15" clip-path="url(#c21-clip)">no task tool:</text>
+<clipPath id="c22-clip"><rect class="s-clip" x="536.9" y="231.3" width="0" height="24.4" style="--t0:14.72s;--t1:0.77s;animation-name:c22"/></clipPath>
+<text class="s-text t-bad" x="540.0" y="248.0" font-size="15" clip-path="url(#c22-clip)">recursion impossible</text>
+</g>
+</svg>

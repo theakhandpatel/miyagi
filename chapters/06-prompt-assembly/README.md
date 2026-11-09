@@ -20,6 +20,9 @@ You edit `agent/cmd/agent/main.go`. You also create one new file, `agent/prompt.
 
 Every request is a list of messages, and the first one is special:
 
+```diagram mechanism
+```
+
 ```json
 [
   { "role": "system",    "content": "You are a coding agent..." },

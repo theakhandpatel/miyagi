@@ -8,11 +8,11 @@ import (
 	"strings"
 	"testing"
 
-	"agent/internal/blackbox"
-	support "agent/internal/checksupport"
-	"agent/internal/fake"
-	"agent/internal/grader"
-	"agent/internal/hints"
+	"github.com/theakhandpatel/miyagi/internal/blackbox"
+	support "github.com/theakhandpatel/miyagi/internal/checksupport"
+	"github.com/theakhandpatel/miyagi/internal/fake"
+	"github.com/theakhandpatel/miyagi/internal/grader"
+	"github.com/theakhandpatel/miyagi/internal/hints"
 )
 
 // Chapter 19 -- session storage.

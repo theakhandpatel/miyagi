@@ -1,0 +1,52 @@
+<svg class="scratch" viewBox="0 0 720 320" role="img" aria-label="04 Tools that touch disk" data-draw="14.75">
+<title>04 Tools that touch disk</title>
+<desc>Every tool that touches the world needs three limits: a path that cannot escape the project, output that cannot fill the window, and a deadline that cannot wedge the program.</desc>
+<style>
+@keyframes c0{from{width:0}to{width:253.9px}}
+@keyframes s1{from{stroke-dashoffset:1}to{stroke-dashoffset:0}}
+@keyframes c2{from{width:0}to{width:162.5px}}
+@keyframes f3{from{opacity:0}to{opacity:1}}
+@keyframes s4{from{stroke-dashoffset:1}to{stroke-dashoffset:0}}
+@keyframes c5{from{width:0}to{width:109.0px}}
+@keyframes c6{from{width:0}to{width:210.1px}}
+@keyframes c7{from{width:0}to{width:140.5px}}
+@keyframes f8{from{opacity:0}to{opacity:1}}
+@keyframes s9{from{stroke-dashoffset:1}to{stroke-dashoffset:0}}
+@keyframes c10{from{width:0}to{width:79.9px}}
+@keyframes c11{from{width:0}to{width:192.9px}}
+@keyframes c12{from{width:0}to{width:128.9px}}
+@keyframes f13{from{opacity:0}to{opacity:1}}
+@keyframes s14{from{stroke-dashoffset:1}to{stroke-dashoffset:0}}
+@keyframes c15{from{width:0}to{width:61.3px}}
+@keyframes c16{from{width:0}to{width:209.1px}}
+</style>
+<g class="scene">
+<clipPath id="c0-clip"><rect class="s-clip" x="24.3" y="14.1" width="0" height="40.6" style="--t0:0.00s;--t1:1.04s;animation-name:c0"/></clipPath>
+<text class="s-text t-ink" x="30.0" y="42.0" font-size="25" clip-path="url(#c0-clip)">every tool has three limits</text>
+<path class="s-line t-accent" d="M29.5 52.4C44.1 51.6 82.9 47.2 116.9 47.6C151.0 48.0 199.7 54.3 233.8 54.7C268.0 55.1 307.4 50.9 321.9 50.1M30.8 51.5C45.3 51.0 82.4 47.7 116.1 48.3C149.8 49.0 198.7 55.4 233.0 55.5C267.3 55.6 307.2 49.7 321.9 48.8" pathLength="1" style="--t0:1.12s;--t1:0.90s;animation-name:s1;stroke-width:2.6"/>
+<clipPath id="c2-clip"><rect class="s-clip" x="26.2" y="73.0" width="0" height="27.7" style="--t0:2.31s;--t1:0.88s;animation-name:c2"/></clipPath>
+<text class="s-text t-ink" x="30.0" y="92.0" font-size="17" clip-path="url(#c2-clip)">who wrote the arguments</text>
+<path class="s-fill t-good" d="M30 104L250 104L250 138L30 138Z" style="--t0:3.27s;--t1:0.22s;animation-name:f3"/>
+<path class="s-line t-good" d="M29.7 102.1C74.1 104.7 118.0 104.4 252.3 105.7M29.9 104.1C110.0 107.7 190.2 107.1 249.1 103.8M250.3 101.7C251.6 113.4 253.5 115.9 252.4 137.1M249.1 103.2C248.7 110.3 249.4 120.8 248.7 136.9M247.6 135.9C188.9 138.8 125.9 141.4 30.5 135.6M249.6 138.5C176.0 137.3 98.9 138.8 30.7 139.0M28.6 136.7C33.0 129.5 28.9 124.0 32.0 104.5M29.1 138.4C30.9 128.5 29.3 121.0 31.1 104.3" pathLength="1" style="--t0:3.27s;--t1:1.56s;animation-name:s4;stroke-width:2.2"/>
+<clipPath id="c5-clip"><rect class="s-clip" x="86.2" y="109.4" width="0" height="19.8" style="--t0:4.98s;--t1:0.73s;animation-name:c5"/></clipPath>
+<text class="s-text t-good" x="89.3" y="126.1" font-size="15" clip-path="url(#c5-clip)">resolve inside root</text>
+<clipPath id="c6-clip"><rect class="s-clip" x="264.6" y="109.3" width="0" height="24.4" style="--t0:4.98s;--t1:1.42s;animation-name:c6"/></clipPath>
+<text class="s-text t-muted" x="268.0" y="126.0" font-size="15" clip-path="url(#c6-clip)">a model cannot be trusted with a path</text>
+<clipPath id="c7-clip"><rect class="s-clip" x="26.4" y="149.0" width="0" height="22.6" style="--t0:6.57s;--t1:0.73s;animation-name:c7"/></clipPath>
+<text class="s-text t-ink" x="30.0" y="168.0" font-size="17" clip-path="url(#c7-clip)">how much comes back</text>
+<path class="s-fill t-good" d="M30 180L250 180L250 214L30 214Z" style="--t0:7.38s;--t1:0.22s;animation-name:f8"/>
+<path class="s-line t-good" d="M28.2 181.9C76.3 180.3 119.9 176.3 248.7 179.6M30.3 179.2C113.9 178.1 198.4 176.8 249.6 179.5M249.6 178.1C249.2 188.9 252.2 193.6 251.5 214.8M251.0 179.5C250.1 188.9 249.3 200.0 250.8 214.9M251.6 214.3C184.2 217.1 119.4 219.0 30.3 213.7M249.7 213.0C179.9 209.1 111.8 210.2 30.6 213.8M30.5 215.3C30.7 203.3 30.1 191.3 29.9 181.7M30.9 214.4C28.5 206.2 30.7 196.6 30.3 180.3" pathLength="1" style="--t0:7.38s;--t1:1.57s;animation-name:s9;stroke-width:2.2"/>
+<clipPath id="c10-clip"><rect class="s-clip" x="100.8" y="185.4" width="0" height="24.4" style="--t0:9.10s;--t1:0.46s;animation-name:c10"/></clipPath>
+<text class="s-text t-good" x="104.2" y="202.1" font-size="15" clip-path="url(#c10-clip)">cap and mark</text>
+<clipPath id="c11-clip"><rect class="s-clip" x="264.6" y="185.3" width="0" height="19.9" style="--t0:9.10s;--t1:1.31s;animation-name:c11"/></clipPath>
+<text class="s-text t-muted" x="268.0" y="202.0" font-size="15" clip-path="url(#c11-clip)">an unbounded read fills the window</text>
+<clipPath id="c12-clip"><rect class="s-clip" x="26.4" y="225.0" width="0" height="27.7" style="--t0:10.56s;--t1:0.73s;animation-name:c12"/></clipPath>
+<text class="s-text t-ink" x="30.0" y="244.0" font-size="17" clip-path="url(#c12-clip)">how long it may run</text>
+<path class="s-fill t-good" d="M30 256L250 256L250 290L30 290Z" style="--t0:11.37s;--t1:0.22s;animation-name:f13"/>
+<path class="s-line t-good" d="M31.9 256.6C73.3 258.2 116.5 255.6 250.2 253.5M30.8 256.8C73.9 256.0 121.2 256.5 250.1 255.2M248.9 254.5C248.2 264.3 252.3 271.4 250.6 292.5M249.9 255.8C249.9 267.4 250.6 279.2 250.0 289.9M250.4 292.6C179.5 290.2 112.9 291.4 30.1 291.8M249.7 290.1C186.4 290.9 122.2 291.7 30.5 291.1M32.4 287.9C29.8 277.0 32.6 264.7 27.7 258.9M29.8 290.4C29.1 277.2 29.0 261.6 29.4 256.3" pathLength="1" style="--t0:11.37s;--t1:1.56s;animation-name:s14;stroke-width:2.2"/>
+<clipPath id="c15-clip"><rect class="s-clip" x="110.1" y="261.4" width="0" height="19.9" style="--t0:13.08s;--t1:0.38s;animation-name:c15"/></clipPath>
+<text class="s-text t-good" x="113.5" y="278.1" font-size="15" clip-path="url(#c15-clip)">a deadline</text>
+<clipPath id="c16-clip"><rect class="s-clip" x="264.6" y="261.3" width="0" height="24.4" style="--t0:13.08s;--t1:1.27s;animation-name:c16"/></clipPath>
+<text class="s-text t-muted" x="268.0" y="278.0" font-size="15" clip-path="url(#c16-clip)">a hung command wedges the program</text>
+</g>
+</svg>
