@@ -136,7 +136,21 @@ const MEASURE = `(() => {
       await send('Runtime.evaluate', {
         expression: `(() => { const w = document.querySelector('.scene3d-wrap'); if (w) w.scrollIntoView({block:'center'}); })()`,
       }, sessionId);
-      await sleep(2600);
+      // Wait for the scene's own duration instead of a fixed guess. A scene whose last
+      // reveal lands after the wait would otherwise be measured mid-animation and reported
+      // as a failure that is really a stopwatch error.
+      let settle = 2600;
+      for (let k = 0; k < 40; k++) {
+        const q = await send('Runtime.evaluate', {
+          expression: `(() => { const s = window.__miyagiScene; if (!s) return -1;
+            return s.moves.reduce((m, x) => Math.max(m, x.d + x.u), 0); })()`,
+          returnByValue: true,
+        }, sessionId);
+        const dur = q.result.value;
+        if (typeof dur === 'number' && dur >= 0) { settle = dur * 1000 + 1400; break; }
+        await sleep(200);
+      }
+      await sleep(settle);
 
       const r = await send('Runtime.evaluate', {
         expression: MEASURE, returnByValue: true, awaitPromise: true,
@@ -154,6 +168,14 @@ const MEASURE = `(() => {
     ws.close();
   } finally {
     chrome.kill();
+  }
+
+  // The stable build has no canvas by design, so sweeping it is a misuse rather than a
+  // failure. Say so plainly instead of reporting 21 broken scenes.
+  if (rows.length && rows.every((r) => String(r[2]) === '' && String(r[1]).startsWith('no canvas'))) {
+    console.log('No 3D canvases found. This script measures the experimental build;');
+    console.log('pass the prefix, for example: node scripts/sweep-scenes.js <base> "" /v2');
+    process.exit(0);
   }
 
   const pad = (s, n) => String(s).padEnd(n);
