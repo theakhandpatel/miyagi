@@ -10,7 +10,7 @@ import (
 // is invisible in a browser and only shows up weeks later as no traffic.
 
 func TestBuildConfigHasSearchMetadata(t *testing.T) {
-	cfg := buildConfig("Miyagi", ".")
+	cfg := buildConfig("Miyagi", ".", false)
 
 	required := []struct{ what, want string }{
 		{"sitemap", "sitemap:"},

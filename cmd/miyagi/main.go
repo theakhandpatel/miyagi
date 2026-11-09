@@ -82,6 +82,7 @@ func usage() {
   miyagi reset [NN]            restore agent/ to the start of a chapter
   miyagi read where-next       what to build after the course
   miyagi site                  render the course as a static website (site/dist)
+  miyagi site --v2             experimental build: 3D figures, served under /v2
   miyagi ui                    terminal interface: pick a chapter, grade it
   miyagi watch [NN]            re-grade on every save
   miyagi doctor                check the environment

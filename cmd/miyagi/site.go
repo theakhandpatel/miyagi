@@ -29,6 +29,7 @@ func cmdSite(args []string) error {
 	out := filepath.Join(root, "site", "dist")
 	title := "Miyagi"
 	skipInstall := false
+	v2 := false
 	for i := 0; i < len(args); i++ {
 		switch args[i] {
 		case "--out", "-o":
@@ -43,7 +44,16 @@ func cmdSite(args []string) error {
 			}
 		case "--no-install":
 			skipInstall = true
+		case "--v2":
+			// The experimental build: three dimensional figures and a denser visual
+			// language. It writes to site/dist-v2 by default so building one never
+			// replaces the other, and it sets the /v2 base so the output can also be
+			// nested inside the stable site at site/dist/v2.
+			v2 = true
 		}
+	}
+	if v2 && out == filepath.Join(root, "site", "dist") {
+		out = filepath.Join(root, "site", "dist-v2")
 	}
 	if !filepath.IsAbs(out) {
 		out = filepath.Join(root, out)
@@ -59,15 +69,22 @@ func cmdSite(args []string) error {
 		return err
 	}
 
-	pages, err := prepareContent(root, srcDir)
+	pages, err := prepareContent(root, srcDir, v2)
 	if err != nil {
 		return err
+	}
+	if v2 {
+		n, err := writeScenes(srcDir)
+		if err != nil {
+			return err
+		}
+		fmt.Printf("\n  %d scenes\n", n)
 	}
 	if pages == 0 {
 		return fmt.Errorf("nothing to render")
 	}
 
-	if err := writeProject(srcDir, title, root); err != nil {
+	if err := writeProject(srcDir, title, root, v2); err != nil {
 		return err
 	}
 
@@ -99,7 +116,7 @@ func cmdSite(args []string) error {
 // Paths are preserved, so every relative link written for `miyagi read` and GitHub also
 // resolves here. Only `README.md` is renamed, because VitePress wants `index.md` for a
 // directory's landing page.
-func prepareContent(root, srcDir string) (int, error) {
+func prepareContent(root, srcDir string, v2 bool) (int, error) {
 	pages := 0
 
 	copyPage := func(source, target string) error {
@@ -111,7 +128,7 @@ func prepareContent(root, srcDir string) (int, error) {
 		// from: a chapter's fence names a file beside that chapter, and the generated
 		// site keeps the same layout, so resolving at copy time is what lets the two
 		// renderers agree without the page needing to know where it will be served.
-		page, err := expandDiagrams(string(body), filepath.Join(root, filepath.Dir(source)))
+		page, err := expandDiagrams(string(body), filepath.Join(root, filepath.Dir(source)), v2)
 		if err != nil {
 			return err
 		}
@@ -213,7 +230,7 @@ func copyAssets(root, srcDir string) error {
 	return os.WriteFile(filepath.Join(srcDir, "public", "robots.txt"), []byte(robots), 0o644)
 }
 
-func writeProject(srcDir, title, root string) error {
+func writeProject(srcDir, title, root string, v2 bool) error {
 	pkg := `{
   "name": "miyagi-site",
   "private": true,
@@ -229,7 +246,7 @@ func writeProject(srcDir, title, root string) error {
 		return err
 	}
 
-	config := buildConfig(title, root)
+	config := buildConfig(title, root, v2)
 	dir := filepath.Join(srcDir, ".vitepress")
 	if err := os.MkdirAll(dir, 0o755); err != nil {
 		return err
@@ -244,10 +261,30 @@ func writeProject(srcDir, title, root string) error {
 	if err := os.MkdirAll(themeDir, 0o755); err != nil {
 		return err
 	}
-	if err := os.WriteFile(filepath.Join(themeDir, "index.ts"), []byte(themeEntry), 0o644); err != nil {
+	entry := themeEntry
+	if v2 {
+		entry = themeEntryV2
+	}
+	if err := os.WriteFile(filepath.Join(themeDir, "index.ts"), []byte(entry), 0o644); err != nil {
 		return err
 	}
-	return os.WriteFile(filepath.Join(themeDir, "custom.css"), []byte(themeCSS), 0o644)
+	if err := os.WriteFile(filepath.Join(themeDir, "custom.css"), []byte(themeCSS), 0o644); err != nil {
+		return err
+	}
+	if !v2 {
+		return nil
+	}
+
+	// The experimental build adds one stylesheet and one script. Both live in the theme
+	// directory so VitePress bundles them and nothing is fetched from a CDN.
+	if err := os.WriteFile(filepath.Join(themeDir, "v2.css"), []byte(v2CSS), 0o644); err != nil {
+		return err
+	}
+	js, err := sitePages.ReadFile("pages/scene3d.js")
+	if err != nil {
+		return err
+	}
+	return os.WriteFile(filepath.Join(themeDir, "scene3d.js"), js, 0o644)
 }
 
 // themeEntry pulls in the default theme and then our stylesheet, which is the whole
@@ -501,7 +538,13 @@ figure.diagram figcaption {
 // The sidebar is the only part of the site that knows about the course, and it is
 // derived from the chapter directories, so adding a chapter never means editing a
 // config by hand.
-func buildConfig(title, root string) string {
+func buildConfig(title, root string, v2 bool) string {
+	base := "/"
+	if v2 {
+		// The experimental site is served under /v2, so VitePress must prefix every
+		// asset and internal link with that base or the whole build 404s.
+		base = "/v2/"
+	}
 	var b strings.Builder
 
 	b.WriteString("import { defineConfig } from 'vitepress'\n")
@@ -510,6 +553,7 @@ func buildConfig(title, root string) string {
 	fmt.Fprintf(&b, "  title: %s,\n", strconv.Quote(title))
 	b.WriteString("  description: 'Build a coding-agent harness in Go, graded offline by a local verifier.',\n")
 	b.WriteString("  lang: 'en',\n")
+	fmt.Fprintf(&b, "  base: %s,\n", strconv.Quote(base))
 	// The logo and favicon are copied into the site source from docs/assets, so the
 	// repository and the published site use one source of art.
 	//
@@ -543,6 +587,9 @@ func buildConfig(title, root string) string {
 	b.WriteString("      { text: 'Home', link: '/' },\n")
 	if first := firstChapterLink(root); first != "" {
 		fmt.Fprintf(&b, "      { text: 'Chapters', link: %s },\n", strconv.Quote(first))
+	}
+	if v2 {
+		b.WriteString("      { text: 'v2 experimental', link: '/v2' },\n")
 	}
 	b.WriteString("      { text: 'Install', link: '/install' },\n")
 	b.WriteString("      { text: 'How it works', link: '/how-it-works' },\n")
@@ -748,7 +795,7 @@ func trimToSentence(s string) string {
 // The site's own pages, embedded so the binary can generate a site with no repository
 // pages beside it. Only the build machine needs the source; `miyagi` carries it.
 //
-//go:embed pages/*.md
+//go:embed pages/*.md pages/*.js
 var sitePages embed.FS
 
 // writeSitePages copies the embedded pages into the generated project.
@@ -757,18 +804,210 @@ var sitePages embed.FS
 // looking at the repository, while the site's front page is for someone who is not, so it
 // leads with what the thing does and the one command that starts it.
 func writeSitePages(srcDir string) error {
-	entries, err := sitePages.ReadDir("pages")
+	// Only the .md pages become site pages. scene3d.js is embedded too, but it is copied
+	// into the theme directory by writeProject rather than published as a page.
+	entries, err := fs.Glob(sitePages, "pages/*.md")
 	if err != nil {
 		return err
 	}
-	for _, e := range entries {
-		body, err := sitePages.ReadFile(filepath.Join("pages", e.Name()))
+	for _, name := range entries {
+		body, err := sitePages.ReadFile(name)
 		if err != nil {
 			return err
 		}
-		if err := os.WriteFile(filepath.Join(srcDir, e.Name()), body, 0o644); err != nil {
+		if err := os.WriteFile(filepath.Join(srcDir, filepath.Base(name)), body, 0o644); err != nil {
 			return err
 		}
 	}
 	return nil
 }
+
+// themeEntryV2 is the experimental theme entry.
+//
+// It adds the scene stylesheet and the renderer on top of the default theme, and keeps
+// everything the shipped theme already does. The renderer is loaded as a module so it is
+// bundled and tree-shaken with the rest of the site rather than fetched at runtime.
+const themeEntryV2 = `import DefaultTheme from 'vitepress/theme'
+import './custom.css'
+import './v2.css'
+import './scene3d.js'
+
+export default {
+  extends: DefaultTheme,
+  setup() {
+    if (typeof window === 'undefined') return
+
+    const play = (fig) => {
+      const svg = fig.querySelector('svg.scratch')
+      if (!svg || svg.dataset.played === '1') return
+      svg.dataset.played = '1'
+      svg.classList.remove('play')
+      void svg.getBoundingClientRect()
+      svg.classList.add('play')
+    }
+
+    // In the experimental build the flat figure is the fallback, not the subject, so it is
+    // only revealed when the renderer could not take over.
+    const sync = () => {
+      const state = document.documentElement.getAttribute('data-scene3d')
+      document.querySelectorAll('figure.diagram').forEach((fig) => {
+        if (state === 'unsupported' || state === 'failed') fig.classList.remove('is-fallback')
+        else fig.classList.add('is-fallback')
+      })
+    }
+
+    const start = () => {
+      const figs = [...document.querySelectorAll('figure.diagram')]
+      if (!figs.length) return
+      sync()
+      if (!('IntersectionObserver' in window)) {
+        figs.forEach(play)
+        return
+      }
+      const io = new IntersectionObserver((entries) => {
+        for (const e of entries) if (e.isIntersecting) play(e.target)
+      }, { threshold: 0.4 })
+      figs.forEach((f) => io.observe(f))
+      // The renderer sets the attribute asynchronously, so watch for it.
+      new MutationObserver(sync).observe(document.documentElement, {
+        attributes: true, attributeFilter: ['data-scene3d'],
+      })
+    }
+
+    if (document.readyState === 'loading') {
+      document.addEventListener('DOMContentLoaded', start)
+    } else {
+      start()
+    }
+  },
+}
+`
+
+// v2CSS is the experimental visual language.
+//
+// The shipped site is deliberately quiet. This build is brighter and denser, which is a
+// different bet: that a reader learns a mechanism faster from a thing they can turn over
+// than from a figure they can only look at. It is behind a flag because that bet is not
+// obviously right, and the quieter version is the one that shipped.
+const v2CSS = `/**
+ * Miyagi v2, experimental.
+ *
+ * A denser, more visual treatment: a stage for the scene, a gradient ground, and figures
+ * sized to be the thing you look at rather than an illustration beside the text.
+ */
+
+:root {
+  --scene-height: 380px;
+  --scene-radius: 14px;
+  --scene-edge: var(--vp-c-divider);
+}
+
+.scene3d-wrap {
+  position: relative;
+  margin: 26px 0 10px;
+  border-radius: var(--scene-radius);
+  border: 1px solid var(--scene-edge);
+  background:
+    radial-gradient(120% 90% at 50% 0%, var(--vp-c-bg-soft) 0%, var(--vp-c-bg) 62%);
+  overflow: hidden;
+}
+
+canvas.scene3d {
+  display: block;
+  width: 100%;
+  height: var(--scene-height);
+  touch-action: pan-y;
+  outline: none;
+}
+
+canvas.scene3d:focus-visible {
+  box-shadow: inset 0 0 0 2px var(--vp-c-brand-1);
+}
+
+/* While the renderer is running, the flat figure is hidden: it is the fallback, and
+   showing both would say the same thing twice. */
+figure.diagram.is-fallback svg.scratch {
+  display: none;
+}
+
+/* A ghost object must be visibly an object: enough opacity to see its edges, clearly less
+   than a solid, so "discarded" reads as discarded rather than as missing. */
+.scene3d-label.is-ghost {
+  opacity: 0.85;
+  text-decoration: line-through;
+  text-decoration-thickness: 1px;
+}
+
+/* If WebGL is missing the canvas is removed by the renderer and the figure returns. */
+figure.diagram:not(.is-fallback) svg.scratch {
+  display: none;
+}
+
+/* The legend beneath a scene. Deterministic placement, so it can never cover the figure,
+   and it carries the hue swatch so a reader can map colour to meaning without a caption. */
+.scene3d-legend {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px 16px;
+  margin: 10px 0 0;
+  padding: 12px 2px 2px;
+  list-style: none;
+  border-top: 1px dashed var(--vp-c-divider);
+}
+
+.scene3d-legend-item {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  font: 500 12px/1.4 var(--vp-font-family-mono, ui-monospace, monospace);
+  color: var(--vp-c-text-2);
+}
+
+.scene3d-legend-item.is-ghost {
+  color: var(--vp-c-text-3);
+  text-decoration: line-through;
+  text-decoration-thickness: 1px;
+}
+
+.scene3d-legend-item.is-ghost .scene3d-swatch {
+  background: transparent;
+  border-style: dashed;
+}
+
+.scene3d-swatch {
+  width: 13px;
+  height: 13px;
+  border-radius: 3px;
+  border: 1px solid var(--vp-c-divider);
+  flex: none;
+}
+
+.scene3d-swatch[data-hue="brand"] { background: var(--vp-c-brand-1); }
+.scene3d-swatch[data-hue="good"]  { background: var(--vp-c-green-1); }
+.scene3d-swatch[data-hue="bad"]   { background: var(--vp-c-danger-1); }
+.scene3d-swatch[data-hue="line"]  { background: var(--vp-c-text-2); }
+.scene3d-swatch[data-hue="muted"] { background: var(--vp-c-text-3); }
+
+.markdown-only {
+  position: absolute;
+  width: 1px; height: 1px;
+  padding: 0; margin: -1px;
+  overflow: hidden; clip: rect(0 0 0 0);
+  white-space: nowrap; border: 0;
+}
+
+/* The hero carries the scene's colour language: a soft wash behind the logo, so the front
+   page is recognisably the same product as the chapters. */
+.VPHero .image-bg {
+  background: radial-gradient(closest-side, var(--vp-c-brand-soft), transparent 72%);
+}
+
+@media (max-width: 640px) {
+  :root { --scene-height: 300px; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  /* The renderer already draws the finished frame; this covers the CSS reveal. */
+  svg.scratch * { animation: none !important; }
+}
+`

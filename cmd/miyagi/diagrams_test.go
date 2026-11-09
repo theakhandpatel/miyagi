@@ -37,7 +37,7 @@ func TestEveryDiagramResolves(t *testing.T) {
 		}
 		// expandDiagrams returns an error for an unresolvable name, which is the failure
 		// a learner would meet as a raw fence on the page.
-		out, err := expandDiagrams(string(body), dir)
+		out, err := expandDiagrams(string(body), dir, false)
 		if err != nil {
 			t.Errorf("%s: %v", slug, err)
 			continue

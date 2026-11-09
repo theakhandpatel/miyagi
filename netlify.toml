@@ -2,7 +2,10 @@
 # VitePress builds it. Nothing generated is committed.
 
 [build]
-  command = "go run ./cmd/miyagi site"
+  # Two builds, in order. The stable site at the root, then the experimental one nested
+  # under /v2 so it is reachable without a second deploy. The experimental build sets its
+  # own /v2 base, so it must be generated into the already-built tree rather than moved.
+  command = "go run ./cmd/miyagi site --out site/dist && go run ./cmd/miyagi site --v2 --out site/dist/v2"
   publish = "site/dist"
 
 [build.environment]

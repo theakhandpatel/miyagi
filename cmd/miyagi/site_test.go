@@ -13,7 +13,7 @@ import (
 
 func TestConfigListsEveryChapter(t *testing.T) {
 	root := repoRootForTests(t)
-	config := buildConfig("Miyagi", root)
+	config := buildConfig("Miyagi", root, false)
 
 	for _, ch := range allChapters(root) {
 		if !ch.written() {
@@ -30,7 +30,7 @@ func TestConfigListsEveryChapter(t *testing.T) {
 
 func TestConfigNamesTheParts(t *testing.T) {
 	root := repoRootForTests(t)
-	config := buildConfig("Miyagi", root)
+	config := buildConfig("Miyagi", root, false)
 	for _, part := range []string{"I. Wire", "II. Act", "III. Remember", "IV. Extend", "V. Compose"} {
 		if !strings.Contains(config, `"`+part+`"`) {
 			t.Errorf("sidebar is missing part %q", part)
@@ -39,7 +39,7 @@ func TestConfigNamesTheParts(t *testing.T) {
 }
 
 func TestConfigIsValidShape(t *testing.T) {
-	config := buildConfig("Miyagi", repoRootForTests(t))
+	config := buildConfig("Miyagi", repoRootForTests(t), false)
 	for _, want := range []string{
 		"withMermaid(defineConfig({",
 		"search: { provider: 'local' }",
@@ -74,7 +74,7 @@ func readTestSource(t *testing.T, rel string) string {
 // invites them to treat a past trade-off as part of the subject.
 func TestSitePublishesNoDecisionRecords(t *testing.T) {
 	root := repoRootForTests(t)
-	config := buildConfig("Miyagi", root)
+	config := buildConfig("Miyagi", root, false)
 
 	if strings.Contains(config, "adr") {
 		t.Errorf("the sidebar links an ADR; decision records are internal")

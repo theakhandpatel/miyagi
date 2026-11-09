@@ -32,7 +32,7 @@ var diagramFence = regexp.MustCompile("(?m)^```diagram[ \t]+([A-Za-z0-9_-]+)[ \t
 
 // expandDiagrams replaces each fence with the figure markup for its SVG. `dir` is the
 // directory holding the page, so a chapter's diagrams resolve relative to that chapter.
-func expandDiagrams(md, dir string) (string, error) {
+func expandDiagrams(md, dir string, v2 bool) (string, error) {
 	var firstErr error
 
 	out := diagramFence.ReplaceAllStringFunc(md, func(match string) string {
@@ -44,7 +44,7 @@ func expandDiagrams(md, dir string) (string, error) {
 			}
 			return match
 		}
-		return figure(name, svg, desc)
+		return figure(name, svg, desc, v2, chapterID(dir))
 	})
 
 	if firstErr != nil {
@@ -58,9 +58,31 @@ func expandDiagrams(md, dir string) (string, error) {
 // The SVG is inlined rather than referenced with <img>, which is what makes the page's
 // colours apply to the drawing, keeps the labels as selectable text, and lets the pen
 // animation start when the figure is scrolled into view.
-func figure(name, svg, desc string) string {
+// chapterID reads the chapter number from a chapter's directory name, which is the only
+// thing the scene renderer needs to find its scene file.
+func chapterID(dir string) string {
+	base := filepath.Base(dir)
+	if len(base) >= 2 && base[2] == '-' {
+		return base[:2]
+	}
+	return ""
+}
+
+// figure wraps a diagram for the page.
+//
+// In the experimental build the figure also carries a canvas and keeps the SVG inside it as
+// the fallback. The renderer removes the canvas if WebGL is unavailable, if the scene file
+// is missing, or if anything else goes wrong, and what remains is the flat figure that
+// shipped before. That ordering matters: the fallback is the default document, and the
+// three dimensional version is an upgrade applied to it.
+func figure(name, svg, desc string, v2 bool, id string) string {
 	var b strings.Builder
 	b.WriteString(`<figure class="diagram">` + "\n")
+	if v2 && id != "" {
+		b.WriteString(`<div class="scene3d-wrap">` + "\n")
+		b.WriteString(`<canvas class="scene3d" data-chapter="` + escapeHTML(id) + `" aria-label="` + escapeHTML(desc) + `"></canvas>` + "\n")
+		b.WriteString(`</div>` + "\n")
+	}
 	b.WriteString(svg)
 	if desc != "" {
 		b.WriteString("\n<figcaption>" + escapeHTML(desc) + "</figcaption>")
