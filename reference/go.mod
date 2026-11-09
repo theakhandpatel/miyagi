@@ -2,6 +2,6 @@
 // compiles them. Each reference/chNN holds only the files chapter NN changes, and
 // `miyagi submit NN --solution` overlays chapters 01 through NN into a throwaway
 // copy of the repository before grading.
-module agent/reference
+module github.com/theakhandpatel/miyagi/reference
 
 go 1.26

@@ -106,7 +106,15 @@ func prepareContent(root, srcDir string) (int, error) {
 		if err != nil {
 			return fmt.Errorf("read %s: %w", source, err)
 		}
-		body = withDescription(body, source)
+		// Diagrams are inlined here, while we still know which directory the page came
+		// from: a chapter's fence names a file beside that chapter, and the generated
+		// site keeps the same layout, so resolving at copy time is what lets the two
+		// renderers agree without the page needing to know where it will be served.
+		page, err := expandDiagrams(string(body), filepath.Join(root, filepath.Dir(source)))
+		if err != nil {
+			return err
+		}
+		body = withDescription([]byte(page), source)
 		dest := filepath.Join(srcDir, target)
 		if err := os.MkdirAll(filepath.Dir(dest), 0o755); err != nil {
 			return err
@@ -144,7 +152,6 @@ func prepareContent(root, srcDir string) (int, error) {
 	for _, doc := range []string{
 		"docs/architecture.md", "docs/chapter-format.md",
 		"docs/writing-style.md", "docs/designs.md", "docs/design-audit.md",
-		"docs/adr/0001-vitepress-for-the-site.md",
 		"chapters/where-next.md",
 	} {
 		if _, err := os.Stat(filepath.Join(root, doc)); err != nil {
@@ -243,10 +250,53 @@ func writeProject(srcDir, title, root string) error {
 // themeEntry pulls in the default theme and then our stylesheet, which is the whole
 // extent of the customisation: colours, the logo lockup, and a wider content column for
 // pages that carry wide tables.
+//
+// It also installs a scroll trigger for diagrams. That is the only script on the site,
+// and it decides nothing about a diagram's content: it adds a class when a figure comes
+// into view so the CSS reveal starts there instead of on page load.
 const themeEntry = `import DefaultTheme from 'vitepress/theme'
 import './custom.css'
 
-export default DefaultTheme
+export default {
+  extends: DefaultTheme,
+  setup() {
+    if (typeof window === 'undefined') return
+
+    const play = (fig) => {
+      const svg = fig.querySelector('svg.scratch')
+      if (!svg || svg.dataset.played === '1') return
+      svg.dataset.played = '1'
+      // Clear, reflow, re-add: an animation cannot restart without a style flush.
+      svg.classList.remove('play')
+      void svg.getBoundingClientRect()
+      svg.classList.add('play')
+    }
+
+    const start = () => {
+      const figs = [...document.querySelectorAll('figure.diagram')]
+      if (!figs.length) return
+
+      if (!('IntersectionObserver' in window)) {
+        figs.forEach(play)
+        return
+      }
+      // threshold 0.4 keeps a diagram still until it is properly in view, so a reader
+      // does not catch the tail of a drawing that started off-screen.
+      const io = new IntersectionObserver((entries) => {
+        for (const e of entries) if (e.isIntersecting) play(e.target)
+      }, { threshold: 0.4 })
+      figs.forEach((f) => io.observe(f))
+    }
+
+    if (document.readyState === 'loading') {
+      document.addEventListener('DOMContentLoaded', start)
+    } else {
+      start()
+    }
+    // VitePress swaps page content without a full load.
+    if (window.__vp_router) window.__vp_router.onAfterRouteChanged = start
+  }
+}
 `
 
 // themeCSS is deliberately small. It sets a warm palette drawn from the logo, tightens
@@ -286,6 +336,120 @@ const themeCSS = `/**
   --vp-c-bg: #16120f;
   --vp-c-bg-alt: #1d1815;
   --vp-c-bg-soft: #241d18;
+
+  /* The diagram pen lifts to stay legible on the dark ground. */
+  --dg-ink: #f0e8e1;
+  --dg-muted: #a2938a;
+  --dg-accent: #e08a5c;
+  --dg-good: #7fbf94;
+  --dg-bad: #e0705a;
+  --dg-violet: #b09ad6;
+}
+
+/* Hand-drawn diagrams.
+ *
+ * A diagram carries no colours of its own. Every stroke and label is tagged with a tone
+ * class and this stylesheet decides what that tone is, which is why one committed SVG
+ * works in both themes and cannot drift from the palette.
+ */
+:root {
+  --dg-ink: #221b16;
+  --dg-muted: #6f6259;
+  --dg-accent: #9a4b28;
+  --dg-good: #2f6b46;
+  --dg-bad: #a8321f;
+  --dg-violet: #6c5b9e;
+}
+
+@font-face {
+  font-family: 'Patrick Hand';
+  src: url('/docs/assets/PatrickHand-Regular.woff2') format('woff2');
+  font-display: swap;
+}
+
+figure.diagram {
+  margin: 1.9rem 0;
+}
+
+figure.diagram svg.scratch {
+  display: block;
+  width: 100%;
+  height: auto;
+  overflow: visible;
+}
+
+figure.diagram figcaption {
+  margin-top: 0.55rem;
+  font-size: 0.82rem;
+  line-height: 1.5;
+  color: var(--vp-c-text-2);
+  border-top: 1px solid var(--vp-c-divider);
+  padding-top: 0.45rem;
+}
+
+.scratch .s-line {
+  fill: none;
+  stroke: var(--dg-ink);
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-dasharray: 1;
+  stroke-dashoffset: 1;
+  animation-duration: var(--t1);
+  animation-delay: var(--t0);
+  animation-timing-function: linear;
+  animation-fill-mode: both;
+}
+.scratch .s-line.t-accent { stroke: var(--dg-accent); }
+.scratch .s-line.t-good { stroke: var(--dg-good); }
+.scratch .s-line.t-bad { stroke: var(--dg-bad); }
+.scratch .s-line.t-violet { stroke: var(--dg-violet); }
+.scratch .s-line.t-muted { stroke: var(--dg-muted); }
+
+.scratch .s-text {
+  fill: var(--dg-ink);
+  font-family: 'Patrick Hand', ui-rounded, 'Comic Sans MS', cursive;
+  animation-duration: var(--t1);
+  animation-delay: var(--t0);
+  animation-timing-function: linear;
+  animation-fill-mode: both;
+}
+.scratch .s-text.t-accent { fill: var(--dg-accent); }
+.scratch .s-text.t-good { fill: var(--dg-good); }
+.scratch .s-text.t-bad { fill: var(--dg-bad); }
+.scratch .s-text.t-violet { fill: var(--dg-violet); }
+.scratch .s-text.t-muted { fill: var(--dg-muted); }
+
+.scratch .s-fill {
+  fill: var(--dg-ink);
+  fill-opacity: 0.1;
+  opacity: 0;
+  animation-fill-mode: both;
+  animation-timing-function: ease;
+}
+.scratch .s-fill.t-accent { fill: var(--dg-accent); }
+.scratch .s-fill.t-good { fill: var(--dg-good); }
+.scratch .s-fill.t-bad { fill: var(--dg-bad); }
+.scratch .s-fill.t-violet { fill: var(--dg-violet); }
+
+.scratch .s-clip {
+  animation-duration: var(--t1);
+  animation-delay: var(--t0);
+  animation-timing-function: linear;
+  animation-fill-mode: both;
+}
+
+/* Before the figure is in view the drawing is complete, not blank. A reader who never
+ * scrolls it into view, has no JavaScript, or prefers reduced motion still gets the whole
+ * diagram; only the reveal is optional. */
+.scratch:not(.play) .s-line { stroke-dashoffset: 0; }
+.scratch:not(.play) .s-fill { opacity: 1; }
+.scratch:not(.play) .s-clip { width: 100% !important; animation: none; }
+
+@media (prefers-reduced-motion: reduce) {
+  .scratch .s-line { stroke-dashoffset: 0 !important; animation: none !important; }
+  .scratch .s-text { animation: none !important; }
+  .scratch .s-fill { opacity: 1 !important; animation: none !important; }
+  .scratch .s-clip { width: 100% !important; animation: none !important; }
 }
 
 /* The hero: logo and title side by side, tagline underneath. */
@@ -411,7 +575,6 @@ func buildConfig(title, root string) string {
         { text: 'Writing style', link: '/docs/writing-style' },
         { text: 'Designs', link: '/docs/designs' },
         { text: 'Design audit', link: '/docs/design-audit' },
-        { text: 'Why VitePress', link: '/docs/adr/0001-vitepress-for-the-site' },
       ] },
 `)
 	b.WriteString("      { text: 'After the course', items: [{ text: 'Where next', link: '/chapters/where-next' }] },\n")

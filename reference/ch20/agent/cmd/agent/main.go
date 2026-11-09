@@ -20,7 +20,7 @@ import (
 	"syscall"
 	"time"
 
-	"agent/agent"
+	"github.com/theakhandpatel/miyagi/agent"
 )
 
 func main() {

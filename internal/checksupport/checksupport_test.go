@@ -4,7 +4,7 @@ import (
 	"testing"
 	"time"
 
-	"agent/internal/fake"
+	"github.com/theakhandpatel/miyagi/internal/fake"
 )
 
 // Tests for the helpers themselves. They are shared by twenty-one chapters, so a bug here

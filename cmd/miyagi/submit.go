@@ -13,7 +13,7 @@ import (
 	"regexp"
 	"strings"
 
-	"agent/internal/grader"
+	"github.com/theakhandpatel/miyagi/internal/grader"
 )
 
 // errBuildFailed distinguishes "the program does not compile" from "a case failed". Both

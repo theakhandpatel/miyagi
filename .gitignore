@@ -34,3 +34,6 @@ docs/research/
 /site/node_modules/
 
 /site/dist/
+
+# the diagram generator's own dependencies; taking the course needs no Node
+/tools/scribble/node_modules/

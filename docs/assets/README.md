@@ -6,6 +6,17 @@ the navigation logo and the apple touch icon. `favicon.ico` is the same art at 4
 
 All three are generated from one supplied image. Nothing here was drawn by hand.
 
+## Patrick Hand
+
+`PatrickHand-Regular.woff2` is the hand-lettering used by the chapter diagrams, subset to
+nothing and converted from the upstream TrueType file. It is licensed under the SIL Open
+Font License 1.1, and `PatrickHand-OFL.txt` is the licence as distributed. It is served
+once and cached; a diagram never embeds it.
+
+The generator in `tools/scribble/` measures text with the same TrueType file, so the label
+widths it computes are the widths the browser draws. That is why the TrueType original is
+kept in `tools/scribble/fonts/` next to the woff2 that ships.
+
 ## How they were made
 
 The source is a 2000 by 1116 PNG with a fully opaque, near-white photographic backdrop. It

@@ -17,9 +17,9 @@ import (
 	"strings"
 	"testing"
 
-	"agent/internal/blackbox"
-	"agent/internal/fake"
-	"agent/internal/grader"
+	"github.com/theakhandpatel/miyagi/internal/blackbox"
+	"github.com/theakhandpatel/miyagi/internal/fake"
+	"github.com/theakhandpatel/miyagi/internal/grader"
 )
 
 // Env points the agent at a scripted server with a test key.

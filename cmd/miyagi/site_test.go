@@ -1,6 +1,8 @@
 package main
 
 import (
+	"os"
+	"path/filepath"
 	"strings"
 	"testing"
 )
@@ -51,5 +53,45 @@ func TestConfigIsValidShape(t *testing.T) {
 	// Unbalanced braces would produce a file VitePress cannot parse.
 	if strings.Count(config, "{") != strings.Count(config, "}") {
 		t.Errorf("config braces are unbalanced")
+	}
+}
+
+// readTestSource reads a file from the repository, for tests that assert on source text
+// rather than behaviour. Used only where a rule is about the list a developer maintains.
+func readTestSource(t *testing.T, rel string) string {
+	t.Helper()
+	body, err := os.ReadFile(filepath.Join(repoRootForTests(t), rel))
+	if err != nil {
+		t.Fatalf("read %s: %v", rel, err)
+	}
+	return string(body)
+}
+
+// The repository keeps working notes that are not part of the course. `docs/adr/` holds
+// decision records written for whoever maintains this repository, addressed to
+// contributors rather than to a learner, and they carry no teaching value for someone
+// building the agent. Publishing them puts internal bookkeeping in front of readers and
+// invites them to treat a past trade-off as part of the subject.
+func TestSitePublishesNoDecisionRecords(t *testing.T) {
+	root := repoRootForTests(t)
+	config := buildConfig("Miyagi", root)
+
+	if strings.Contains(config, "adr") {
+		t.Errorf("the sidebar links an ADR; decision records are internal")
+	}
+	// prepareContent is the only path a file can take onto the site, so its allowlist is
+	// what decides. An ADR added to the list would be published with no other change.
+	source := readTestSource(t, "cmd/miyagi/site.go")
+	start := strings.Index(source, "for _, doc := range []string{")
+	if start < 0 {
+		t.Fatal("could not find the published-documents list in site.go")
+	}
+	end := strings.Index(source[start:], "}")
+	if end < 0 {
+		t.Fatal("could not find the end of the published-documents list")
+	}
+	list := source[start : start+end]
+	if strings.Contains(list, "docs/adr") {
+		t.Errorf("docs/adr is in the published-documents list; decision records are internal")
 	}
 }

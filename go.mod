@@ -1,4 +1,4 @@
-module agent
+module github.com/theakhandpatel/miyagi
 
 go 1.26.0
 

@@ -9,7 +9,7 @@ import (
 	"strings"
 	"time"
 
-	"agent/internal/hints"
+	"github.com/theakhandpatel/miyagi/internal/hints"
 )
 
 func timeNow() time.Time { return time.Now().UTC() }
@@ -102,7 +102,14 @@ func cmdRead(args []string) error {
 	if err != nil {
 		return fmt.Errorf("no %s for chapter %s (try: %s)", doc, ch.ID, strings.Join(docNames, ", "))
 	}
-	return page(string(body))
+
+	// A diagram becomes its description. The terminal cannot draw it, and dropping the
+	// picture silently would leave the prose pointing at something the reader cannot see.
+	text, err := describeDiagrams(string(body), filepath.Join(root, "chapters", ch.Slug))
+	if err != nil {
+		return err
+	}
+	return page(text)
 }
 
 func isDocName(s string) bool {

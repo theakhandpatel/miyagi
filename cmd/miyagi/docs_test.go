@@ -8,7 +8,7 @@ import (
 	"strings"
 	"testing"
 
-	"agent/internal/hints"
+	"github.com/theakhandpatel/miyagi/internal/hints"
 )
 
 // The documentation and the grader must agree. They are the two halves of the course
